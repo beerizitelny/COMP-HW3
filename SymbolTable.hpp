@@ -8,6 +8,7 @@
 #include "nodes.hpp"
 #include <vector>
 #include <stack>
+#include <deque>
 #include <string>
 
 /*
@@ -37,14 +38,15 @@ public:
     ~SymTable();
     /* append a new entry in the table */
     void add_new_entry(SymTableEntry* entry);
+    void add_new_entry(std::string name, ast::BuiltInType type, unsigned int offset);
 };
 
 class SymTableStack {
-    std::stack<SymTable*>* sym_tables;
+    std::deque<SymTable*>* sym_tables;
     std::stack<unsigned int>* offsets;
 
 public:
-    SymTableStack() : sym_tables(new std::stack<SymTable*>), offsets(new std::stack<unsigned int>) {
+    SymTableStack() : sym_tables(new std::deque<SymTable*>), offsets(new std::stack<unsigned int>) {
         sym_tables->push(new SymTable());
         offsets->push(0);
     };

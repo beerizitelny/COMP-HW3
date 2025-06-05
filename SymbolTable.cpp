@@ -21,9 +21,9 @@ void SymTable::add_new_entry(SymTableEntry *entry) {
 
 SymTableStack::~SymTableStack() {
     while (!sym_tables->empty()){
-        SymTable* sym_table = sym_tables->top();
+        SymTable* sym_table = sym_tables->front();
         delete sym_table;
-        sym_tables->pop();
+        sym_tables->pop_front();
     }
     delete sym_tables;
     delete offsets;
@@ -36,14 +36,14 @@ void SymTableStack::push_table() {
 
 void SymTableStack::pop_table() {
     if (!sym_tables->empty() && !offsets->empty()){
-        delete sym_tables->top();
-        sym_tables->pop();
+        delete sym_tables->front();
+        sym_tables->pop_front();
         offsets->pop();
     }
 }
 
 void SymTableStack::push_entry(SymTableEntry *entry) {
-    sym_tables->top()->add_new_entry(entry);
+    sym_tables->front()->add_new_entry(entry);
     unsigned int offset = 0;
     if (!offsets->empty()){
         offset = offsets->top();
