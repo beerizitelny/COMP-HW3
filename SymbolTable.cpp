@@ -1,7 +1,3 @@
-//
-// Created by baeri on 31/05/2025.
-//
-
 #include "SymbolTable.hpp"
 
 SymTable::~SymTable() {
