@@ -1,40 +1,39 @@
 
-#include "nodes.hpp"
 #include "SymbolTable.hpp"
+#include "nodes.hpp"
 
 // TODO: remove this later! and remove prints
 #include <iostream>
 using namespace std;
 
-class SemanticParserVisitor: Visitor {
+class SemanticParserVisitor : Visitor {
 protected:
+    SymTableStack symbol_table_stack;
+    SymTable declared_functions;
 
-    bool looping = False;
+    bool looping = false;
 
     bool is_valid_cast(ast::BuiltInType from, ast::BuiltInType to) {
         return ((from == to) || (from == ast::BuiltInType::BYTE && to == ast::BuiltInType::INT));
     }
 
 public:
-
-    SymTableStack symbol_table_stack;
-
     /** constructor */
-    SemanticParserVisitor() : symbol_table_stack() {}
+    SemanticParserVisitor() : symbol_table_stack(), declared_functions() {}
 
     /***************************************************************************************
                             implementation of visitor methods
     ****************************************************************************************/
     void visit(ast::Num &node) {
         cout << "visited NUM node" << endl;
-        node.type == ast::BuiltInType::INT
+        node.type == ast::BuiltInType::INT;
     }
 
     void visit(ast::NumB &node) {
         cout << "visited NUM_B node" << endl;
         if (node.value > 255)
-            output::errorByteTooLarge(node.line);
-        node.type == ast::BuiltInType::BYTE
+            output::errorByteTooLarge(node.line, node.value);
+        node.type == ast::BuiltInType::BYTE;
     }
 
     void visit(ast::String &node) {
@@ -44,29 +43,36 @@ public:
 
     void visit(ast::Bool &node) {
         cout << "visited BOOL node" << endl;
-        node.type == ast::BuiltInType::BOOL
+        node.type == ast::BuiltInType::BOOL;
     }
 
     void visit(ast::ID &node) {
         cout << "visited ID node" << endl;
 
-        // TODO: check function declarations if ID is a name of a function, and if so - set type to FUNC
-
-        // TODO: if not a func, verify that the ID is defined in some previous scope in symbol table, and set the type as exists in symbol table entry. otherwise throw errorUndef
+        std::string id = node.value;
+        SymTableEntry *func_entry = declared_functions.get_entry_by_id(id);
+        SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
+        if (func_entry)
+            node.type = func_entry->get_type();
+        else if (var_entry)
+            node.type = var_entry->get_type();
+        else
+            output::errorUndef(node.line, id);
     }
 
     void visit(ast::BinOp &node) {
         cout << "visited BINOP node" << endl;
-        node->left.accept(*this);
-        node->right.accept(*this);
+        node.left->accept(*this);
+        node.right->accept(*this);
 
-        // validate that both left and right side types are INT/BYTE to allow binary operation, and set type as the type with broader range.
+        // validate that both left and right side types are INT/BYTE to allow binary operation, and set type as the type
+        // with broader range.
         if (node.left->type == ast::BuiltInType::BYTE && node.right->type == ast::BuiltInType::BYTE)
             node.type = ast::BuiltInType::BYTE;
 
         else if ((node.left->type == ast::BuiltInType::INT || node.left->type == ast::BuiltInType::BYTE) &&
-            (node.right->type == ast::BuiltInType::INT || node.right->type == ast::BuiltInType::BYTE))
-            node.type = ast::BuiltInType:INT;
+                 (node.right->type == ast::BuiltInType::INT || node.right->type == ast::BuiltInType::BYTE))
+            node.type = ast::BuiltInType::INT;
 
         else
             output::errorMismatch(node.line);
@@ -74,13 +80,13 @@ public:
 
     void visit(ast::RelOp &node) {
         cout << "visited RELOP node" << endl;
-        node->left.accept(*this);
-        node->right.accept(*this);
+        node.left->accept(*this);
+        node.right->accept(*this);
 
         // validate that both left and right side types are INT/BYTE to allow relative operation.
         if ((node.left->type == ast::BuiltInType::INT || node.left->type == ast::BuiltInType::BYTE) &&
             (node.right->type == ast::BuiltInType::INT || node.right->type == ast::BuiltInType::BYTE))
-            node.type = ast::BuiltInType:BOOL;
+            node.type = ast::BuiltInType::BOOL;
 
         else
             output::errorMismatch(node.line);
@@ -168,7 +174,7 @@ public:
         cout << "visited EXP_LIST node" << endl;
 
         // visit each expression in the exps vector
-        for (auto exp& : node.exps) {
+        for (auto exp: node.exps) {
             exp->accept(*this);
         }
     }
@@ -176,7 +182,33 @@ public:
     void visit(ast::Call &node) {
         cout << "visited CALL node" << endl;
 
-        // TODO: implement this
+        node.func_id->accept(*this);
+        std::string id = node.func_id->value;
+        SymTableEntry *func_entry = declared_functions.get_entry_by_id(id);
+        SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
+
+        // skipping the case where both are defined since it is checked in func_decl and assign.
+        // case 1 - function is declared somewhere
+        if (func_entry) {
+            node.args->accept(*this);
+
+            // validate number of parameters match before iterating to validate parameter typre
+            if (func_entry->get_param_types()->size() != node.args->exps.size())
+                output::errorPrototypeMismatch(node.line, id, func_entry->get_string_param_types());
+
+            for (int i = 0; i < func_entry->get_param_types()->size(); ++i) {
+                if (!is_valid_cast(node.args->exps[i]->type, (*func_entry->get_param_types())[i]))
+                    output::errorPrototypeMismatch(node.line, id, func_entry->get_string_param_types());
+            }
+        }
+
+        // case 2 - function isn't declared, but a variable bearing this id was declared
+        else if (var_entry)
+            output::errorDefAsVar(node.line, id);
+
+        // case 3 - function isn't declared, no variable with this id exists
+        else
+            output::errorMismatch(node.line);
     }
 
     void visit(ast::Statements &node) {
@@ -187,13 +219,12 @@ public:
         symbol_table_stack.scope_printer.beginScope();
 
         // visit all statements inside the scope
-        for (auto statement& : node.statements)
+        for (auto statement: node.statements)
             statement->accept(*this);
 
         // entry procedure - close new scope and remove its symbol table
         symbol_table_stack.pop_table();
         symbol_table_stack.scope_printer.endScope();
-
     }
 
     void visit(ast::Break &node) {
@@ -213,11 +244,15 @@ public:
     void visit(ast::Return &node) {
         cout << "visited RETURN node" << endl;
 
-        // TODO: retrieve the function at the top of the stack
+        SymTableEntry *current_function_scope = symbol_table_stack.get_current_function_scope();
+        if (node.exp)
+            node.exp->accept(*this);
 
-        // TODO: if node.exp exists: visit, get type, and check if cast is valid between function return type and node type, throw mismatch if not
-
-        // TODO: if it doesn't exist, check that function return type is VOID, throw mismatch if not
+        // validate that if expression type matches function return type, or function returns void and no expression is
+        // used
+        if ((node.exp && !is_valid_cast(node.exp->type, current_function_scope->get_type())) ||
+            (!node.exp && current_function_scope->get_type() != ast::BuiltInType::VOID))
+            output::errorMismatch(node.line);
     }
 
     void visit(ast::If &node) {
@@ -228,9 +263,11 @@ public:
         symbol_table_stack.scope_printer.beginScope();
         node.condition->accept(*this);
         if (node.condition->type != ast::BuiltInType::BOOL)
-            output::errorMismatch(node.line)
+            output::errorMismatch(node.line);
+
         // this might create a new scope inside the if scope
         node.then->accept(*this);
+
         // deleting the if scope
         symbol_table_stack.pop_table();
         symbol_table_stack.scope_printer.endScope();
@@ -242,7 +279,6 @@ public:
             node.otherwise->accept(*this);
             symbol_table_stack.pop_table();
             symbol_table_stack.scope_printer.endScope();
-
         }
     }
 
@@ -265,7 +301,9 @@ public:
     void visit(ast::VarDecl &node) {
         cout << "visited VAR_DECL node" << endl;
 
-        // TODO: make sure node.id doesn't exist in any of the previous scopes of variables or functions (no shadowing allowed)
+        std::string id = node.id->value;
+        if (declared_functions.get_entry_by_id(id) || symbol_table_stack.get_symbol_entry_by_id(id))
+            output::errorDef(node.line, id);
 
         node.type->accept(*this);
         if (node.init_exp) {
@@ -273,24 +311,35 @@ public:
             if (!is_valid_cast(node.init_exp->type, node.type->type))
                 output::errorMismatch(node.line);
         }
-        SymTableEntry* new_symbol_table_entry = new SymTableEntry(node.id->value, node.type->type);
+        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type);
         symbol_table_stack.push_entry(new_symbol_table_entry);
 
         // visiting id only here to avoid premature lookup in symbol table
         node.id->accept(*this);
-
     }
 
     void visit(ast::Assign &node) {
         cout << "visited ASSIGN node" << endl;
+
         // validation of prior declaration of this ID is done when visiting node.id
         node.id->accept(*this);
+        std::string id = node.id->value;
 
-        // TODO: make sure node.id doesn't exist in any of the previous scopes of functions, otherwise throw errorDefAsFunc
+        // cannot assign into a funcion identifier
+        if (declared_functions.get_entry_by_id(id))
+            output::errorDefAsFunc(node.line, id);
 
         node.exp->accept(*this);
 
-        // TODO: make sure cast from node.exp->type to sym_table_entry.type where it was defined, otherwise throw errorMismatch
+        SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
+
+        // make sure that a variable bearing this id exists
+        if (!var_entry)
+            output::errorUndefinedVar(node.line, id);
+
+        // validate matching types between expression and symbol as declared
+        if (!is_valid_cast(node.exp->type, var_entry->get_type())
+            output::errorMismatch(node.line);
     }
 
     void visit(ast::Formal &node) {
@@ -304,14 +353,16 @@ public:
         cout << "visited FORMALS node" << endl;
 
         int argument_offset = -1;
-        for (auto formal& : node.formals) {
+        for (auto formal: node.formals) {
 
-            // TODO: make sure formal->id->value doesn't exist in some previous scope, otherwise throw errorDef
+            std::string formal_id = formal->id->value;
+            if (declared_functions.get_entry_by_id(formal_id) || symbol_table_stack.get_symbol_entry_by_id(formal_id))
+                output::errorDef(node.line, formal_id);
 
-            SymTableEntry* new_symbol_table_entry = new SymTableEntry(node.id->value, node.type->type, argument_offset--);
+            SymTableEntry *new_symbol_table_entry = new SymTableEntry(formal_id, formal->type->type, argument_offset--);
             symbol_table_stack.push_entry(new_symbol_table_entry);
         }
-        for (auto formal& : node.formals) {
+        for (auto formal: node.formals) {
             formal->accept(*this);
         }
     }
@@ -322,14 +373,15 @@ public:
         symbol_table_stack.push_table();
         symbol_table_stack.scope_printer.beginScope();
 
-        // TODO: retrieve entry from the data-structure that holds function declarations (no need to validate existence - Funcs ensures that)
+        // TODO: retrieve entry from the data-structure that holds function declarations (no need to validate existence
+        // - Funcs ensures that)
 
         // TODO: insert entry into symbol table stack
 
         node.id->accept(*this);
         node.return_type->accept(*this);
         node.formals->accept(*this);
-        for (auto statement& : node.body->statement)
+        for (auto statement: node.body->statements)
             statement->accept(*this);
 
         symbol_table_stack.pop_table();
@@ -339,43 +391,40 @@ public:
     void visit(ast::Funcs &node) {
         cout << "visited FUNCS node" << endl;
 
-        // TODO: handle main func here - make sure it is defined and correctly implemented to comply with exercise requirements
+        // TODO: handle main func here - make sure it is defined and correctly implemented to comply with exercise
+        // requirements
 
         // create symbol table entries for print and printi functions
-        SymTableEntry* symbol_table_entry_print = new SymTableEntry("print", ast::BuiltInType::VOID, true);
-        SymTableEntry* symbol_table_entry_printi = new SymTableEntry("printi", ast::BuiltInType::VOID, true);
+        SymTableEntry *symbol_table_entry_print = new SymTableEntry("print", ast::BuiltInType::VOID, true);
+        SymTableEntry *symbol_table_entry_printi = new SymTableEntry("printi", ast::BuiltInType::VOID, true);
 
         // TODO: add these function declarations to the data structure that holds function declarations
 
         // call scopePrinter's function emitter
-        symbol_table_entry_print->param_types->push_back(ast::BuiltInType::STRING);
-        symbol_table_entry_printi->param_types->push_back(ast::BuiltInType::INT);
-        symbol_table_stack.scope_printer.emitFunc(
-            symbol_table_entry_print->name,
-            symbol_table_entry_print->type,
-            string_param_types_vector
-        );
-        symbol_table_stack.scope_printer.emitFunc(
-            symbol_table_entry_printi->name,
-            symbol_table_entry_printi->type,
-            int_param_types_vector
-        );
+        symbol_table_entry_print->add_param(ast::BuiltInType::STRING);
+        symbol_table_entry_printi->add_param(ast::BuiltInType::INT);
+        symbol_table_stack.scope_printer.emitFunc(symbol_table_entry_print->get_name(),
+                                                  symbol_table_entry_print->get_type(),
+                                                  *symbol_table_entry_print->get_param_types());
+        symbol_table_stack.scope_printer.emitFunc(symbol_table_entry_printi->get_name(),
+                                                  symbol_table_entry_printi->get_type(),
+                                                  *symbol_table_entry_printi->get_param_types());
 
-        for (auto func& : node.funcs) {
+        for (auto func: node.funcs) {
             string func_id = func->id->value;
-            ast::BuiltInType funct_type = new func->return_type->type;
+            ast::BuiltInType func_type = func->return_type->type;
 
             // TODO: make sure this function id is defined in the data-structure that holds function declarations
 
-            SymTableEntry* new_entry = new SymTableEntry(func_id, func_type, true);
-            for (auto func_param : func->formals->formals)
-                new_entry->param_types->push_back(func_param->type->type); // TODO: handle PrimitiveType and ArrayType
+            SymTableEntry *new_entry = new SymTableEntry(func_id, func_type, true);
+            for (auto func_param: func->formals->formals)
+                new_entry->add_param(func_param->type->type); // TODO: handle PrimitiveType and ArrayType
 
             // TODO: add this function declaration to the data-stucture that holds function declarations
         }
 
         // visiting functions only here to avoid premature lookup in symbol table
-        for (auto func& : node.funcs)
+        for (auto func: node.funcs)
             func->accept(*this);
     }
 }

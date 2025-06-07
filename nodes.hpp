@@ -13,7 +13,7 @@ namespace ast {
         ADD, // Addition
         SUB, // Subtraction
         MUL, // Multiplication
-        DIV  // Division
+        DIV // Division
     };
 
     /* Relational operations */
@@ -23,17 +23,11 @@ namespace ast {
         LT, // Less than
         GT, // Greater than
         LE, // Less than or equal
-        GE  // Greater than or equal
+        GE // Greater than or equal
     };
 
     /* Built-in types */
-    enum BuiltInType {
-        VOID,
-        BOOL,
-        BYTE,
-        INT,
-        STRING
-    };
+    enum BuiltInType { VOID, BOOL, BYTE, INT, STRING };
 
     /* Base class for all AST nodes */
     class Node {
@@ -52,11 +46,11 @@ namespace ast {
     class Exp : virtual public Node {
     public:
         Exp() = default;
+        BuiltInType type;
     };
 
     /* Base class for all statements */
-    class Statement : virtual public Node {
-    };
+    class Statement : virtual public Node {};
 
     /* Number literal */
     class Num : public Exp {
@@ -67,9 +61,7 @@ namespace ast {
         // Constructor that receives a C-style string that represents the number
         explicit Num(const char *str);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Byte literal */
@@ -81,9 +73,7 @@ namespace ast {
         // Constructor that receives a C-style (including b character) string that represents the number
         explicit NumB(const char *str);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* String literal */
@@ -95,9 +85,7 @@ namespace ast {
         // Constructor that receives a C-style string that represents the string *including quotes*
         explicit String(const char *str);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Boolean literal */
@@ -109,9 +97,7 @@ namespace ast {
         // Constructor that receives the boolean value
         explicit Bool(bool value);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Identifier */
@@ -123,9 +109,7 @@ namespace ast {
         // Constructor that receives a C-style string that represents the identifier
         explicit ID(const char *str);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Binary arithmetic operation */
@@ -141,9 +125,7 @@ namespace ast {
         // Constructor that receives the left and right operands and the operation
         BinOp(std::shared_ptr<Exp> left, std::shared_ptr<Exp> right, BinOpType op);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Binary relational operation */
@@ -159,9 +141,7 @@ namespace ast {
         // Constructor that receives the left and right operands and the operation
         RelOp(std::shared_ptr<Exp> left, std::shared_ptr<Exp> right, RelOpType op);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Unary logical NOT operation */
@@ -173,9 +153,7 @@ namespace ast {
         // Constructor that receives the operand
         explicit Not(std::shared_ptr<Exp> exp);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Binary logical AND operation */
@@ -189,9 +167,7 @@ namespace ast {
         // Constructor that receives the left and right operands
         And(std::shared_ptr<Exp> left, std::shared_ptr<Exp> right);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Binary logical OR operation */
@@ -205,9 +181,7 @@ namespace ast {
         // Constructor that receives the left and right operands
         Or(std::shared_ptr<Exp> left, std::shared_ptr<Exp> right);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     class ArrayDereference : public Exp {
@@ -220,44 +194,34 @@ namespace ast {
         // Constructor that receives the identifier and the index expression
         ArrayDereference(std::shared_ptr<ID> id, std::shared_ptr<Exp> index);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     class Type : virtual public Node {
-        public:
-            Type() = default;
-        };    
+    public:
+        BuiltInType type;
+        Type() = default;
+    };
 
     /* Type symbol */
     class PrimitiveType : public Type {
     public:
-        // Type
-        BuiltInType type;
-
         // Constructor that receives the typeSS
         explicit PrimitiveType(BuiltInType type);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Type symbol For Array*/
     class ArrayType : public Type {
-        public:
-            BuiltInType type;
-            std::shared_ptr<Exp> length;
-            
-            // Constructor that receives the type
-            explicit ArrayType(BuiltInType type, std::shared_ptr<Exp> length);
-    
-            void accept(Visitor &visitor) override {
-                visitor.visit(*this);
-            }
-    };
+    public:
+        std::shared_ptr<Exp> length;
 
+        // Constructor that receives the type
+        explicit ArrayType(BuiltInType type, std::shared_ptr<Exp> length);
+
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
+    };
 
 
     /* Type cast */
@@ -271,9 +235,7 @@ namespace ast {
         // Constructor that receives the expression and the target type
         Cast(std::shared_ptr<Exp> exp, std::shared_ptr<PrimitiveType> type);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* List of expressions */
@@ -294,9 +256,7 @@ namespace ast {
         // Method to add an expression at the end of the list
         void push_back(const std::shared_ptr<Exp> &exp);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Function call */
@@ -313,9 +273,7 @@ namespace ast {
         // Constructor that receives only the function identifier (for parameterless functions)
         explicit Call(std::shared_ptr<ID> func_id);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* List of statements */
@@ -336,23 +294,17 @@ namespace ast {
         // Method to add a statement at the end of the list
         void push_back(const std::shared_ptr<Statement> &statement);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Break statement */
     class Break : public Statement {
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Continue statement */
     class Continue : public Statement {
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Return statement */
@@ -364,9 +316,7 @@ namespace ast {
         // Constructor that receives the expression to be returned
         explicit Return(std::shared_ptr<Exp> exp = nullptr);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* If statement */
@@ -379,13 +329,12 @@ namespace ast {
         // Statement to be executed if the condition is false. For an if statement without else, this field is nullptr
         std::shared_ptr<Statement> otherwise;
 
-        // Constructor that receives the condition, the statement to be executed if the condition is true, and the statement to be executed if the condition is false
+        // Constructor that receives the condition, the statement to be executed if the condition is true, and the
+        // statement to be executed if the condition is false
         If(std::shared_ptr<Exp> condition, std::shared_ptr<Statement> then,
            std::shared_ptr<Statement> otherwise = nullptr);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* While statement */
@@ -399,9 +348,7 @@ namespace ast {
         // Constructor that receives the condition and the statement to be executed while the condition is true
         While(std::shared_ptr<Exp> condition, std::shared_ptr<Statement> body);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Variable declaration */
@@ -417,9 +364,7 @@ namespace ast {
         // Constructor that receives the identifier, the type, and the initial value expression
         VarDecl(std::shared_ptr<ID> id, std::shared_ptr<Type> type, std::shared_ptr<Exp> init_exp = nullptr);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Assignment statement */
@@ -433,9 +378,7 @@ namespace ast {
         // Constructor that receives the identifier and the expression to be assigned
         Assign(std::shared_ptr<ID> id, std::shared_ptr<Exp> exp);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     class ArrayAssign : public Statement {
@@ -450,9 +393,7 @@ namespace ast {
         // Constructor that receives the identifier and the expression to be assigned
         ArrayAssign(std::shared_ptr<ID> id, std::shared_ptr<Exp> exp, std::shared_ptr<Exp> index);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Formal parameter */
@@ -466,9 +407,7 @@ namespace ast {
         // Constructor that receives the identifier and the type
         Formal(std::shared_ptr<ID> id, std::shared_ptr<Type> type);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* List of formal parameters */
@@ -489,9 +428,7 @@ namespace ast {
         // Method to add a formal parameter at the end of the list
         void push_back(const std::shared_ptr<Formal> &formal);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* Function declaration */
@@ -507,11 +444,10 @@ namespace ast {
         std::shared_ptr<Statements> body;
 
         // Constructor that receives the identifier, the return type, the list of formal parameters, and the body
-        FuncDecl(std::shared_ptr<ID> id, std::shared_ptr<Type> return_type, std::shared_ptr<Formals> formals, std::shared_ptr<Statements> body);
+        FuncDecl(std::shared_ptr<ID> id, std::shared_ptr<Type> return_type, std::shared_ptr<Formals> formals,
+                 std::shared_ptr<Statements> body);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
 
     /* List of function declarations */
@@ -532,20 +468,14 @@ namespace ast {
         // Method to add a function declaration at the end of the list
         void push_back(const std::shared_ptr<FuncDecl> &func);
 
-        void accept(Visitor &visitor) override {
-            visitor.visit(*this);
-        }
+        void accept(Visitor &visitor) override { visitor.visit(*this); }
     };
-}
+} // namespace ast
 
 #define YYSTYPE std::shared_ptr<ast::Node>
 
-#endif //NODES_HPP
+#endif // NODES_HPP
 
 
-
-
-
-
-//ArrayType:      Type {$$ = make_shared<ast::ArrayType>(dynamic_pointer_cast<ast::PrimitiveType>($1)->type, nullptr);}
-// ;
+// ArrayType:      Type {$$ = make_shared<ast::ArrayType>(dynamic_pointer_cast<ast::PrimitiveType>($1)->type, nullptr);}
+//  ;
