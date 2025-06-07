@@ -44,9 +44,11 @@ namespace ast {
 
     /* Base class for all expressions */
     class Exp : virtual public Node {
+
     public:
-        Exp() = default;
         BuiltInType type;
+        bool is_number() const {return type == ast::BuiltInType::INT || type == ast::BuiltInType::BYTE; }
+        void* get_value() {return nullptr;}
     };
 
     /* Base class for all statements */
@@ -62,6 +64,7 @@ namespace ast {
         explicit Num(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        void* get_value() {return &value; }
     };
 
     /* Byte literal */
@@ -74,6 +77,7 @@ namespace ast {
         explicit NumB(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        void* get_value() {return &value; }
     };
 
     /* String literal */
@@ -86,6 +90,7 @@ namespace ast {
         explicit String(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        void* get_value() {return &value; }
     };
 
     /* Boolean literal */
@@ -98,6 +103,7 @@ namespace ast {
         explicit Bool(bool value);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        void* get_value() {return &value; }
     };
 
     /* Identifier */
@@ -110,6 +116,7 @@ namespace ast {
         explicit ID(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        void* get_value() {return &value; }
     };
 
     /* Binary arithmetic operation */
@@ -216,6 +223,7 @@ namespace ast {
     class ArrayType : public Type {
     public:
         std::shared_ptr<Exp> length;
+        unsigned int size;
 
         // Constructor that receives the type
         explicit ArrayType(BuiltInType type, std::shared_ptr<Exp> length);

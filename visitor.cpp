@@ -136,27 +136,28 @@ public:
 
     void visit(ast::ArrayType &node) {
         cout << "visited ArrayType node" << endl;
-
-        // TODO: fill this up
         assert(node.length != nullptr);
 
         node.length->accept(*this);
-
-        ast::BuiltInType type = node.length->type;
-        node.
-
+        if (node.length->is_number()) {
+            node.size = *(int*)node.length->get_value();
+        }
     }
 
     void visit(ast::PrimitiveType &node) {
         cout << "visited PRIMITIVE_TYPE node" << endl;
 
-        // TODO: fill this up
+        // nothing to do here
     }
 
     void visit(ast::ArrayDereference &node) {
         cout << "visited ARRAY_DEREFERENCE node" << endl;
 
-        // TODO: fill this up
+        int arr_size = symbol_table_stack.get_symbol_entry_by_id(node.id->value)->get_array_size();
+        int index = *(int*)node.index->get_value();
+        if(index >= arr_size){
+            // size error
+        }
     }
 
     void visit(ast::ArrayAssign &node) {
@@ -321,10 +322,15 @@ public:
                 output::errorMismatch(node.line);
         }
         SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type);
+        if (dynamic_cast<ast::ArrayType*>(node.type.get())) {
+            int size = dynamic_cast<ast::ArrayType*>(node.type.get())->size;
+            new_symbol_table_entry->set_array_size(size);
+        }
         symbol_table_stack.push_entry(new_symbol_table_entry);
 
         // visiting id only here to avoid premature lookup in symbol table
         node.id->accept(*this);
+        // TODO: scope printer
     }
 
     void visit(ast::Assign &node) {
