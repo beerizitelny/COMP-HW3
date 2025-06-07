@@ -27,11 +27,13 @@ class SymTableEntry {
     unsigned int offset;
     std::vector<ast::BuiltInType> *param_types;
     std::vector<std::string> *string_param_types;
+    unsigned int array_size; // bigger then 0 only for arrays
 
 public:
     SymTableEntry(const std::string &name, ast::BuiltInType type, bool is_func_decl = false, unsigned int offset = 0) :
         name(name), type(type), is_func_decl(is_func_decl), offset(offset),
-        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {};
+        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()),
+        array_size(0) {};
 
     const std::string get_name() const { return name; }
     ast::BuiltInType get_type() const { return type; }
@@ -39,6 +41,9 @@ public:
     unsigned int get_offset() const { return offset; }
     std::vector<ast::BuiltInType> *const get_param_types() const { return param_types; }
     std::vector<std::string> *const get_string_param_types() const { return string_param_types; }
+    void set_array_size (unsigned int array_size) {this->array_size = array_size; }
+    unsigned int get_array_size() { return this->array_size; }
+    bool is_array() {return this->array_size > 0; }
 
     void add_param(ast::BuiltInType type);
 };

@@ -4,6 +4,8 @@
 
 // TODO: remove this later! and remove prints
 #include <iostream>
+
+#include <cassert>
 using namespace std;
 
 class SemanticParserVisitor : Visitor {
@@ -133,9 +135,16 @@ public:
     // void visit(ast::Type &node) { };
 
     void visit(ast::ArrayType &node) {
-        cout << "visited OR node" << endl;
+        cout << "visited ArrayType node" << endl;
 
         // TODO: fill this up
+        assert(node.length != nullptr);
+
+        node.length->accept(*this);
+
+        ast::BuiltInType type = node.length->type;
+        node.
+
     }
 
     void visit(ast::PrimitiveType &node) {
