@@ -23,19 +23,21 @@
 class SymTableEntry {
     std::string name;
     ast::BuiltInType type;
-    bool is_func_decl;
+
     unsigned int offset;
     std::vector<ast::BuiltInType> *param_types;
     std::vector<std::string> *string_param_types;
 
 public:
+    bool is_array = false;
+    bool is_func_decl = false;
     SymTableEntry(const std::string &name, ast::BuiltInType type, bool is_func_decl = false, unsigned int offset = 0) :
         name(name), type(type), is_func_decl(is_func_decl), offset(offset),
         param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {};
 
     const std::string get_name() const { return name; }
     ast::BuiltInType get_type() const { return type; }
-    bool is_func_decl() const { return is_func_decl; }
+    // bool is_func_decl() const { return is_func_decl; }
     unsigned int get_offset() const { return offset; }
     std::vector<ast::BuiltInType> *const get_param_types() const { return param_types; }
     std::vector<std::string> *const get_string_param_types() const { return string_param_types; }
