@@ -46,9 +46,10 @@ namespace ast {
     class Exp : virtual public Node {
 
     public:
+        unsigned int numerical_value = 0;
         BuiltInType type;
         bool is_number() const {return type == ast::BuiltInType::INT || type == ast::BuiltInType::BYTE; }
-        void* get_value() {return nullptr;}
+        unsigned int get_numerical_value() const {return numerical_value;}
     };
 
     /* Base class for all statements */
@@ -64,7 +65,6 @@ namespace ast {
         explicit Num(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        void* get_value() {return &value; }
     };
 
     /* Byte literal */
@@ -77,7 +77,6 @@ namespace ast {
         explicit NumB(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        void* get_value() {return &value; }
     };
 
     /* String literal */
@@ -90,7 +89,6 @@ namespace ast {
         explicit String(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        void* get_value() {return &value; }
     };
 
     /* Boolean literal */
@@ -103,7 +101,6 @@ namespace ast {
         explicit Bool(bool value);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        void* get_value() {return &value; }
     };
 
     /* Identifier */
@@ -116,7 +113,6 @@ namespace ast {
         explicit ID(const char *str);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        void* get_value() {return &value; }
     };
 
     /* Binary arithmetic operation */
@@ -208,6 +204,7 @@ namespace ast {
     public:
         BuiltInType type;
         Type() = default;
+        virtual unsigned int get_offset() const = 0;;
     };
 
     /* Type symbol */
@@ -217,18 +214,20 @@ namespace ast {
         explicit PrimitiveType(BuiltInType type);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        unsigned int get_offset() const override {return 0; }
     };
 
     /* Type symbol For Array*/
     class ArrayType : public Type {
     public:
         std::shared_ptr<Exp> length;
-        unsigned int size;
 
         // Constructor that receives the type
         explicit ArrayType(BuiltInType type, std::shared_ptr<Exp> length);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+
+        unsigned int get_offset() const override {return length->get_numerical_value(); }
     };
 
 

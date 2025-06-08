@@ -8,6 +8,19 @@
 #include <cassert>
 using namespace std;
 
+static int calc_bin_op (ast::BinOpType op, int var1, int var2) {
+    switch (op) {
+        case ast::BinOpType::ADD:
+            return var1 + var2;
+        case ast::BinOpType::DIV:
+            return var1 / var2;
+        case ast::BinOpType::MUL:
+            return var1 * var2;
+        case ast::BinOpType::SUB:
+            return var1 - var2;
+    }
+}
+
 class SemanticParserVisitor : Visitor {
 protected:
     SymTableStack symbol_table_stack;
@@ -29,6 +42,7 @@ public:
     void visit(ast::Num &node) {
         cout << "visited NUM node" << endl;
         node.type == ast::BuiltInType::INT;
+        node.numerical_value = node.value;
     }
 
     void visit(ast::NumB &node) {
@@ -36,6 +50,7 @@ public:
         if (node.value > 255)
             output::errorByteTooLarge(node.line, node.value);
         node.type == ast::BuiltInType::BYTE;
+        node.numerical_value = node.value;
     }
 
     void visit(ast::String &node) {
@@ -78,6 +93,8 @@ public:
 
         else
             output::errorMismatch(node.line);
+
+        node.numerical_value = calc_bin_op(node.op, node.left->get_numerical_value(), node.right->get_numerical_value());
     }
 
     void visit(ast::RelOp &node) {
@@ -137,17 +154,15 @@ public:
     void visit(ast::ArrayType &node) {
         cout << "visited ArrayType node" << endl;
         assert(node.length != nullptr);
-
+        // finding out the length of the array
         node.length->accept(*this);
-        if (node.length->is_number()) {
-            node.size = *(int*)node.length->get_value();
-        }
     }
 
     void visit(ast::PrimitiveType &node) {
         cout << "visited PRIMITIVE_TYPE node" << endl;
 
         // nothing to do here
+        // TODO: fill this up
     }
 
     void visit(ast::ArrayDereference &node) {
@@ -321,11 +336,10 @@ public:
             if (!is_valid_cast(node.init_exp->type, node.type->type))
                 output::errorMismatch(node.line);
         }
-        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type);
-        if (dynamic_cast<ast::ArrayType*>(node.type.get())) {
-            int size = dynamic_cast<ast::ArrayType*>(node.type.get())->size;
-            new_symbol_table_entry->set_array_size(size);
-        }
+        // calculate the offset whether it's an arrayType or primitiveType
+        int offset = node.type->get_offset();
+        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type, offset);
+
         symbol_table_stack.push_entry(new_symbol_table_entry);
 
         // visiting id only here to avoid premature lookup in symbol table
