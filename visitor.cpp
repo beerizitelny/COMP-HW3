@@ -203,7 +203,7 @@ public:
         SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
         node.exp->accept(*this);
         if(sym_entry->get_type() != node.exp->type){
-            output::ErrorInvalidAssignArray(node.line, node.id->value);
+            output::errorMismatch(node.line);
         }
     }
 
@@ -365,10 +365,7 @@ public:
         // calculate the offset whether it's an arrayType or primitiveType
         int offset = node.type->get_offset();
         SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type, offset);
-        if (offset > 0) {
-            new_symbol_table_entry->is_array = true;
-        }
-
+        // TODO: Insert to offsets stack
         symbol_table_stack.push_entry(new_symbol_table_entry);
 
         // visiting id only here to avoid premature lookup in symbol table
@@ -394,6 +391,9 @@ public:
         // make sure that a variable bearing this id exists
         if (!var_entry)
             output::errorUndef(node.line, id);
+
+        if (var_entry->is_array)
+            output::ErrorInvalidAssignArray(node.line, node.id->value);
 
         // validate matching types between expression and symbol as declared
         if (!is_valid_cast(node.exp->type, var_entry->get_type()))
