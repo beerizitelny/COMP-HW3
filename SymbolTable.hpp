@@ -33,7 +33,12 @@ public:
     bool is_func_decl = false;
     SymTableEntry(const std::string &name, ast::BuiltInType type, bool is_func_decl = false, unsigned int offset = 0) :
         name(name), type(type), is_func_decl(is_func_decl), offset(offset),
-        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {};
+        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {
+
+        if (offset > 0) {
+            is_array = true;
+        }
+    };
 
     const std::string get_name() const { return name; }
     ast::BuiltInType get_type() const { return type; }
