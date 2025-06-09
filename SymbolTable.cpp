@@ -2,9 +2,12 @@
 #include <algorithm>
 #include <iostream>
 
+
+static const std::string type_to_uppercase_string[5] = {"VOID", "BOOL", "BYTE", "INT", "STRING"};
+
 void SymTableEntry::add_param(ast::BuiltInType type) {
     param_types->push_back(type);
-    string_param_types->push_back(output::toString(type));
+    string_param_types->push_back(type_to_uppercase_string[type]);
 }
 
 SymTable::~SymTable() {
@@ -62,6 +65,7 @@ void SymTableStack::push_entry(SymTableEntry *entry, int var_size) {
         offset = offsets->top();
         offsets->pop();
     }
+
     offset += var_size;
     offsets->push(offset);
     // print_entries();

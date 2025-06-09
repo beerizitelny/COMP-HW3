@@ -1,11 +1,12 @@
 
+#include <iostream>
 #include "SymbolTable.hpp"
 #include "nodes.hpp"
 
-// TODO: remove this later! and remove prints
-#include <cassert>
-#include <iostream>
-using namespace std;
+static void print_node_name(const std::string &name) {
+    if (false)
+        std::cout << "visited " << name << " node" << std::endl;
+}
 
 class SemanticParserVisitor : public Visitor {
 protected:
@@ -41,7 +42,7 @@ public:
         }
     }
 
-    SymTableEntry *validate_array_dereference(string id, std::shared_ptr<ast::Exp> index, int line) {
+    SymTableEntry *validate_array_dereference(std::string id, std::shared_ptr<ast::Exp> index, int line) {
         // checking if this is a valid id
         SymTableEntry *sym_entry = symbol_table_stack.get_symbol_entry_by_id(id);
         if (sym_entry == nullptr) {
@@ -61,52 +62,47 @@ public:
                             implementation of visitor methods
     ****************************************************************************************/
     void visit(ast::Num &node) {
-        // cout << "visited NUM node" << endl;
+        print_node_name("NUM");
         node.type = ast::BuiltInType::INT;
         node.numerical_value = node.value;
     }
 
     void visit(ast::NumB &node) {
-        // cout << "visited NUM_B node" << endl;
+        print_node_name("NUM_B");
         if (node.value > 255)
             output::errorByteTooLarge(node.line, node.value);
         node.type = ast::BuiltInType::BYTE;
         node.numerical_value = node.value;
-        // cout << "NUM_B NODE ON EXIT: " << output::toString(node.type) << endl;
     }
 
     void visit(ast::String &node) {
-        // cout << "visited STRING node" << endl;
+        print_node_name("STRING");
         node.type = ast::BuiltInType::STRING;
     }
 
     void visit(ast::Bool &node) {
-        // cout << "visited BOOL node" << endl;
+        print_node_name("BOOL");
         node.type = ast::BuiltInType::BOOL;
     }
 
     void visit(ast::ID &node) {
-        // cout << "visited ID node" << endl;
+        print_node_name("ID");
 
         std::string id = node.value;
         SymTableEntry *entry = symbol_table_stack.get_symbol_entry_by_id(id);
-        if (!entry) {
-            symbol_table_stack.print_entries();
+        if (!entry)
             output::errorUndef(node.line, id);
-        }
 
         node.type = entry->get_type();
     }
 
     void visit(ast::BinOp &node) {
-        // cout << "visited BINOP node" << endl;
+        print_node_name("BINOP");
         node.left->accept(*this);
         node.right->accept(*this);
 
         // validate that both left and right side types are INT/BYTE to allow binary operation, and set type as the type
         // with broader range.
-        // cout << "Node left type: " << output::toString(node.left->type) << endl;
-        // cout << "Node Right type: " << output::toString(node.right->type) << endl;
         if (node.left->type == ast::BuiltInType::BYTE && node.right->type == ast::BuiltInType::BYTE)
             node.type = ast::BuiltInType::BYTE;
 
@@ -122,7 +118,7 @@ public:
     }
 
     void visit(ast::RelOp &node) {
-        // cout << "visited RELOP node" << endl;
+        print_node_name("RELOP");
         node.left->accept(*this);
         node.right->accept(*this);
 
@@ -136,7 +132,7 @@ public:
     }
 
     void visit(ast::Not &node) {
-        // cout << "visited NOT node" << endl;
+        print_node_name("NOT");
         node.exp->accept(*this);
 
         // validate that the expression is of boolean type to allow negating operation
@@ -148,7 +144,7 @@ public:
     }
 
     void visit(ast::And &node) {
-        // cout << "visited AND node" << endl;
+        print_node_name("AND");
         node.left->accept(*this);
         node.right->accept(*this);
 
@@ -161,7 +157,7 @@ public:
     }
 
     void visit(ast::Or &node) {
-        // cout << "visited OR node" << endl;
+        print_node_name("OR");
         node.left->accept(*this);
         node.right->accept(*this);
 
@@ -176,18 +172,15 @@ public:
     // void visit(ast::Type &node) { };
 
     void visit(ast::ArrayType &node) {
-        // cout << "visited ArrayType node" << endl;
-        assert(node.length != nullptr);
+        print_node_name("ArrayType");
         // finding out the length of the array
         node.length->accept(*this);
     }
 
-    void visit(ast::PrimitiveType &node) {
-        // cout << "visited PRIMITIVE_TYPE node" << endl;
-    }
+    void visit(ast::PrimitiveType &node) { print_node_name("PRIMITIVE_TYPE"); }
 
     void visit(ast::ArrayDereference &node) {
-        // cout << "visited ARRAY_DEREFERENCE node" << endl;
+        print_node_name("ARRAY_DEREFERENCE");
 
         node.id->accept(*this);
         // getting the sym_entry only if valid params
@@ -198,19 +191,23 @@ public:
     }
 
     void visit(ast::ArrayAssign &node) {
-        // cout << "visited ARRAY_ASSIGN node" << endl;
+        print_node_name("ARRAY_ASSIGN");
 
         node.id->accept(*this);
         // getting the sym_entry only if valid params
         SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
         node.exp->accept(*this);
-        if (sym_entry->get_type() != node.exp->type) {
+
+        // check if types match and that rvalue is not of array type
+        if (sym_entry->get_type() != node.exp->type ||
+            (dynamic_cast<ast::ID *>(node.exp.get()) &&
+             symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_array)) {
             output::errorMismatch(node.line);
         }
     }
 
     void visit(ast::Cast &node) {
-        // cout << "visited CAST node" << endl;
+        print_node_name("CAST");
         node.exp->accept(*this);
         node.target_type->accept(*this);
 
@@ -224,7 +221,7 @@ public:
     }
 
     void visit(ast::ExpList &node) {
-        // cout << "visited EXP_LIST node" << endl;
+        print_node_name("EXP_LIST");
 
         // visit each expression in the exps vector
         for (auto exp: node.exps) {
@@ -233,12 +230,15 @@ public:
     }
 
     void visit(ast::Call &node) {
-        // cout << "visited CALL node" << endl;
+        print_node_name("CALL");
 
-        node.func_id->accept(*this);
         std::string id = node.func_id->value;
         SymTableEntry *entry = symbol_table_stack.get_symbol_entry_by_id(id);
 
+        if (!entry)
+            output::errorUndefFunc(node.line, id);
+
+        node.func_id->accept(*this);
         // skipping the case where both are defined since it is checked in func_decl and assign.
 
         // case 1 - function isn't declared, no variable with this id exists
@@ -261,11 +261,12 @@ public:
                 if (!is_valid_cast(node.args->exps[i]->type, (*entry->get_param_types())[i]))
                     output::errorPrototypeMismatch(node.line, id, *entry->get_string_param_types());
             }
+            node.type = entry->get_type();
         }
     }
 
     void visit(ast::Statements &node) {
-        // cout << "visited STATEMENTS node" << endl;
+        print_node_name("STATEMENTS");
 
         // entry procedure - create new scope and symbol table for it
         symbol_table_stack.push_table();
@@ -281,35 +282,36 @@ public:
     }
 
     void visit(ast::Break &node) {
-        // cout << "visited BREAK node" << endl;
+        print_node_name("BREAK");
 
         if (!looping)
             output::errorUnexpectedBreak(node.line);
     };
 
     void visit(ast::Continue &node) {
-        // cout << "visited CONTINUE node" << endl;
+        print_node_name("CONTINUE");
 
         if (!looping)
             output::errorUnexpectedContinue(node.line);
     }
 
     void visit(ast::Return &node) {
-        // cout << "visited RETURN node" << endl;
+        print_node_name("RETURN");
 
-        SymTableEntry *current_function_scope = symbol_table_stack.get_current_function_scope();
+        ast::BuiltInType expected_return_type = symbol_table_stack.get_current_function_scope();
+
         if (node.exp)
             node.exp->accept(*this);
 
         // validate that if expression type matches function return type, or function returns void and no expression
         // is used
-        if ((node.exp && !is_valid_cast(node.exp->type, current_function_scope->get_type())) ||
-            (!node.exp && current_function_scope->get_type() != ast::BuiltInType::VOID))
+        if ((node.exp && !is_valid_cast(node.exp->type, expected_return_type)) ||
+            (!node.exp && expected_return_type != ast::BuiltInType::VOID))
             output::errorMismatch(node.line);
     }
 
     void visit(ast::If &node) {
-        // cout << "visited IF node" << endl;
+        print_node_name("IF");
 
         // if statements always create a new scope
         symbol_table_stack.push_table();
@@ -336,7 +338,7 @@ public:
     }
 
     void visit(ast::While &node) {
-        // cout << "visited WHILE node" << endl;
+        print_node_name("WHILE");
 
         // while statements always create a new scope
         symbol_table_stack.push_table();
@@ -352,7 +354,7 @@ public:
     }
 
     void visit(ast::VarDecl &node) {
-        // cout << "visited VAR_DECL node" << endl;
+        print_node_name("VAR_DECL");
 
         std::string id = node.id->value;
         if (symbol_table_stack.get_symbol_entry_by_id(id))
@@ -363,11 +365,16 @@ public:
             node.init_exp->accept(*this);
             if (!is_valid_cast(node.init_exp->type, node.type->type))
                 output::errorMismatch(node.line);
+
+            // if rvalue is of array type
+            if (dynamic_cast<ast::ID *>(node.init_exp.get()) &&
+                symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.init_exp.get())->value)->is_array)
+                output::errorMismatch(node.line);
         }
         // calculate the offset whether it's an arrayType or primitiveType
         int var_size = node.type->get_size();
         int offset = symbol_table_stack.get_next_offset();
-        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type, offset);
+        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type, false, offset);
         symbol_table_stack.push_entry(new_symbol_table_entry, var_size);
 
         if (node.type->is_array) {
@@ -384,7 +391,7 @@ public:
     }
 
     void visit(ast::Assign &node) {
-        // cout << "visited ASSIGN node" << endl;
+        print_node_name("ASSIGN");
 
         // validation of prior declaration of this ID is done when visiting node.id
         node.id->accept(*this);
@@ -402,8 +409,13 @@ public:
         if (!var_entry)
             output::errorUndef(node.line, id);
 
+        // TODO: follow https://piazza.com/class/m8mycqqtxff2ir/post/102
         if (var_entry->is_array)
             output::ErrorInvalidAssignArray(node.line, node.id->value);
+
+        if (dynamic_cast<ast::ID *>(node.exp.get()) &&
+            symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_array)
+            output::errorMismatch(node.line);
 
         // validate matching types between expression and symbol as declared
         if (!is_valid_cast(node.exp->type, var_entry->get_type()))
@@ -411,23 +423,23 @@ public:
     }
 
     void visit(ast::Formal &node) {
-        // cout << "visited FORMAL node" << endl;
+        print_node_name("FORMAL");
 
         node.id->accept(*this);
         node.type->accept(*this);
     }
 
     void visit(ast::Formals &node) {
-        // cout << "visited FORMALS node" << endl;
+        print_node_name("FORMALS");
 
         int argument_offset = 0;
         for (auto formal: node.formals) {
-
             std::string formal_id = formal->id->value;
             if (symbol_table_stack.get_symbol_entry_by_id(formal_id))
                 output::errorDef(node.line, formal_id);
 
-            SymTableEntry *new_symbol_table_entry = new SymTableEntry(formal_id, formal->type->type, --argument_offset);
+            SymTableEntry *new_symbol_table_entry =
+                    new SymTableEntry(formal_id, formal->type->type, false, --argument_offset);
             symbol_table_stack.push_entry(new_symbol_table_entry, 0);
             symbol_table_stack.scope_printer.emitVar(formal_id, formal->type->type, argument_offset);
         }
@@ -437,8 +449,8 @@ public:
     }
 
     void visit(ast::FuncDecl &node) {
-        // cout << "visited FUNC_DECL node" << endl;
-
+        print_node_name("FUNC_DECL");
+        symbol_table_stack.push_function_scope(node.return_type->type);
         symbol_table_stack.push_table();
         symbol_table_stack.scope_printer.beginScope();
 
@@ -449,11 +461,12 @@ public:
             statement->accept(*this);
 
         symbol_table_stack.pop_table();
+        symbol_table_stack.pop_function_scope();
         symbol_table_stack.scope_printer.endScope();
     }
 
     void visit(ast::Funcs &node) {
-        // cout << "visited FUNCS node" << endl;
+        print_node_name("FUNCS");
 
         // create symbol table entries for print and printi functions
         SymTableEntry *symbol_table_entry_print = new SymTableEntry("print", ast::BuiltInType::VOID, true);
@@ -502,7 +515,6 @@ public:
         // handling main function and visiting function declaration nodes
         bool found_main = false;
         for (auto func: node.funcs) {
-
             // visiting functions only here to avoid premature lookup in symbol table
             func->accept(*this);
             if (!func->id->value.compare("main")) {

@@ -68,12 +68,12 @@ public:
 class SymTableStack {
     std::deque<SymTable *> *sym_tables;
     std::stack<unsigned int> *offsets;
-    std::stack<SymTableEntry *> *function_scopes;
+    std::stack<ast::BuiltInType> *function_scopes;
 
 public:
     SymTableStack() :
         sym_tables(new std::deque<SymTable *>), offsets(new std::stack<unsigned int>),
-        function_scopes(new std::stack<SymTableEntry *>()) {
+        function_scopes(new std::stack<ast::BuiltInType>()) {
 
         SymTable *new_symbol_table = new SymTable();
         sym_tables->push_back(new_symbol_table);
@@ -107,7 +107,7 @@ public:
      */
     SymTableEntry *get_symbol_entry_by_id(const std::string &id);
 
-    SymTableEntry *get_current_function_scope() const { return function_scopes->top(); }
+    ast::BuiltInType get_current_function_scope() const { return function_scopes->top(); }
 
     void delete_current_function_scope() { function_scopes->pop(); }
 
@@ -124,6 +124,13 @@ public:
         }
         std::cout << " ~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
     }
+
+    void pop_function_scope() {
+        if (!function_scopes->empty())
+            function_scopes->pop();
+    }
+
+    void push_function_scope(ast::BuiltInType type) { function_scopes->push(type); }
 };
 
 #endif // COMP_HW3_SYMBOLTABLE_HPP
