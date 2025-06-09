@@ -2,6 +2,7 @@
 #define COMP_HW3_SYMBOLTABLE_HPP
 
 #include <deque>
+#include <iostream>
 #include <stack>
 #include <string>
 #include <vector>
@@ -33,12 +34,7 @@ public:
     bool is_func_decl = false;
     SymTableEntry(const std::string &name, ast::BuiltInType type, bool is_func_decl = false, unsigned int offset = 0) :
         name(name), type(type), is_func_decl(is_func_decl), offset(offset),
-        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {
-
-        if (offset > 0) {
-            is_array = true;
-        }
-    };
+        param_types(new std::vector<ast::BuiltInType>()), string_param_types(new std::vector<std::string>()) {};
 
     const std::string get_name() const { return name; }
     ast::BuiltInType get_type() const { return type; }
@@ -54,9 +50,9 @@ public:
 ******************************************************************************************/
 
 class SymTable {
-    std::vector<SymTableEntry *> *entries;
 
 public:
+    std::vector<SymTableEntry *> *entries;
     SymTable() : entries(new std::vector<SymTableEntry *>()) {};
     ~SymTable();
     /* append a new entry in the table */
@@ -103,7 +99,7 @@ public:
      * pushes a new entry to the top table.
      * use in case of a new declaration.
      */
-    void push_entry(SymTableEntry *entry);
+    void push_entry(SymTableEntry *entry, int var_size = 1);
 
     /*
      * pushes a new entry to the top table.
@@ -114,6 +110,20 @@ public:
     SymTableEntry *get_current_function_scope() const { return function_scopes->top(); }
 
     void delete_current_function_scope() { function_scopes->pop(); }
+
+    int get_next_offset() const { return offsets->empty() ? 0 : offsets->top(); }
+
+    void print_entries() const {
+        std::cout << " ~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
+        std::cout << "PRINTING TABLE: " << std::endl;
+        for (auto table: *sym_tables) {
+            std::cout << " # " << std::endl;
+            for (auto entry: *table->entries) {
+                std::cout << entry->get_name() << std::endl;
+            }
+        }
+        std::cout << " ~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
+    }
 };
 
 #endif // COMP_HW3_SYMBOLTABLE_HPP

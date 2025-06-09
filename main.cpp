@@ -1,5 +1,7 @@
-#include "output.hpp"
 #include "nodes.hpp"
+#include "output.hpp"
+#include "visitor.cpp"
+#include "visitor.hpp"
 
 // Extern from the bison-generated parser
 extern int yyparse();
@@ -7,13 +9,15 @@ extern int yyparse();
 extern std::shared_ptr<ast::Node> program;
 
 int main() {
-    // TODO: implement this
-/**
     // Parse the input. The result is stored in the global variable `program`
     yyparse();
 
-    // Print the AST using the PrintVisitor
-    output::PrintVisitor printVisitor;
-    program->accept(printVisitor);
-*/
+    SemanticParserVisitor semantic_visitor;
+    try {
+        program->accept(semantic_visitor);
+        }
+    catch(const std::exception& e) {
+        std::cerr << "Semantic error" << e.what() << std::endl;}
+
+    std::cout << semantic_visitor.symbol_table_stack.scope_printer;
 }

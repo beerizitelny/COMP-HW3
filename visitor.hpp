@@ -32,7 +32,7 @@ namespace ast {
     class PrimitiveType;
     class ArrayDereference;
     class ArrayAssign;
-}
+} // namespace ast
 
 class Visitor {
 public:
@@ -97,4 +97,5 @@ public:
     virtual void visit(ast::Funcs &node) = 0;
 };
 
-#endif //VISITOR_HPP
+
+#endif // VISITOR_HPP

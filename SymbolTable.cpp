@@ -1,5 +1,6 @@
 #include "SymbolTable.hpp"
 #include <algorithm>
+#include <iostream>
 
 void SymTableEntry::add_param(ast::BuiltInType type) {
     param_types->push_back(type);
@@ -19,7 +20,7 @@ SymTable::~SymTable() {
 
 SymTableEntry *SymTable::get_entry_by_id(const std::string &id) {
     auto entry_iterator = std::find_if(entries->begin(), entries->end(),
-                                       [&id](SymTableEntry* entry) { return entry->get_name() == id; });
+                                       [&id](SymTableEntry *entry) { return entry->get_name() == id; });
 
     if (entry_iterator == entries->end())
         return nullptr;
@@ -40,11 +41,13 @@ SymTableStack::~SymTableStack() {
 }
 
 void SymTableStack::push_table() {
-    sym_tables->push_back(new SymTable);
+    // std::cout << " ~~ PUSHING" << std::endl;
+    sym_tables->push_front(new SymTable);
     offsets->push(offsets->top());
 }
 
 void SymTableStack::pop_table() {
+    // std::cout << " ## POPPING" << std::endl;
     if (!sym_tables->empty() && !offsets->empty()) {
         delete sym_tables->front();
         sym_tables->pop_front();
@@ -52,16 +55,16 @@ void SymTableStack::pop_table() {
     }
 }
 
-void SymTableStack::push_entry(SymTableEntry *entry) {
+void SymTableStack::push_entry(SymTableEntry *entry, int var_size) {
     sym_tables->front()->add_new_entry(entry);
     unsigned int offset = 0;
     if (!offsets->empty()) {
         offset = offsets->top();
         offsets->pop();
     }
-    // TODO: handle function arguments as well
-    offset += entry->get_offset();
+    offset += var_size;
     offsets->push(offset);
+    // print_entries();
 }
 
 SymTableEntry *SymTableStack::get_symbol_entry_by_id(const std::string &id) {

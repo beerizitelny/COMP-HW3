@@ -48,8 +48,8 @@ namespace ast {
     public:
         unsigned int numerical_value = 0;
         BuiltInType type;
-        bool is_number() const {return type == ast::BuiltInType::INT || type == ast::BuiltInType::BYTE; }
-        unsigned int get_numerical_value() const {return numerical_value;}
+        bool is_number() const { return type == ast::BuiltInType::INT || type == ast::BuiltInType::BYTE; }
+        unsigned int get_numerical_value() const { return numerical_value; }
     };
 
     /* Base class for all statements */
@@ -203,8 +203,10 @@ namespace ast {
     class Type : virtual public Node {
     public:
         BuiltInType type;
+        bool is_array = false;
+
         Type() = default;
-        virtual unsigned int get_offset() const = 0;;
+        virtual unsigned int get_size() const = 0;
     };
 
     /* Type symbol */
@@ -214,7 +216,7 @@ namespace ast {
         explicit PrimitiveType(BuiltInType type);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
-        unsigned int get_offset() const override {return 0; }
+        unsigned int get_size() const override { return 1; }
     };
 
     /* Type symbol For Array*/
@@ -227,7 +229,7 @@ namespace ast {
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
 
-        unsigned int get_offset() const override {return length->get_numerical_value(); }
+        unsigned int get_size() const override { return length->get_numerical_value(); }
     };
 
 
