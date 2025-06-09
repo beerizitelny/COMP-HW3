@@ -27,9 +27,10 @@ namespace ast {
     RelOp::RelOp(std::shared_ptr<Exp> left, std::shared_ptr<Exp> right, RelOpType op)
             : Exp(), left(std::move(left)), right(std::move(right)), op(op) {}
 
-    PrimitiveType::PrimitiveType(BuiltInType type) : Node(), type(type) {}
+    PrimitiveType::PrimitiveType(BuiltInType type) : Node() {this->type = type; }
 
-    ArrayType::ArrayType(BuiltInType type, std::shared_ptr<Exp> length) : Node(), type(type), length(length) {}
+    ArrayType::ArrayType(BuiltInType type, std::shared_ptr<Exp> length) : Node(), length(length)
+    {this->type = type; }
 
     Cast::Cast(std::shared_ptr<Exp> exp, std::shared_ptr<PrimitiveType> target_type)
             : Exp(), exp(std::move(exp)), target_type(std::move(target_type)) {}

@@ -1,5 +1,5 @@
 #include "SymbolTable.hpp"
-
+#include <algorithm>
 
 void SymTableEntry::add_param(ast::BuiltInType type) {
     param_types->push_back(type);
@@ -19,7 +19,7 @@ SymTable::~SymTable() {
 
 SymTableEntry *SymTable::get_entry_by_id(const std::string &id) {
     auto entry_iterator = std::find_if(entries->begin(), entries->end(),
-                                       [&id](const SymTableEntry &entry) { return entry.get_name() == id; });
+                                       [&id](SymTableEntry* entry) { return entry->get_name() == id; });
 
     if (entry_iterator == entries->end())
         return nullptr;

@@ -44,9 +44,12 @@ namespace ast {
 
     /* Base class for all expressions */
     class Exp : virtual public Node {
+
     public:
-        Exp() = default;
+        unsigned int numerical_value = 0;
         BuiltInType type;
+        bool is_number() const {return type == ast::BuiltInType::INT || type == ast::BuiltInType::BYTE; }
+        unsigned int get_numerical_value() const {return numerical_value;}
     };
 
     /* Base class for all statements */
@@ -201,6 +204,7 @@ namespace ast {
     public:
         BuiltInType type;
         Type() = default;
+        virtual unsigned int get_offset() const = 0;;
     };
 
     /* Type symbol */
@@ -210,6 +214,7 @@ namespace ast {
         explicit PrimitiveType(BuiltInType type);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+        unsigned int get_offset() const override {return 0; }
     };
 
     /* Type symbol For Array*/
@@ -221,6 +226,8 @@ namespace ast {
         explicit ArrayType(BuiltInType type, std::shared_ptr<Exp> length);
 
         void accept(Visitor &visitor) override { visitor.visit(*this); }
+
+        unsigned int get_offset() const override {return length->get_numerical_value(); }
     };
 
 

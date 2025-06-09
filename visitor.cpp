@@ -4,6 +4,8 @@
 
 // TODO: remove this later! and remove prints
 #include <iostream>
+
+#include <cassert>
 using namespace std;
 
 class SemanticParserVisitor : Visitor {
@@ -22,11 +24,44 @@ public:
     SemanticParserVisitor() : symbol_table_stack(), declared_functions() {}
 
     /***************************************************************************************
+                            implementation of helper methods
+    ****************************************************************************************/
+    int calc_bin_op (ast::BinOpType op, int var1, int var2) {
+        switch (op) {
+            case ast::BinOpType::ADD:
+                return var1 + var2;
+            case ast::BinOpType::DIV:
+                return var1 / var2;
+            case ast::BinOpType::MUL:
+                return var1 * var2;
+            case ast::BinOpType::SUB:
+                return var1 - var2;
+        }
+    }
+
+    SymTableEntry * validate_array_dereference(string id,std::shared_ptr<ast::Exp> index, int line){
+        // checking if this is a valid id
+        SymTableEntry *sym_entry = symbol_table_stack.get_symbol_entry_by_id(id);
+        if (sym_entry == nullptr){
+            output::errorUndef(line, id);
+        }
+
+        index->accept(*this);
+        // checking that this is an array and that the index is valid
+        if (!(index->is_number() && sym_entry->is_array)){
+            output::errorMismatch(line);
+        }
+
+        return sym_entry;
+    }
+
+    /***************************************************************************************
                             implementation of visitor methods
     ****************************************************************************************/
     void visit(ast::Num &node) {
         cout << "visited NUM node" << endl;
         node.type == ast::BuiltInType::INT;
+        node.numerical_value = node.value;
     }
 
     void visit(ast::NumB &node) {
@@ -34,6 +69,7 @@ public:
         if (node.value > 255)
             output::errorByteTooLarge(node.line, node.value);
         node.type == ast::BuiltInType::BYTE;
+        node.numerical_value = node.value;
     }
 
     void visit(ast::String &node) {
@@ -76,6 +112,8 @@ public:
 
         else
             output::errorMismatch(node.line);
+
+        node.numerical_value = calc_bin_op(node.op, node.left->get_numerical_value(), node.right->get_numerical_value());
     }
 
     void visit(ast::RelOp &node) {
@@ -133,27 +171,40 @@ public:
     // void visit(ast::Type &node) { };
 
     void visit(ast::ArrayType &node) {
-        cout << "visited OR node" << endl;
-
-        // TODO: fill this up
+        cout << "visited ArrayType node" << endl;
+        assert(node.length != nullptr);
+        // finding out the length of the array
+        node.length->accept(*this);
     }
 
     void visit(ast::PrimitiveType &node) {
         cout << "visited PRIMITIVE_TYPE node" << endl;
 
+        // nothing to do here
         // TODO: fill this up
     }
 
     void visit(ast::ArrayDereference &node) {
         cout << "visited ARRAY_DEREFERENCE node" << endl;
 
-        // TODO: fill this up
+        node.id->accept(*this);
+        //getting the sym_entry only if valid params
+        SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
+
+        // updating the type
+        node.type = sym_entry->get_type();
     }
 
     void visit(ast::ArrayAssign &node) {
         cout << "visited ARRAY_ASSIGN node" << endl;
 
-        // TODO: fill this up
+        node.id->accept(*this);
+        //getting the sym_entry only if valid params
+        SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
+        node.exp->accept(*this);
+        if(sym_entry->get_type() != node.exp->type){
+            output::errorMismatch(node.line);
+        }
     }
 
     void visit(ast::Cast &node) {
@@ -194,11 +245,11 @@ public:
 
             // validate number of parameters match before iterating to validate parameter typre
             if (func_entry->get_param_types()->size() != node.args->exps.size())
-                output::errorPrototypeMismatch(node.line, id, func_entry->get_string_param_types());
+                output::errorPrototypeMismatch(node.line, id, *func_entry->get_string_param_types());
 
             for (int i = 0; i < func_entry->get_param_types()->size(); ++i) {
                 if (!is_valid_cast(node.args->exps[i]->type, (*func_entry->get_param_types())[i]))
-                    output::errorPrototypeMismatch(node.line, id, func_entry->get_string_param_types());
+                    output::errorPrototypeMismatch(node.line, id, *func_entry->get_string_param_types());
             }
         }
 
@@ -311,11 +362,15 @@ public:
             if (!is_valid_cast(node.init_exp->type, node.type->type))
                 output::errorMismatch(node.line);
         }
-        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type);
+        // calculate the offset whether it's an arrayType or primitiveType
+        int offset = node.type->get_offset();
+        SymTableEntry *new_symbol_table_entry = new SymTableEntry(id, node.type->type, offset);
+        // TODO: Insert to offsets stack
         symbol_table_stack.push_entry(new_symbol_table_entry);
 
         // visiting id only here to avoid premature lookup in symbol table
         node.id->accept(*this);
+        // TODO: scope printer
     }
 
     void visit(ast::Assign &node) {
@@ -335,10 +390,13 @@ public:
 
         // make sure that a variable bearing this id exists
         if (!var_entry)
-            output::errorUndefinedVar(node.line, id);
+            output::errorUndef(node.line, id);
+
+        if (var_entry->is_array)
+            output::ErrorInvalidAssignArray(node.line, node.id->value);
 
         // validate matching types between expression and symbol as declared
-        if (!is_valid_cast(node.exp->type, var_entry->get_type())
+        if (!is_valid_cast(node.exp->type, var_entry->get_type()))
             output::errorMismatch(node.line);
     }
 
