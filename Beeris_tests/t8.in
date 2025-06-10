@@ -1,0 +1,6 @@
+int foo() {
+    return "abc";
+}
+void main() {
+    printi(1);
+}

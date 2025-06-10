@@ -1,0 +1,7 @@
+void foo(int x, byte y) {
+    printi(x);
+}
+
+void main() {
+    foo(1, "hello");
+}
