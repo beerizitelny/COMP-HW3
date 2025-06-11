@@ -1,0 +1,46 @@
+byte f77m92(bool pgx41u) {
+    int vl1o8a = 999;
+pgx41u = true;
+pgx41u = true;
+pgx41u = true;
+f77m92(false);
+ft3dt4();
+vl1o8a = 887;
+}
+
+void main() {
+    int vr4qq1 = 62;
+    bool an20ah[6];
+    byte ao37cr[4];
+printi(42);
+vr4qq1 = 322;
+{
+    vr4qq1 = 45;
+    f77m92(true);
+    vr4qq1 = 754;
+    ao37cr[0] = 202;
+    vr4qq1 = 133;
+    main();
+    vr4qq1 = 569;
+    vr4qq1 = 787;
+    vr4qq1 = 841;
+    {
+        f77m92(false);
+    }
+}
+}
+
+byte ft3dt4() {
+    int v6538w = 926;
+    bool alpfxw[3];
+    byte vw4p02 = 115;
+main();
+v6538w = 266;
+alpfxw[v6538w] = true;
+vw4p02 = 229;
+v6538w = 146;
+v6538w = 986;
+alpfxw[v6538w] = false;
+main();
+vw4p02 = 133;
+}

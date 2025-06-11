@@ -1,0 +1,48 @@
+byte fnqhjyd(bool p518bi, byte p2mboo) {
+    p518bi = 114b<=202b;
+    p2mboo = (byte)161+224;
+    byte v0ba8g = (byte)388;
+    v0ba8g = (byte)241;
+    v0ba8g = (byte)10;
+    printi(43);
+    while (272>=91/400) {
+        v0ba8g = 253b;
+    }
+    return (byte)423;
+}
+
+byte flz3ee3(byte pbikth, bool plfeqj) {
+    pbikth = (byte)500;
+    plfeqj = (byte)202-226<=211b;
+    bool vy9ejp = 62>241+140;
+    vy9ejp = 176<393;
+    vy9ejp = 35b<(byte)219+218;
+    byte vpbdwv = 212b;
+    vpbdwv = 206b;
+    bool vad01s = 390/759>431;
+    vad01s = 8b<=(byte)183*130;
+    vad01s = 32+558>430;
+    printi(38);
+    while (96/934<=665) {
+        vpbdwv = 0b;
+    }
+    return (byte)773;
+}
+
+byte f6ruciz() {
+    bool v2leir = 32<=995;
+    v2leir = 223b<226b;
+    v2leir = 991==618;
+    fnqhjyd(true, (byte)125);
+    printi(19);
+    return (byte)603;
+}
+
+void main() {
+    byte m63vjf = 235b;
+    bool mv4pfn = 414<=459;
+    fnqhjyd(true, (byte)859);
+    flz3ee3((byte)128+19, true);
+    f6ruciz();
+    print("all done");
+}

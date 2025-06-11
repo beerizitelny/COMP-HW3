@@ -1,0 +1,40 @@
+void main() {
+    byte v0b3xd = 178;
+main();
+printi(42);
+print("hello");
+main();
+v0b3xd = 97;
+print("hello");
+f89rno(true, 705);
+print("hello");
+print("hello");
+}
+
+byte f89rno(bool piyqdp, int pew2ml) {
+    bool vlvg4a = true;
+print("hello");
+while (pew2ml == pew2ml) {
+    piyqdp = true;
+    print("hello");
+    printi(42);
+    f89rno(false, 181);
+    main();
+    fd7c28(false, 210);
+}
+}
+
+byte fd7c28(bool pyutp2, byte pj2jbl) {
+    byte vm4tmo = 185;
+print("hello");
+main();
+printi(42);
+pj2jbl = vm4tmo;
+if (vm4tmo >= pj2jbl) {
+    f89rno(true, 679);
+    f89rno(true, 814);
+    fd7c28(false, 191);
+    f89rno(true, 744);
+    printi(42);
+}
+}

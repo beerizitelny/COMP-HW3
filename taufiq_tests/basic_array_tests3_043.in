@@ -1,0 +1,53 @@
+byte fybo0rc(int prsotg) {
+    prsotg = 173;
+    int vq32as = 434;
+    vq32as = 898;
+    vq32as = 581;
+    printi(117);
+    while (vq32as == vq32as) {
+        vq32as = 865;
+    }
+    return 150b;
+}
+
+bool fbtwteu(byte pou0gq) {
+    pou0gq = 43b;
+    int vmzmeg = 922;
+    vmzmeg = 723;
+    int vzo6po = 891;
+    vzo6po = 61;
+    vzo6po = 324;
+    byte vwo3ws = 116b;
+    vwo3ws = 176b;
+    fybo0rc(582);
+    print("hello");
+    while (vwo3ws == vwo3ws) {
+        vwo3ws = 186b;
+    }
+    return true;
+}
+
+int f25z2j2() {
+    bool vis97b = true;
+    vis97b = false;
+    vis97b = true;
+    byte vpkksg = 180b;
+    vpkksg = 190b;
+    vpkksg = 36b;
+    printi(167);
+    while (vpkksg < vpkksg) {
+        vpkksg = 129b;
+    }
+    return 72;
+}
+
+void main() {
+    bool m9aool = false;
+    int mkx83e = 545;
+    bool mabkqi = false;
+    fybo0rc(324);
+    fbtwteu(225b);
+    f25z2j2();
+    print("test");
+    print("world");
+}

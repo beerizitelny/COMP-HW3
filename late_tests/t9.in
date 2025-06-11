@@ -1,0 +1,8 @@
+bool foo(int x, byte y) {
+    return true;
+}
+
+void main() {
+    bool arr[3+2];
+    foo = arr;
+}

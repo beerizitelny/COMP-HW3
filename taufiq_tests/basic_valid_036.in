@@ -1,0 +1,61 @@
+int fiqb9c(int piw8os) {
+    byte vo74ju = 131;
+    byte vvybec = 245;
+print("hello");
+print("hello");
+{
+    fm2a78(153);
+    f9o2ka(false, true);
+    fm2a78(206);
+    fiqb9c(688);
+    print("hello");
+    print("hello");
+}
+}
+
+void f9o2ka(bool peix90, bool pfzfym) {
+    byte vlg73n = 134;
+    byte v3ehq8 = 235;
+main();
+while (vlg73n <= v3ehq8) {
+    vlg73n = v3ehq8;
+    print("hello");
+    main();
+    v3ehq8 = 93;
+    print("hello");
+    fm2a78(179);
+    {
+        printi(42);
+    }
+}
+}
+
+void main() {
+    int vy4au6 = 381;
+    byte v3fe58 = 101;
+    byte vusldw = 214;
+main();
+f9o2ka(false, true);
+fm2a78(116);
+print("hello");
+v3fe58 = 211;
+printi(42);
+}
+
+byte fm2a78(byte p3jg61) {
+    bool vwxx39 = false;
+fm2a78(221);
+printi(42);
+fm2a78(43);
+fm2a78(245);
+print("hello");
+print("hello");
+vwxx39 = true;
+fiqb9c(191);
+f9o2ka(true, false);
+p3jg61 = 128;
+main();
+vwxx39 = false;
+p3jg61 = 52;
+fiqb9c(765);
+}

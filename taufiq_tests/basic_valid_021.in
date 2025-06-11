@@ -1,0 +1,45 @@
+byte f2a1px(int ptvek6, bool ptcerh, bool pf9aof) {
+    bool v3sisa = true;
+    int v8g44k = 504;
+printi(42);
+while (v8g44k <= v8g44k) {
+    v3sisa = ptcerh;
+    f2a1px(545, false, false);
+    v3sisa = pf9aof;
+    ptcerh = pf9aof;
+    v3sisa = false;
+}
+}
+
+int f47x17(bool pxsuyo, byte poyvvb, int pax3fx) {
+    byte v1s6fm = 55;
+    byte v12f9a = 64;
+    bool v6esyk = false;
+v1s6fm = 71;
+v6esyk = pxsuyo;
+print("hello");
+f47x17(true, (byte)58, 764);
+{
+    v12f9a = 218;
+    pax3fx = 510;
+    {
+        v6esyk = true;
+    }
+}
+}
+
+void main() {
+    int vrcuu8 = 801;
+    int vfofau = 963;
+vfofau = 247;
+print("hello");
+f47x17(false, (byte)111, 213);
+{
+    vfofau = 372;
+    main();
+    printi(42);
+    f47x17(true, (byte)243, 983);
+    vrcuu8 = vfofau;
+    printi(42);
+}
+}

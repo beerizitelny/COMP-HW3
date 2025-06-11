@@ -1,0 +1,47 @@
+void f449wro(int pebef8) {
+    pebef8 = 652;
+    int vefz2u = 771;
+    vefz2u = 781;
+    vefz2u = 145;
+    byte vhf00m = 166b;
+    vhf00m = 26b;
+    vhf00m = (byte)281;
+    f449wro(398);
+    print("hello");
+    while (vhf00m >= vhf00m) {
+        vhf00m = 163b;
+    }
+}
+
+byte fz6h59c(byte ptulef, byte pyti0g) {
+    ptulef = 214b;
+    pyti0g = 96b;
+    int vffjpo = 655;
+    vffjpo = 181;
+    f449wro(33);
+    printi(122);
+    while (vffjpo >= vffjpo) {
+        vffjpo = 356;
+    }
+    return 140b;
+}
+
+int f3ehqhi(int prtzb7, byte pnqz9d) {
+    prtzb7 = 454;
+    pnqz9d = 125b;
+    int vyk41i = 185;
+    vyk41i = 425;
+    printi(207);
+    while (vyk41i == vyk41i) {
+        vyk41i = 606;
+    }
+    return 857;
+}
+
+void main() {
+    byte mxmm69 = 109b;
+    f449wro(296);
+    fz6h59c(27b, 113b);
+    f3ehqhi(367, 67b);
+    print("test");
+}

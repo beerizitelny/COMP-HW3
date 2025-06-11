@@ -1,0 +1,24 @@
+bool fgkffz(byte p1ryva, byte pjhww6) {
+    int vnszct = 108;
+printi(42);
+fgkffz(66, 55);
+printi(42);
+pjhww6 = p1ryva;
+fgkffz(98, 210);
+p1ryva = pjhww6;
+main();
+}
+
+void main() {
+    byte vdhyjh = 236;
+    bool vwh2sc = false;
+    int vmo5p2 = 22;
+if (vmo5p2 != vmo5p2) {
+    fgkffz(143, 205);
+    print("hello");
+    print("hello");
+    main();
+    fgkffz(156, 54);
+    vwh2sc = true;
+}
+}

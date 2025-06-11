@@ -1,0 +1,44 @@
+int fgfm7k1(bool p339ri, bool pkitia) {
+    p339ri = true;
+    pkitia = false;
+    byte vg3pzv = 19b;
+    vg3pzv = 100b;
+    byte v8t09j = 87b;
+    v8t09j = 56b;
+    bool v7t0ze = true;
+    v7t0ze = false;
+    fgfm7k1(true, false);
+    fgfm7k1(true, true);
+    printi(120);
+    while (v8t09j == v8t09j) {
+        v8t09j = 580;
+    }
+    return 273;
+}
+
+byte fc0naul() {
+    bool vba0rh = true;
+    vba0rh = true;
+    bool vu1vlm = false;
+    vu1vlm = false;
+    printi(168);
+    return (byte)977;
+}
+
+void f6kbli1() {
+    bool v3wmq4 = false;
+    v3wmq4 = false;
+    fc0naul();
+    f6kbli1();
+    print("array");
+}
+
+void main() {
+    int ms5328 = 79;
+    int mczklc = 435;
+    byte miyc52 = 239b;
+    fgfm7k1(true, false);
+    fc0naul();
+    f6kbli1();
+    print("test");
+}

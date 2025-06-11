@@ -1,0 +1,54 @@
+bool fq98jw0(byte py83dy, int ppwnlq) {
+    py83dy = 73b;
+    ppwnlq = 630;
+    byte v930ed = 134b;
+    v930ed = (byte)772;
+    byte vvpvol = 127b;
+    vvpvol = 165b;
+    print("random");
+    while (vvpvol == vvpvol) {
+        vvpvol = 502;
+    }
+    return true;
+}
+
+bool flvng0x(bool p7jyz7) {
+    p7jyz7 = false;
+    int vrwjtf = 897;
+    vrwjtf = 362;
+    vrwjtf = 739;
+    fq98jw0(201b, 102);
+    fq98jw0(174b, 531);
+    print("world");
+    while (vrwjtf > vrwjtf) {
+        vrwjtf = 133;
+    }
+    return true;
+}
+
+bool f7m8wu7() {
+    int v3wvjf = 77;
+    v3wvjf = 802;
+    v3wvjf = 568;
+    int vf58ml = 613;
+    vf58ml = 456;
+    vf58ml = 574;
+    bool va8e0d = false;
+    va8e0d = false;
+    va8e0d = true;
+    print("world");
+    return true;
+}
+
+void main() {
+    bool mu8zel = true;
+    byte miz88w = 150b;
+    fq98jw0(4b, 608);
+    flvng0x(false);
+    f7m8wu7();
+    miz88w = 111b;
+    print("hello");
+    while (miz88w != miz88w) {
+        miz88w = 605;
+    }
+}

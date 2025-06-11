@@ -1,0 +1,6 @@
+int f4() {
+    return 1;
+}
+void main() {
+    bool b = f4();
+}

@@ -1,0 +1,44 @@
+void fgu732(bool plgifd, bool p1fy1z, int pbesnh) {
+    byte vl00vb = 2;
+main();
+print("hello");
+printi(42);
+pbesnh = 167;
+plgifd = false;
+main();
+fbkc9b(245, 99, 39);
+main();
+plgifd = false;
+main();
+pbesnh = 366;
+fbkc9b(52, 201, 525);
+fgu732(true, false, 672);
+}
+
+void fbkc9b(byte p32ue3, byte p9zu6h, int psarvn) {
+    int v3mvk2 = 508;
+psarvn = v3mvk2;
+p32ue3 = p9zu6h;
+printi(42);
+fgu732(false, true, 915);
+printi(42);
+printi(42);
+}
+
+void main() {
+    int vekj40 = 800;
+    bool v1dn7o = false;
+    int v6zqql = 623;
+vekj40 = v6zqql;
+vekj40 = 734;
+print("hello");
+fbkc9b(125, 35, 539);
+printi(42);
+v1dn7o = false;
+fgu732(true, true, 917);
+printi(42);
+if (vekj40 != vekj40) {
+    v6zqql = vekj40;
+    print("hello");
+}
+}

@@ -1,0 +1,43 @@
+void f0hd6mr() {
+    byte vq1enl = 14b;
+    vq1enl = 124b;
+    vq1enl = 198b;
+    print("array");
+}
+
+bool fqj7oxb() {
+    byte v2dnl5 = 22b;
+    v2dnl5 = 73b;
+    byte voxj51 = 200b;
+    voxj51 = (byte)140;
+    byte vnfqk3 = 85b;
+    vnfqk3 = 57b;
+    f0hd6mr();
+    f0hd6mr();
+    print("random");
+    while (v2dnl5 == v2dnl5) {
+        v2dnl5 = 135b;
+    }
+    return false;
+}
+
+byte fze824l(int pdgl2v, byte p6fa6z) {
+    pdgl2v = 911;
+    p6fa6z = 202b;
+    int v8hyqu = 54;
+    v8hyqu = 981;
+    int v52ka1 = 520;
+    v52ka1 = 142;
+    f0hd6mr();
+    fqj7oxb();
+    printi(52);
+    return 227b;
+}
+
+void main() {
+    int mhvn1m = 176;
+    f0hd6mr();
+    fqj7oxb();
+    fze824l(881, 175b);
+    print("test");
+}

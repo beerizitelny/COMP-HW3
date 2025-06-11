@@ -1,0 +1,31 @@
+void main() {
+    bool vr1ta6 = true;
+    byte vkre2y = 10;
+vkre2y = 192;
+printi(42);
+vkre2y = 35;
+vkre2y = 135;
+printi(42);
+printi(42);
+vkre2y = 186;
+fh4kwx(94, 315);
+fh4kwx(63, 441);
+}
+
+int fh4kwx(byte pburuq, int p2qu2e) {
+    bool vzq493 = true;
+p2qu2e = 170;
+fh4kwx(102, 36);
+print("hello");
+print("hello");
+main();
+p2qu2e = 272;
+fh4kwx(119, 647);
+print("hello");
+while (p2qu2e == p2qu2e) {
+    p2qu2e = 443;
+    fh4kwx(182, 798);
+    pburuq = 14;
+    main();
+}
+}

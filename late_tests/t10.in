@@ -1,0 +1,7 @@
+bool foo(int x, byte y) {
+    return true;
+}
+
+void main() {
+    foo[2] = false;
+}

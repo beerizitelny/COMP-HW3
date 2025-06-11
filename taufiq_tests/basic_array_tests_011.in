@@ -1,0 +1,49 @@
+int f2xpiw() {
+    bool vp2aa5 = true;
+while (vp2aa5) {
+    f2xpiw();
+    vp2aa5 = true;
+    print("hello");
+    vp2aa5 = true;
+    vp2aa5 = true;
+    vp2aa5 = true;
+    vp2aa5 = true;
+    vp2aa5 = true;
+    vp2aa5 = false;
+    f2xpiw();
+    vp2aa5 = true;
+}
+}
+
+void main() {
+    bool vfc3l4 = true;
+    byte vckggp = 180;
+    int vnrpkx = 34;
+main();
+vnrpkx = 998;
+fip1mx(656, false);
+vfc3l4 = false;
+f2xpiw();
+fip1mx(56, false);
+}
+
+void fip1mx(int p1fmpu, bool pkjqg2) {
+    byte vyk5o6 = 209;
+    bool vb0vzh = true;
+while (p1fmpu <= p1fmpu) {
+    main();
+    vyk5o6 = 202;
+    {
+        fip1mx(132, true);
+        pkjqg2 = vb0vzh;
+        {
+            main();
+            fip1mx(682, false);
+            printi(42);
+            {
+                print("hello");
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,34 @@
+int fkjvxt(byte pepnx4, byte plr7ox) {
+    byte v8ch3y = 102;
+v8ch3y = 167;
+printi(42);
+fmakmn(265, false);
+v8ch3y = pepnx4;
+plr7ox = 237;
+v8ch3y = pepnx4;
+}
+
+void main() {
+    int v9qimh = 309;
+printi(42);
+fmakmn(755, false);
+v9qimh = 999;
+main();
+v9qimh = 447;
+v9qimh = 217;
+main();
+v9qimh = 84;
+}
+
+void fmakmn(int p4vv1p, bool p304ow) {
+    bool vuzkgk = false;
+    int vkc9a9 = 485;
+printi(42);
+printi(42);
+fmakmn(318, false);
+{
+    printi(42);
+    main();
+    print("hello");
+}
+}

@@ -1,0 +1,55 @@
+byte f1(int p1) {
+    byte b1 = 0;
+    bool toggle = false;
+    while (b1 < 5) {
+        if (toggle == false) {
+            {
+                if (b1 < 3) {
+                    b1 = b1 + 2;
+                } else {
+                    {
+                        b1 = b1 - 1;
+                        toggle = true;
+                    }
+                }
+            }
+        } else {
+            {
+                while (p1 > 0) {
+                    if (p1 == 2) {
+                        { b1 = b1 + 1; }
+                    } else {
+                        p1 = p1 - 1;
+                    }
+                }
+                toggle = false;
+            }
+        }
+    }
+    return b1;
+}
+
+int f2(byte p2) {
+    int arr1[4];
+    int sum = 0;
+    int i = 0;
+    while (i < 4) {
+        arr1[i] = i;
+        sum = sum + arr1[i];
+        i = i + 1;
+    }
+    return sum + p2;
+}
+
+void main() {
+    int v1 = f2(f1(3));
+    bool c = false;
+    if (v1 > 10) {
+        printi(v1);
+    } else {
+        {
+            c = true;
+            print("hello");
+        }
+    }
+}

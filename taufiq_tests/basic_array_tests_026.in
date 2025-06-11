@@ -1,0 +1,38 @@
+int fzrqls(int pea8hr, bool perj99) {
+    byte v0atd7 = 121;
+{
+    pea8hr = 112;
+    main();
+    printi(42);
+    fzrqls(866, false);
+    fzrqls(369, false);
+    while (pea8hr == pea8hr) {
+        printi(42);
+        pea8hr = 639;
+        if (pea8hr >= pea8hr) {
+            fzrqls(51, true);
+            pea8hr = 397;
+        }
+    }
+}
+}
+
+void main() {
+    byte vl322k = 189;
+fzrqls(123, true);
+{
+    printi(42);
+    vl322k = 183;
+    main();
+    vl322k = 151;
+    vl322k = 6;
+    vl322k = 175;
+    {
+        printi(42);
+        print("hello");
+        vl322k = 23;
+        printi(42);
+        vl322k = 21;
+    }
+}
+}

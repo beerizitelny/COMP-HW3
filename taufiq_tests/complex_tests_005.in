@@ -1,0 +1,49 @@
+void f89kxk1(int pkyrtq) {
+    pkyrtq = 707*752;
+    bool v3nbj0 = false;
+    v3nbj0 = false;
+    v3nbj0 = false;
+    f89kxk1(691/289);
+    f89kxk1(111*43);
+    print("test");
+}
+
+bool fs34x5p() {
+    bool v4foa8 = true;
+    v4foa8 = true;
+    print("test");
+    return true;
+}
+
+byte fvyjryc(bool p1kdpp, int pqovdy) {
+    p1kdpp = true;
+    pqovdy = 72*101;
+    bool vz0cuv = true;
+    vz0cuv = false;
+    vz0cuv = true;
+    printi(41);
+    return 198b;
+}
+
+int f2zqkj6(byte pywkzt, bool p871xf) {
+    pywkzt = 81b;
+    p871xf = true;
+    bool vwk1l5 = true;
+    vwk1l5 = false;
+    vwk1l5 = false;
+    bool vwstl1 = true;
+    vwstl1 = false;
+    vwstl1 = true;
+    printi(176);
+    return 178-844;
+}
+
+void main() {
+    bool mpilfc = false;
+    bool mdzwm3 = false;
+    f89kxk1(997);
+    fs34x5p();
+    fvyjryc(false, 312);
+    f2zqkj6((byte)790*746, false);
+    print("all done");
+}

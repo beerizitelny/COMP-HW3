@@ -1,0 +1,36 @@
+bool fwj7vm(bool pmas5f, int ppx65m) {
+    int v12b2v = 410;
+pmas5f = false;
+printi(42);
+v12b2v = 621;
+while (v12b2v == ppx65m) {
+    printi(42);
+    pmas5f = false;
+    fwj7vm(true, 946);
+    {
+        fwj7vm(false, 158);
+        printi(42);
+        printi(42);
+        while (v12b2v != v12b2v) {
+            main();
+        }
+    }
+}
+}
+
+void main() {
+    bool vqq59k = true;
+    bool vqchgq = true;
+vqchgq = true;
+fwj7vm(true, 413);
+vqq59k = true;
+vqchgq = vqq59k;
+fwj7vm(false, 436);
+vqq59k = vqchgq;
+fwj7vm(false, 173);
+fwj7vm(false, 270);
+vqchgq = true;
+printi(42);
+print("hello");
+vqq59k = vqchgq;
+}

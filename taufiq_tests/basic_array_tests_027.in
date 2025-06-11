@@ -1,0 +1,57 @@
+void main() {
+    bool v5rvid = false;
+    byte vzs7rz = 153;
+if (vzs7rz > vzs7rz) {
+    vzs7rz = 17;
+    vzs7rz = 3;
+    v5rvid = true;
+    main();
+    printi(42);
+    v5rvid = true;
+    printi(42);
+    print("hello");
+    print("hello");
+    vzs7rz = 167;
+    vzs7rz = 141;
+    vzs7rz = 145;
+    vzs7rz = 2;
+}
+}
+
+bool fldotf(int pbs3yb, bool p41k4x, bool phvaho) {
+    int vlugiz = 612;
+    bool a1cq9r[10];
+f0tw4c(375, 113);
+print("hello");
+printi(42);
+f0tw4c(265, 225);
+vlugiz = 350;
+f0tw4c(677, 141);
+p41k4x = false;
+p41k4x = a1cq9r[2];
+f0tw4c(114, 105);
+a1cq9r[pbs3yb] = true;
+phvaho = a1cq9r[6];
+a1cq9r[pbs3yb] = phvaho;
+main();
+}
+
+void f0tw4c(int p11rh5, byte pmslie) {
+    byte vbmx2d = 245;
+printi(42);
+vbmx2d = pmslie;
+vbmx2d = 62;
+if (p11rh5 <= p11rh5) {
+    p11rh5 = 239;
+    p11rh5 = 484;
+    f0tw4c(977, 57);
+    printi(42);
+    if (p11rh5 > p11rh5) {
+        vbmx2d = 96;
+        vbmx2d = 157;
+        print("hello");
+        p11rh5 = 36;
+        p11rh5 = 881;
+    }
+}
+}

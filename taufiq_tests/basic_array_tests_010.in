@@ -1,0 +1,33 @@
+void main() {
+    byte v43g3x = 4;
+v43g3x = 134;
+while (v43g3x < v43g3x) {
+    v43g3x = 16;
+    while (v43g3x > v43g3x) {
+        print("hello");
+        main();
+        main();
+        printi(42);
+        printi(42);
+        frun79(true, false, 745);
+        frun79(false, false, 476);
+    }
+}
+}
+
+byte frun79(bool p5vrjq, bool p1m6gl, int pxqvjy) {
+    bool vksabc = false;
+    int v1obd3 = 333;
+    int vioyan = 233;
+while (v1obd3 >= v1obd3) {
+    p1m6gl = p5vrjq;
+    frun79(false, false, 988);
+    printi(42);
+    vioyan = 998;
+    if (pxqvjy <= v1obd3) {
+        frun79(false, true, 868);
+        printi(42);
+        p1m6gl = false;
+    }
+}
+}

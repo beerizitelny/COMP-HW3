@@ -1,0 +1,49 @@
+int fff4bqy(bool ppys4c, bool pb2q6h) {
+    ppys4c = false;
+    pb2q6h = true;
+    bool vzx0i1 = false;
+    vzx0i1 = true;
+    vzx0i1 = true;
+    byte vxuy8c = 212b;
+    vxuy8c = 71b;
+    vxuy8c = (byte)628;
+    byte vesiov = 10b;
+    vesiov = 160b;
+    fff4bqy(false, true);
+    printi(241);
+    return 564;
+}
+
+int fvf2p1i(int pgaemm, bool p5lt4j) {
+    pgaemm = 852;
+    p5lt4j = true;
+    byte vshate = 101b;
+    vshate = 208b;
+    vshate = (byte)352;
+    byte v35282 = (byte)784;
+    v35282 = (byte)338;
+    v35282 = 114b;
+    printi(104);
+    return 96;
+}
+
+byte fduqrne(byte p5ysje, byte p26rib) {
+    p5ysje = (byte)905;
+    p26rib = 231b;
+    byte vipcwd = 5b;
+    vipcwd = 90b;
+    vipcwd = 148b;
+    printi(95);
+    while (vipcwd > vipcwd) {
+        vipcwd = 220;
+    }
+    return 168b;
+}
+
+void main() {
+    byte mr4byv = 213b;
+    fff4bqy(false, true);
+    fvf2p1i(770, true);
+    fduqrne(221b, (byte)52);
+    mr4byv = 57b;
+}

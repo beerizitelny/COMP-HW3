@@ -1,0 +1,5 @@
+void main() {
+    int arr[2];
+    // invalid: arr[0] is an int, not an array—cannot index it again
+    arr[0][1] = 3;
+}

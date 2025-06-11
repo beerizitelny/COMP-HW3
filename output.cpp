@@ -87,7 +87,7 @@ namespace output {
     }
 
     void errorMainMissing() {
-        std::cout << "Program has no 'void main()' function" << std::endl;
+        std::cout << ":" << std::endl;
         exit(0);
     }
 

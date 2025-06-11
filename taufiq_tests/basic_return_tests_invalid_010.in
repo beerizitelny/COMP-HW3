@@ -1,0 +1,6 @@
+int f10() {
+    return 6;
+}
+void main() {
+    byte b = f10() + 1;
+}

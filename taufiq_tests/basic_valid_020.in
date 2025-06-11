@@ -1,0 +1,42 @@
+void main() {
+    int vzjozs = 565;
+vzjozs = 549;
+main();
+print("hello");
+print("hello");
+print("hello");
+vzjozs = 910;
+main();
+printi(42);
+print("hello");
+print("hello");
+main();
+while (vzjozs >= vzjozs) {
+    vzjozs = 335;
+    vzjozs = 400;
+}
+}
+
+void f8oiq4(bool p450te) {
+    int v5v09j = 627;
+    bool vealw6 = false;
+    byte vq4nyc = 70;
+printi(42);
+while (v5v09j != v5v09j) {
+    p450te = true;
+    f8oiq4(true);
+    while (v5v09j != v5v09j) {
+        v5v09j = 849;
+        {
+            printi(42);
+            f8oiq4(false);
+            v5v09j = 485;
+            print("hello");
+            main();
+            printi(42);
+            vq4nyc = 124;
+            print("hello");
+        }
+    }
+}
+}

@@ -1,0 +1,45 @@
+bool fpi7kb(byte p3amoj, byte pf02yz, byte pem8zl) {
+    byte vss85f = 190;
+    byte vf61je = 251;
+    byte vrgnvz = 90;
+main();
+fpi7kb(37, 203, 209);
+printi(42);
+fpi7kb(245, 145, 161);
+print("hello");
+fpi7kb(5, 39, 67);
+main();
+pem8zl = 166;
+vss85f = 95;
+}
+
+void main() {
+    byte vitdxk = 173;
+    int voefly = 497;
+main();
+voefly = 795;
+f1dap2(93, 161, 363);
+print("hello");
+voefly = 281;
+voefly = 187;
+main();
+print("hello");
+printi(42);
+main();
+vitdxk = 9;
+}
+
+void f1dap2(byte pw80ig, int phvyd6, int p4olxo) {
+    byte v29foa = 43;
+main();
+print("hello");
+main();
+print("hello");
+pw80ig = v29foa;
+p4olxo = phvyd6;
+phvyd6 = p4olxo;
+print("hello");
+print("hello");
+printi(42);
+printi(42);
+}

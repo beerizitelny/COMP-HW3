@@ -1,0 +1,80 @@
+byte fzykapv(int pw8qhr, byte pyh4fu) {
+    pw8qhr = 297+809;
+    pyh4fu = 21b;
+    bool v7ou1y = false;
+    v7ou1y = true;
+    bool vqmi91 = true;
+    vqmi91 = true;
+    vqmi91 = true;
+    bool vm05ue = false;
+    vm05ue = true;
+    vm05ue = true;
+    fzykapv(91, 21b);
+    printi(227);
+    return 82b;
+}
+
+bool f9r5gnj() {
+    bool v66hwv = true;
+    v66hwv = true;
+    v66hwv = true;
+    byte vkntmb = (byte)746;
+    vkntmb = (byte)81*3;
+    vkntmb = (byte)519;
+    int volo4w = 113;
+    volo4w = 360+196;
+    fzykapv(982, (byte)355/236);
+    fzykapv(684, (byte)407);
+    print("random");
+    while (vkntmb<(byte)445/402) {
+        vkntmb = (byte)862-583;
+    }
+    return true;
+}
+
+byte f9ahlzi(bool pzv6cq, int ptl5m6) {
+    pzv6cq = false;
+    ptl5m6 = 221+227;
+    int vwfcpg = 62;
+    vwfcpg = 436;
+    vwfcpg = 312;
+    int vpojio = 675;
+    vpojio = 467;
+    vpojio = 130;
+    bool voweuo = true;
+    voweuo = false;
+    printi(81);
+    if (vwfcpg>=165) {
+        vwfcpg = 694;
+    }
+    while (vwfcpg<=722) {
+        vwfcpg = 377;
+    }
+    return (byte)534;
+}
+
+int fu4j3l9(int p1lvq2, int poc4o2) {
+    p1lvq2 = 264;
+    poc4o2 = 341-110;
+    bool v30eah = false;
+    v30eah = false;
+    int vz13zy = 541;
+    vz13zy = 545;
+    vz13zy = 137;
+    f9ahlzi(false, 834);
+    printi(138);
+    while (vz13zy==375) {
+        vz13zy = 444;
+    }
+    return 168-385;
+}
+
+void main() {
+    bool mz5zp0 = true;
+    bool m9m7e8 = true;
+    fzykapv(321*309, 120b);
+    f9r5gnj();
+    f9ahlzi(true, 387);
+    fu4j3l9(574, 595);
+    print("all done");
+}

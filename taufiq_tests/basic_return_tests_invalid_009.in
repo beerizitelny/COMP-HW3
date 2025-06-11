@@ -1,0 +1,6 @@
+byte f9() {
+    return 255;
+}
+void main() {
+    int x = f9();
+}

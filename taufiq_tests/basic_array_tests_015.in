@@ -1,0 +1,30 @@
+void main() {
+    bool vmkoyr = true;
+    int afmtwa[9];
+afmtwa[7] = 456;
+vmkoyr = false;
+vmkoyr = true;
+afmtwa[4] = 68;
+if (vmkoyr) {
+    vmkoyr = false;
+    vmkoyr = true;
+    afmtwa[4] = 331;
+    frs3js(546, 196);
+    afmtwa[8] = 976;
+}
+}
+
+int frs3js(int pur09i, byte p657ti) {
+    byte v9yj9g = 130;
+    byte vrlk46 = 25;
+v9yj9g = 43;
+p657ti = vrlk46;
+pur09i = 215;
+while (pur09i < pur09i) {
+    main();
+    while (pur09i <= pur09i) {
+        print("hello");
+        printi(42);
+    }
+}
+}

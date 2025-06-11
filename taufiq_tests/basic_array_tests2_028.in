@@ -1,0 +1,80 @@
+void fv18hhv(byte pdzc62) {
+    pdzc62 = (byte)881;
+    int vebaze = 912;
+    vebaze = 1;
+    print("random");
+    while (vebaze == vebaze) {
+        vebaze = 241;
+    }
+}
+
+byte fv7lqaf(int pqifxs, bool pe69ay) {
+    pqifxs = 168;
+    pe69ay = true;
+    int vfl1l3 = 951;
+    vfl1l3 = 231;
+    fv7lqaf(318, true);
+    printi(6);
+    return 181b;
+}
+
+bool fxo3mol(bool ppxykl) {
+    ppxykl = true;
+    bool v2k7uo = true;
+    v2k7uo = true;
+    bool vfqm3v = true;
+    vfqm3v = true;
+    vfqm3v = false;
+    int vwdtqv = 469;
+    vwdtqv = 77;
+    print("hello");
+    while (vwdtqv < vwdtqv) {
+        vwdtqv = 907;
+    }
+    return false;
+}
+
+void fpavh5w() {
+    bool vpfez1 = false;
+    vpfez1 = true;
+    vpfez1 = false;
+    bool vhsoif = false;
+    vhsoif = false;
+    byte v8d6lz = 135b;
+    v8d6lz = 83b;
+    fxo3mol(true);
+    fxo3mol(true);
+    print("test");
+    while (v8d6lz == v8d6lz) {
+        v8d6lz = 280;
+    }
+}
+
+void fnwothu(bool pat28t) {
+    pat28t = true;
+    int vo9ldk = 481;
+    vo9ldk = 820;
+    vo9ldk = 79;
+    int v0oxak = 183;
+    v0oxak = 835;
+    v0oxak = 848;
+    byte v4vwu7 = (byte)718;
+    v4vwu7 = 81b;
+    fv7lqaf(530, false);
+    fv18hhv((byte)879);
+    print("test");
+    while (v0oxak == v0oxak) {
+        v0oxak = 413;
+    }
+}
+
+void main() {
+    int mluor9 = 55;
+    fv18hhv(242b);
+    fv7lqaf(332, true);
+    fxo3mol(false);
+    fpavh5w();
+    fnwothu(true);
+    print("array");
+    mluor9 = 409;
+}

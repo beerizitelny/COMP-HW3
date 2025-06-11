@@ -1,0 +1,56 @@
+int fwvvm3(int puabnu, int pgyv7s, bool p5bs55) {
+    byte vpwkb3 = 36b;
+    int vc89ku = 523;
+    bool vpsri3 = true;
+while (vc89ku != pgyv7s) {
+    vc89ku = puabnu;
+    {
+        printi(42);
+        pgyv7s = 447;
+        while (puabnu >= pgyv7s) {
+            puabnu = 3;
+            fyp1sd(929);
+            print("hello");
+            printi(42);
+        }
+    }
+}
+}
+
+void fyp1sd(int peivg7) {
+    int vamtkm = 411;
+{
+    peivg7 = vamtkm;
+    print("hello");
+    vamtkm = peivg7;
+    vamtkm = 964;
+    peivg7 = 121;
+    main();
+    vamtkm = 499;
+    print("hello");
+    peivg7 = vamtkm;
+}
+}
+
+int fhtn17(bool pg0xdv) {
+    byte v5v8v0 = 214b;
+fhtn17(true);
+print("hello");
+v5v8v0 = 228b;
+pg0xdv = true;
+fwvvm3(317, 26, false);
+fwvvm3(857, 833, true);
+pg0xdv = true;
+v5v8v0 = 182b;
+}
+
+void main() {
+    bool v3g2q8 = true;
+v3g2q8 = true;
+{
+    print("hello");
+    main();
+    v3g2q8 = true;
+    fhtn17(true);
+}
+}

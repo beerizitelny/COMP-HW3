@@ -1,0 +1,65 @@
+byte f6vrxew() {
+    bool vah8qx = true;
+    vah8qx = false;
+    vah8qx = false;
+    bool vddfo2 = true;
+    vddfo2 = false;
+    vddfo2 = false;
+    bool v6r20f = false;
+    v6r20f = true;
+    v6r20f = true;
+    printi(19);
+    return (byte)664;
+}
+
+byte fzi0vf8(byte pis6ui) {
+    pis6ui = 233b;
+    byte vipyzf = 216b;
+    vipyzf = (byte)348;
+    vipyzf = 225b;
+    int vrzn68 = 82;
+    vrzn68 = 435;
+    int vmsg20 = 47;
+    vmsg20 = 695;
+    vmsg20 = 910;
+    f6vrxew();
+    f6vrxew();
+    printi(245);
+    return 229b;
+}
+
+int fnm37zd(byte pqbhat, bool pg4gey) {
+    pqbhat = 208b;
+    pg4gey = false;
+    byte v88jio = 248b;
+    v88jio = 199b;
+    v88jio = 96b;
+    printi(172);
+    return 209;
+}
+
+byte frp4xpy(bool pzz05y) {
+    pzz05y = false;
+    byte vlq3yt = 83b;
+    vlq3yt = 108b;
+    bool vj1dxc = true;
+    vj1dxc = true;
+    vj1dxc = true;
+    frp4xpy(false);
+    fzi0vf8(0b);
+    printi(169);
+    return 230b;
+}
+
+void main() {
+    byte mfaqv3 = 78b;
+    f6vrxew();
+    fzi0vf8(87b);
+    fnm37zd(90b, true);
+    frp4xpy(true);
+    mfaqv3 = 169b;
+    print("world");
+    while (mfaqv3 > mfaqv3) {
+        mfaqv3 = 139b;
+    }
+}

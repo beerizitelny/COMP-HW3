@@ -1,0 +1,95 @@
+byte fg86tu(int pt20x0, bool pa2vdj) {
+    byte v19kl6 = 227;
+    bool vbzaiz = true;
+fg86tu(199, false);
+while (pt20x0 >= pt20x0) {
+    pa2vdj = vbzaiz;
+    printi(42);
+    print("hello");
+    pt20x0 = 746;
+    if (pt20x0 != pt20x0) {
+        v19kl6 = 193;
+        printi(42);
+        printi(42);
+        pa2vdj = vbzaiz;
+        f4vxns(238);
+    }
+}
+}
+
+int fb50uv(byte p5auql) {
+    bool v9ykdz = false;
+    byte vk4m6r = 235;
+    bool vcgk1p = false;
+v9ykdz = vcgk1p;
+f9bpqg();
+vk4m6r = p5auql;
+print("hello");
+if (vk4m6r < vk4m6r) {
+    vcgk1p = false;
+    fg86tu(862, true);
+    fb50uv(44);
+    v9ykdz = vcgk1p;
+    if (p5auql == vk4m6r) {
+        fg86tu(759, true);
+    }
+}
+}
+
+byte f9bpqg() {
+    bool vsdlx6 = false;
+    bool vryezy = false;
+{
+    vryezy = vsdlx6;
+    {
+        vsdlx6 = vryezy;
+        while (vryezy) {
+            vsdlx6 = true;
+            f9bpqg();
+            printi(42);
+            print("hello");
+            vsdlx6 = vryezy;
+            {
+                print("hello");
+                main();
+                if (vryezy) {
+                    f9bpqg();
+                }
+            }
+        }
+    }
+}
+}
+
+void main() {
+    int vxazb8 = 734;
+    bool v6bifw = false;
+    byte v6xevy = 231;
+{
+    printi(42);
+    fb50uv(139);
+    fg86tu(241, false);
+    printi(42);
+    while (vxazb8 > vxazb8) {
+        f4vxns(172);
+        v6bifw = false;
+        if (vxazb8 < vxazb8) {
+            v6xevy = 4;
+            f4vxns(85);
+        }
+    }
+}
+}
+
+byte f4vxns(byte pszuul) {
+    byte v7tm07 = 120;
+v7tm07 = pszuul;
+v7tm07 = 204;
+while (v7tm07 == v7tm07) {
+    pszuul = v7tm07;
+    f9bpqg();
+    {
+        fg86tu(486, false);
+    }
+}
+}

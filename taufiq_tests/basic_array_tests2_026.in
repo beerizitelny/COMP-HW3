@@ -1,0 +1,50 @@
+bool f0meat0() {
+    bool vvmpuy = true;
+    vvmpuy = false;
+    vvmpuy = false;
+    byte vlmen5 = 96b;
+    vlmen5 = 80b;
+    bool v7t162 = true;
+    v7t162 = false;
+    print("hello");
+    while (vlmen5 <= vlmen5) {
+        vlmen5 = 332;
+    }
+    return false;
+}
+
+void frz57ls() {
+    int vis5a5 = 103;
+    vis5a5 = 494;
+    bool vog4ss = false;
+    vog4ss = true;
+    bool vw4e99 = false;
+    vw4e99 = true;
+    print("world");
+    while (vis5a5 != vis5a5) {
+        vis5a5 = 832;
+    }
+}
+
+void fh2dv8e(bool pae01t) {
+    pae01t = true;
+    int v4gicc = 649;
+    v4gicc = 933;
+    int v5fumc = 591;
+    v5fumc = 338;
+    fh2dv8e(true);
+    print("random");
+    while (v5fumc > v5fumc) {
+        v5fumc = 807;
+    }
+}
+
+void main() {
+    bool m9n9f4 = true;
+    bool mgp99m = false;
+    bool mf106y = true;
+    f0meat0();
+    frz57ls();
+    fh2dv8e(true);
+    print("hello");
+}

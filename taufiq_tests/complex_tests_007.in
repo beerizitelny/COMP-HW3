@@ -1,0 +1,45 @@
+int f8vcxne(byte peo0x9, byte ppdx64) {
+    peo0x9 = (byte)38*425;
+    ppdx64 = (byte)778/70;
+    bool vo8pnp = true;
+    vo8pnp = true;
+    f8vcxne(10b, (byte)279);
+    f8vcxne((byte)209, (byte)660);
+    printi(223);
+    return 95/528;
+}
+
+void fmtorb0(byte pryc8f, int pdxz0c) {
+    pryc8f = (byte)840;
+    pdxz0c = 429;
+    int v8bb76 = 975;
+    v8bb76 = 120;
+    f8vcxne((byte)997, 173b);
+    fmtorb0((byte)572, 666*550);
+    print("world");
+    while (v8bb76==93) {
+        v8bb76 = 838;
+    }
+}
+
+byte f992p53(bool pi9r6s) {
+    pi9r6s = false;
+    byte v14rgc = (byte)998;
+    v14rgc = (byte)519/292;
+    v14rgc = 63b;
+    f8vcxne(173b, 243b);
+    printi(58);
+    if (v14rgc>111b) {
+        v14rgc = (byte)682-876;
+    }
+    return 227b;
+}
+
+void main() {
+    byte m4u3qo = (byte)823;
+    int myxbl9 = 764+563;
+    f8vcxne(218b, 99b);
+    fmtorb0((byte)328/806, 141+367);
+    f992p53(false);
+    print("all done");
+}

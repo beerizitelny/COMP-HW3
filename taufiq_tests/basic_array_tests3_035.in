@@ -1,0 +1,83 @@
+void fgo1h4h() {
+    int vu8kwl = 445;
+    vu8kwl = 723;
+    vu8kwl = 660;
+    byte vuwjrh = 187b;
+    vuwjrh = 63b;
+    fgo1h4h();
+    print("random");
+    while (vuwjrh != vuwjrh) {
+        vuwjrh = 70b;
+    }
+}
+
+int fg10jh9(bool p0bbk5) {
+    p0bbk5 = false;
+    int vs9at6 = 100;
+    vs9at6 = 26;
+    bool vt5zpb = true;
+    vt5zpb = false;
+    vt5zpb = true;
+    fgo1h4h();
+    printi(29);
+    while (vs9at6 >= vs9at6) {
+        vs9at6 = 603;
+    }
+    return 832;
+}
+
+bool ff4vrvr() {
+    bool vtya53 = false;
+    vtya53 = true;
+    print("test");
+    return true;
+}
+
+int fir01f5(byte pe2fbm) {
+    pe2fbm = 242b;
+    bool vjkg2b = false;
+    vjkg2b = false;
+    vjkg2b = true;
+    bool vtbqzu = false;
+    vtbqzu = false;
+    fir01f5(109b);
+    printi(24);
+    return 437;
+}
+
+bool fej9l0r(bool p91y6m, int poygko) {
+    p91y6m = false;
+    poygko = 754;
+    byte vy5brw = 42b;
+    vy5brw = 1b;
+    vy5brw = 136b;
+    fej9l0r(true, 992);
+    fej9l0r(true, 230);
+    print("random");
+    return false;
+}
+
+int fzp72ge(bool pvbpff, int p8mgol) {
+    pvbpff = false;
+    p8mgol = 79;
+    bool v16bv1 = false;
+    v16bv1 = true;
+    printi(17);
+    return 593;
+}
+
+void main() {
+    byte mjvl4v = 247b;
+    bool miy12x = true;
+    fgo1h4h();
+    fg10jh9(true);
+    ff4vrvr();
+    fir01f5(66b);
+    fej9l0r(false, 996);
+    fzp72ge(true, 332);
+    miy12x = false;
+    mjvl4v = 113b;
+    while (mjvl4v >= mjvl4v) {
+        mjvl4v = (byte)729;
+    }
+}

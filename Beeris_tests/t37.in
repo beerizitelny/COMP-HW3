@@ -1,0 +1,8 @@
+void main() {
+    int a;
+    berri(a);
+}
+
+int beeri(bool[3] a) {
+    return 0;
+}

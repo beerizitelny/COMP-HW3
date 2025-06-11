@@ -1,0 +1,104 @@
+byte f2r8vn6(bool pgj9d8) {
+    pgj9d8 = false;
+    int vd3u1t = 858;
+    vd3u1t = 114;
+    vd3u1t = 939;
+    int vbzlw1 = 745;
+    vbzlw1 = 280;
+    vbzlw1 = 999;
+    int vq8tsy = 247;
+    vq8tsy = 985;
+    f2r8vn6(false);
+    printi(152);
+    return 168b;
+}
+
+byte fumqf0r(int p5msor, bool p5eve6) {
+    p5msor = 815;
+    p5eve6 = false;
+    byte vua7rg = 12b;
+    vua7rg = 71b;
+    bool vn3cz6 = true;
+    vn3cz6 = true;
+    f2r8vn6(true);
+    printi(12);
+    while (vua7rg < vua7rg) {
+        vua7rg = 524;
+    }
+    return (byte)619;
+}
+
+byte f4wkqrw(int p8sxif, int psbmhi) {
+    p8sxif = 281;
+    psbmhi = 998;
+    byte v6hm1r = 79b;
+    v6hm1r = 146b;
+    int viisom = 61;
+    viisom = 537;
+    viisom = 927;
+    f2r8vn6(true);
+    f4wkqrw(492, 774);
+    printi(3);
+    return (byte)458;
+}
+
+void f4blsop(bool pfx43a, bool petv1k) {
+    pfx43a = false;
+    petv1k = true;
+    int vbwkh1 = 371;
+    vbwkh1 = 5;
+    vbwkh1 = 531;
+    fumqf0r(108, true);
+    print("world");
+}
+
+byte flqhxzs(byte phglfc, byte p36ezj) {
+    phglfc = 167b;
+    p36ezj = (byte)459;
+    byte vpyo2u = 40b;
+    vpyo2u = 210b;
+    vpyo2u = 50b;
+    bool v9xzbu = true;
+    v9xzbu = false;
+    v9xzbu = true;
+    byte voffii = (byte)794;
+    voffii = (byte)185;
+    voffii = 168b;
+    flqhxzs(9b, 123b);
+    flqhxzs(0b, 207b);
+    printi(90);
+    return 154b;
+}
+
+int fp9vq27(byte pttxn2, bool p3kdzd) {
+    pttxn2 = 3b;
+    p3kdzd = false;
+    int vyb41t = 57;
+    vyb41t = 79;
+    vyb41t = 423;
+    bool v22jjc = true;
+    v22jjc = true;
+    v22jjc = true;
+    f2r8vn6(false);
+    printi(96);
+    while (vyb41t >= vyb41t) {
+        vyb41t = 860;
+    }
+    return 516;
+}
+
+void main() {
+    bool mi4dfc = false;
+    int m4mxyu = 730;
+    f2r8vn6(false);
+    fumqf0r(722, false);
+    f4wkqrw(181, 543);
+    f4blsop(true, false);
+    flqhxzs((byte)687, 180b);
+    fp9vq27(138b, false);
+    m4mxyu = 923;
+    mi4dfc = true;
+    while (m4mxyu == m4mxyu) {
+        m4mxyu = 974;
+    }
+}

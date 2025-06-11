@@ -1,0 +1,77 @@
+int f9ox9p() {
+    int v6a5u1 = 872;
+v6a5u1 = 620;
+v6a5u1 = 663;
+f9ox9p();
+{
+    printi(42);
+    v6a5u1 = 48;
+    v6a5u1 = 807;
+    main();
+}
+}
+
+bool f8q64z() {
+    byte vcbr7x = 210;
+    int v6q0io = 72;
+v6q0io = 966;
+print("hello");
+v6q0io = 293;
+{
+    vcbr7x = 184;
+    while (v6q0io <= v6q0io) {
+        main();
+    }
+}
+}
+
+void main() {
+    int vqhgb3 = 179;
+{
+    vqhgb3 = 216;
+    vqhgb3 = 776;
+    print("hello");
+    {
+        vqhgb3 = 13;
+        vqhgb3 = 999;
+        while (vqhgb3 == vqhgb3) {
+            vqhgb3 = 97;
+        }
+    }
+}
+}
+
+void fzd0vj(byte prt426) {
+    byte v6bc3m = 100;
+print("hello");
+f2jpyq();
+main();
+f8q64z();
+f9ox9p();
+v6bc3m = prt426;
+v6bc3m = 29;
+prt426 = 245;
+prt426 = 91;
+prt426 = v6bc3m;
+fzd0vj((byte)17);
+prt426 = 202;
+f2jpyq();
+f2jpyq();
+}
+
+int f2jpyq() {
+    byte vecgcg = 82;
+vecgcg = 58;
+fzd0vj((byte)223);
+f9ox9p();
+vecgcg = 166;
+vecgcg = 46;
+vecgcg = 39;
+vecgcg = 43;
+printi(42);
+print("hello");
+printi(42);
+f8q64z();
+printi(42);
+vecgcg = 124;
+}

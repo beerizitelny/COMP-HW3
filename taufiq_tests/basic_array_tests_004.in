@@ -1,0 +1,36 @@
+int fc13v0(byte p8sd0r, int px3ua8, bool py195c) {
+    bool vs91fp = false;
+if (px3ua8 == px3ua8) {
+    p8sd0r = 179;
+    fc13v0(14, 659, true);
+    while (px3ua8 < px3ua8) {
+        main();
+        px3ua8 = 954;
+        main();
+        vs91fp = py195c;
+        while (px3ua8 == px3ua8) {
+            vs91fp = py195c;
+        }
+    }
+}
+}
+
+void main() {
+    byte vlk9wf = 171;
+    int vmq1o7 = 401;
+    int a17bgy[6];
+main();
+a17bgy[vmq1o7] = 432;
+fc13v0(34, 1, true);
+a17bgy[1] = vmq1o7;
+printi(42);
+fc13v0(106, 224, false);
+vlk9wf = 23;
+printi(42);
+vlk9wf = 209;
+printi(42);
+vmq1o7 = 908;
+vmq1o7 = a17bgy[vmq1o7];
+vmq1o7 = a17bgy[4];
+vmq1o7 = a17bgy[vmq1o7];
+}

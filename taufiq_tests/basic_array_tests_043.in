@@ -1,0 +1,53 @@
+bool fpku70(byte pa673f, byte pt67re, bool prh773) {
+    int v8m4c2 = 792;
+    int vzzckq = 53;
+pa673f = 79;
+main();
+pt67re = pa673f;
+printi(42);
+if (vzzckq == vzzckq) {
+    v8m4c2 = 953;
+    print("hello");
+}
+}
+
+void main() {
+    int vrw37i = 587;
+    int ajafxb[10];
+    bool vsfk6q = false;
+ajafxb[vrw37i] = vrw37i;
+vrw37i = ajafxb[vrw37i];
+vrw37i = ajafxb[vrw37i];
+vrw37i = ajafxb[vrw37i];
+vrw37i = 507;
+ajafxb[4] = 772;
+vrw37i = ajafxb[vrw37i];
+vrw37i = ajafxb[8];
+vrw37i = 339;
+if (vrw37i > vrw37i) {
+    vsfk6q = true;
+    ajafxb[2] = 561;
+    vrw37i = ajafxb[vrw37i];
+    vrw37i = 471;
+}
+}
+
+byte fwy261(bool pp1d5v, byte p6j0ut, int p9eufx) {
+    int v2hz38 = 998;
+    byte v457rj = 13;
+while (p9eufx <= v2hz38) {
+    v457rj = p6j0ut;
+    {
+        p9eufx = v2hz38;
+        fpku70(115, 36, false);
+        v457rj = p6j0ut;
+        fpku70(172, 33, false);
+        p9eufx = 447;
+        fwy261(false, 232, 932);
+        main();
+        while (p9eufx == v2hz38) {
+            pp1d5v = true;
+        }
+    }
+}
+}

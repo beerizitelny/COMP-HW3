@@ -12,8 +12,8 @@ class SemanticParserVisitor : public Visitor {
 protected:
     // SymTable declared_functions;
 
-    bool looping = false;
-
+    unsigned int whiles = 0;
+    bool looping() { return whiles > 0;}
     bool is_valid_cast(ast::BuiltInType from, ast::BuiltInType to) {
         return ((from == to) || (from == ast::BuiltInType::BYTE && to == ast::BuiltInType::INT));
     }
@@ -48,7 +48,9 @@ public:
         if (sym_entry == nullptr) {
             output::errorUndef(line, id);
         }
-
+        if (sym_entry->is_func_decl){
+            output::errorDefAsFunc(line, id);
+        }
         index->accept(*this);
         // checking that this is an array and that the index is valid
         if (!(index->is_number() && sym_entry->is_array)) {
@@ -194,9 +196,23 @@ public:
         print_node_name("ARRAY_ASSIGN");
 
         node.id->accept(*this);
+        node.exp->accept(*this);
+
+        //TODO: see assign
+
+        // in case RHS is ID
+        if (dynamic_cast<ast::ID *>(node.exp.get())){
+            // in case RHS is an array
+            std::string rhs_id = ((ast::ID *) node.exp.get())->value;
+            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
+                output::errorMismatch(node.line);
+            // in case RHS is a function
+            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_func_decl)
+                output::errorDefAsFunc(node.line, rhs_id);
+        }
+
         // getting the sym_entry only if valid params
         SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
-        node.exp->accept(*this);
 
         // check if types match and that rvalue is not of array type
         if (sym_entry->get_type() != node.exp->type ||
@@ -258,6 +274,12 @@ public:
                 output::errorPrototypeMismatch(node.line, id, *entry->get_string_param_types());
 
             for (int i = 0; i < entry->get_param_types()->size(); ++i) {
+
+                if (dynamic_cast<ast::ID*>(node.args->exps[i].get())){
+                    std::string arg_name = static_cast<ast::ID*>(node.args->exps[i].get())->value;
+                    if (symbol_table_stack.get_symbol_entry_by_id(arg_name)->is_array)
+                        output::errorMismatch(node.line);
+                }
                 if (!is_valid_cast(node.args->exps[i]->type, (*entry->get_param_types())[i]))
                     output::errorPrototypeMismatch(node.line, id, *entry->get_string_param_types());
             }
@@ -284,14 +306,14 @@ public:
     void visit(ast::Break &node) {
         print_node_name("BREAK");
 
-        if (!looping)
+        if (!looping())
             output::errorUnexpectedBreak(node.line);
     };
 
     void visit(ast::Continue &node) {
         print_node_name("CONTINUE");
 
-        if (!looping)
+        if (!looping())
             output::errorUnexpectedContinue(node.line);
     }
 
@@ -308,6 +330,17 @@ public:
         if ((node.exp && !is_valid_cast(node.exp->type, expected_return_type)) ||
             (!node.exp && expected_return_type != ast::BuiltInType::VOID))
             output::errorMismatch(node.line);
+
+        if (dynamic_cast<ast::ID *>(node.exp.get())){
+            // in case RHS is an array
+            std::string exp_id = ((ast::ID *) node.exp.get())->value;
+            if(symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_array){
+                output::errorMismatch(node.line);
+            }
+            if (symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_func_decl){
+                output::errorDefAsFunc(node.line, exp_id);
+            }
+        }
     }
 
     void visit(ast::If &node) {
@@ -343,12 +376,12 @@ public:
         // while statements always create a new scope
         symbol_table_stack.push_table();
         symbol_table_stack.scope_printer.beginScope();
-        looping = true;
+        whiles++;
         node.condition->accept(*this);
         if (node.condition->type != ast::BuiltInType::BOOL)
             output::errorMismatch(node.line);
         node.body->accept(*this);
-        looping = false;
+        whiles--;
         symbol_table_stack.pop_table();
         symbol_table_stack.scope_printer.endScope();
     }
@@ -396,27 +429,38 @@ public:
         // validation of prior declaration of this ID is done when visiting node.id
         node.id->accept(*this);
         std::string id = node.id->value;
-
-        // cannot assign into a funcion identifier
-        if (symbol_table_stack.get_symbol_entry_by_id(id)->is_func_decl)
-            output::errorDefAsFunc(node.line, id);
-
         node.exp->accept(*this);
 
+        // cannot assign into a funcion identifier
         SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
+
+        //TODO: make sure that RHS is checked before LHS even if its arr1 = arr2
+        // as in https://piazza.com/class/m8mycqqtxff2ir/post/102
+        // see late_tests/t1
 
         // make sure that a variable bearing this id exists
         if (!var_entry)
             output::errorUndef(node.line, id);
 
-        // TODO: follow https://piazza.com/class/m8mycqqtxff2ir/post/102
-        if (var_entry->is_array)
+
+        if (var_entry->is_array) {
             output::ErrorInvalidAssignArray(node.line, node.id->value);
+        }
 
-        if (dynamic_cast<ast::ID *>(node.exp.get()) &&
-            symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_array)
-            output::errorMismatch(node.line);
 
+        // in case RHS is ID
+        if (dynamic_cast<ast::ID *>(node.exp.get())){
+            // in case RHS is an array
+            std::string rhs_id = ((ast::ID *) node.exp.get())->value;
+            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
+                output::errorMismatch(node.line);
+            // in case RHS is a function
+            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_func_decl)
+                output::errorDefAsFunc(node.line, rhs_id);
+        }
+
+        if (var_entry->is_func_decl)
+            output::errorDefAsFunc(node.line, id);
         // validate matching types between expression and symbol as declared
         if (!is_valid_cast(node.exp->type, var_entry->get_type()))
             output::errorMismatch(node.line);
@@ -492,7 +536,7 @@ public:
             ast::BuiltInType func_type = func->return_type->type;
 
             if (symbol_table_stack.get_symbol_entry_by_id(func_id))
-                output::errorDef(node.line, func_id);
+                output::errorDef(func->line, func_id);
 
             SymTableEntry *new_entry = new SymTableEntry(func_id, func_type, true);
             symbol_table_stack.push_entry(new_entry, 0);
@@ -502,16 +546,6 @@ public:
             symbol_table_stack.scope_printer.emitFunc(func_id, func_type, *new_entry->get_param_types());
         }
 
-        // std::cout << " FUNCTION DECLARATIONS: " << std::endl;
-        // for (auto func: node.funcs) {
-        //     std::cout << func->id->value << std::endl;
-        // }
-        // std::cout << " LOOKING FOR FUNCTION DECLARATION: " << std::endl;
-
-        // if (!symbol_table_stack.get_symbol_entry_by_id("printOk"))
-        //     std::cout << " !!!!!!!!!!!!!! NOT INSERTED CORRECTLY " << std::endl;
-
-
         // handling main function and visiting function declaration nodes
         bool found_main = false;
         for (auto func: node.funcs) {
@@ -519,8 +553,7 @@ public:
             func->accept(*this);
             if (!func->id->value.compare("main")) {
 
-                // TODO: verify this with answer to https://piazza.com/class/m8mycqqtxff2ir/post/98
-                if (func->return_type->type != ast::BuiltInType::VOID || func->formals->formals.size() || found_main)
+                if (func->return_type->type != ast::BuiltInType::VOID || func->formals->formals.size())
                     output::errorMainMissing();
 
                 found_main = true;

@@ -1,0 +1,58 @@
+bool ferc33h(byte prh8as) {
+    prh8as = 94b;
+    byte v9lqi6 = (byte)200;
+    v9lqi6 = 18b;
+    bool vbohim = true;
+    vbohim = false;
+    vbohim = true;
+    int vfxqmq = 954;
+    vfxqmq = 168;
+    vfxqmq = 410;
+    ferc33h((byte)495);
+    ferc33h(87b);
+    print("test");
+    while (v9lqi6 == v9lqi6) {
+        v9lqi6 = 118;
+    }
+    return true;
+}
+
+bool f6akzrv() {
+    byte v52xv6 = 210b;
+    v52xv6 = 15b;
+    v52xv6 = 158b;
+    byte vgllqy = 159b;
+    vgllqy = (byte)395;
+    vgllqy = 71b;
+    print("test");
+    while (v52xv6 > v52xv6) {
+        v52xv6 = 162;
+    }
+    return true;
+}
+
+bool fky5xcx(int ph9zqf, bool pq2t95) {
+    ph9zqf = 660;
+    pq2t95 = false;
+    int vwn7k3 = 383;
+    vwn7k3 = 949;
+    bool vx2u9v = true;
+    vx2u9v = false;
+    vx2u9v = true;
+    bool vcfd8e = false;
+    vcfd8e = true;
+    vcfd8e = false;
+    print("array");
+    return false;
+}
+
+void main() {
+    bool ml79v2 = true;
+    int mmh1op = 899;
+    bool mh5p8b = true;
+    ferc33h(138b);
+    f6akzrv();
+    fky5xcx(778, false);
+    print("array");
+    print("hello");
+}

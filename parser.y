@@ -178,17 +178,6 @@ FormalsDecl: Type ID {$$ = make_shared<ast::Formal>(
             dynamic_pointer_cast<ast::ID>($2),
             dynamic_pointer_cast<ast::Type>($1)
         );}
-
-       | Type ID LBRACK RBRACK {$$ = make_shared<ast::Formal>(
-            dynamic_pointer_cast<ast::ID>($2),
-            dynamic_pointer_cast<ast::Type>($1)
-        );}
-
-       | Type ID LBRACK Exp RBRACK {$$ = make_shared<ast::Formal>(
-            dynamic_pointer_cast<ast::ID>($2),
-            dynamic_pointer_cast<ast::Type>($1),
-            dynamic_pointer_cast<ast::Exp>($4),
-        );}
 ;
 
 Call: ID LPAREN ExpList RPAREN {$$ = make_shared<ast::Call>(

@@ -1,0 +1,45 @@
+byte ffg2o2v(bool p4fi0t, byte p8majk) {
+    p4fi0t = true;
+    p8majk = 24b;
+    int vjbv0b = 354;
+    vjbv0b = 625;
+    vjbv0b = 883;
+    byte vg1ayf = 47b;
+    vg1ayf = 192b;
+    vg1ayf = 21b;
+    ffg2o2v(false, 154b);
+    printi(240);
+    return 118b;
+}
+
+byte fbxngzi(byte pvs10x, bool p21opv) {
+    pvs10x = 56b;
+    p21opv = false;
+    int veiucf = 531;
+    veiucf = 761;
+    fbxngzi(74b, true);
+    printi(49);
+    while (veiucf != veiucf) {
+        veiucf = 947;
+    }
+    return 77b;
+}
+
+int fgnqrsh() {
+    bool vp14l3 = false;
+    vp14l3 = false;
+    fgnqrsh();
+    fbxngzi((byte)679, true);
+    printi(80);
+    return 681;
+}
+
+void main() {
+    bool mzaz7y = false;
+    int manck9 = 557;
+    bool mxl5bx = false;
+    ffg2o2v(true, 181b);
+    fbxngzi((byte)796, false);
+    fgnqrsh();
+    mzaz7y = false;
+}

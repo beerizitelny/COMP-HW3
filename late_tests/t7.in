@@ -1,0 +1,7 @@
+int foo() {
+    return;
+}
+
+void main() {
+    return;
+}

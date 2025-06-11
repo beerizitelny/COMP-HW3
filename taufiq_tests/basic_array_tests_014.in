@@ -1,0 +1,31 @@
+void main() {
+    bool v2hwru = false;
+    byte a6shon[7];
+a6shon[2] = 80;
+v2hwru = false;
+printi(42);
+fruaoh(true, 46, 177);
+main();
+main();
+a6shon[5] = 66;
+v2hwru = false;
+a6shon[0] = 206;
+main();
+a6shon[0] = 174;
+}
+
+byte fruaoh(bool pnyit9, byte pcq1kx, byte pzz2c9) {
+    bool v4ym1q = false;
+    int ae6vun[7];
+printi(42);
+ae6vun[6] = 988;
+main();
+printi(42);
+ae6vun[2] = 964;
+fruaoh(false, 158, 10);
+pcq1kx = pzz2c9;
+fruaoh(false, 147, 158);
+while (pzz2c9 == pzz2c9) {
+    ae6vun[1] = 371;
+}
+}

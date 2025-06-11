@@ -1,0 +1,6 @@
+bool f7() {
+    return false;
+}
+void main() {
+    byte b = f7();
+}

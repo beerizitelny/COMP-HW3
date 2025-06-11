@@ -1,0 +1,4 @@
+void main() {
+    bool arr[3];
+    arr[1] = 1;
+}

@@ -1,0 +1,48 @@
+bool fyqlaak() {
+    bool v53dlr = true;
+    v53dlr = false;
+    fyqlaak();
+    print("test");
+    return false;
+}
+
+bool flfsby5(int pdwo4w) {
+    pdwo4w = 528;
+    bool vzya5y = true;
+    vzya5y = true;
+    byte vx723x = (byte)200+824;
+    vx723x = (byte)983-35;
+    fyqlaak();
+    flfsby5(254);
+    print("test");
+    while (vx723x>=(byte)420) {
+        vx723x = 86b;
+    }
+    return true;
+}
+
+int fm2khpi(byte pirrjy, byte pcaql0) {
+    pirrjy = 10b;
+    pcaql0 = (byte)615-426;
+    byte v9ssnd = (byte)299;
+    v9ssnd = (byte)140;
+    v9ssnd = 148b;
+    fyqlaak();
+    printi(213);
+    if (v9ssnd>=226b) {
+        v9ssnd = 250b;
+    }
+    while (v9ssnd>=(byte)524) {
+        v9ssnd = (byte)856-234;
+    }
+    return 620;
+}
+
+void main() {
+    byte mq7bjf = 2b;
+    int mvlhlm = 831/485;
+    fyqlaak();
+    flfsby5(392-999);
+    fm2khpi(27b, 203b);
+    print("all done");
+}

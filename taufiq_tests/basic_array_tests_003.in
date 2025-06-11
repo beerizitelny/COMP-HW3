@@ -1,0 +1,48 @@
+byte fjin0y(byte p3gap1, int phv43s, byte pne64p) {
+    int vxcqse = 12;
+    bool aars2r[3];
+fjin0y(52, 572, 5);
+if (phv43s < phv43s) {
+    fjin0y(215, 484, 171);
+    pne64p = 128;
+    print("hello");
+    aars2r[0] = false;
+    phv43s = vxcqse;
+    vxcqse = phv43s;
+    phv43s = 121;
+    printi(42);
+    phv43s = vxcqse;
+    main();
+}
+}
+
+void main() {
+    byte vy6kk0 = 45;
+print("hello");
+fjin0y(124, 319, 166);
+main();
+main();
+while (vy6kk0 == vy6kk0) {
+    fnulwi(false);
+    vy6kk0 = 103;
+    vy6kk0 = 85;
+    main();
+    vy6kk0 = 161;
+    fjin0y(178, 180, 102);
+}
+}
+
+void fnulwi(bool pbg3cz) {
+    bool vqh2as = true;
+    byte aznruj[5];
+printi(42);
+print("hello");
+vqh2as = false;
+pbg3cz = vqh2as;
+{
+    main();
+    pbg3cz = vqh2as;
+    printi(42);
+    pbg3cz = false;
+}
+}

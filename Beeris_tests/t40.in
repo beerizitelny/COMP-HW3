@@ -1,0 +1,9 @@
+int beeri(bool a) {
+    return 0;
+}
+
+void main() {
+    bool arr[3];
+    arr[0] = true;
+    beeri(arr[0]);
+}

@@ -1,0 +1,73 @@
+bool fureex(byte pcb7d8, bool p1pgfq) {
+    bool vb9kr3 = false;
+    bool vk2clv = false;
+main();
+printi(42);
+pcb7d8 = 92;
+printi(42);
+fu343g(196, false);
+vb9kr3 = true;
+fu343g(3, true);
+fu343g(159, true);
+}
+
+void main() {
+    bool vzzp4d = true;
+    byte vo59hk = 176;
+fureex(24, false);
+vo59hk = 68;
+while (vo59hk >= vo59hk) {
+    vo59hk = 183;
+    main();
+    f8io47();
+    printi(42);
+    {
+        print("hello");
+        while (vo59hk < vo59hk) {
+            fu343g(99, true);
+            {
+                vo59hk = 156;
+                {
+                    main();
+                }
+            }
+        }
+    }
+}
+}
+
+bool fu343g(byte pgr4j4, bool phujsd) {
+    int v9d6ld = 927;
+    byte vi0bgd = 58;
+fu343g(191, true);
+printi(42);
+pgr4j4 = vi0bgd;
+if (v9d6ld != v9d6ld) {
+    pgr4j4 = 213;
+    vi0bgd = pgr4j4;
+    main();
+    main();
+    print("hello");
+    while (v9d6ld == v9d6ld) {
+        fu343g(171, true);
+    }
+}
+}
+
+byte f8io47() {
+    bool vv3ox4 = true;
+    bool v2zg4n = false;
+f8io47();
+vv3ox4 = true;
+vv3ox4 = true;
+if (vv3ox4) {
+    main();
+    vv3ox4 = v2zg4n;
+    print("hello");
+    v2zg4n = false;
+    v2zg4n = true;
+    v2zg4n = false;
+    fu343g(183, false);
+    fu343g(150, false);
+}
+}

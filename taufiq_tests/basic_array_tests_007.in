@@ -1,0 +1,28 @@
+bool fh8ny1(byte pyx9v6) {
+    byte vve3ag = 188;
+vve3ag = 183;
+vve3ag = pyx9v6;
+pyx9v6 = 184;
+print("hello");
+pyx9v6 = vve3ag;
+printi(42);
+{
+    main();
+}
+}
+
+void main() {
+    byte venay8 = 0;
+venay8 = 65;
+venay8 = 103;
+print("hello");
+fh8ny1(253);
+main();
+venay8 = 182;
+fh8ny1(116);
+venay8 = 7;
+{
+    venay8 = 56;
+    printi(42);
+}
+}

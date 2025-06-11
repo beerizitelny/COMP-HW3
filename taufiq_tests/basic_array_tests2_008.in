@@ -1,0 +1,62 @@
+int foilryr(byte p2icm1) {
+    p2icm1 = 1b;
+    bool v4k9e0 = false;
+    v4k9e0 = true;
+    v4k9e0 = true;
+    foilryr(245b);
+    foilryr(148b);
+    printi(131);
+    return 289;
+}
+
+void fo0pzss() {
+    bool vqmei5 = true;
+    vqmei5 = false;
+    byte vkc700 = (byte)412;
+    vkc700 = 158b;
+    byte v926dn = 9b;
+    v926dn = 223b;
+    v926dn = 226b;
+    foilryr(211b);
+    print("array");
+    while (vkc700 < vkc700) {
+        vkc700 = 664;
+    }
+}
+
+byte f1fr0an(int pznovq, int pmaoy1) {
+    pznovq = 633;
+    pmaoy1 = 986;
+    int vhxgbg = 839;
+    vhxgbg = 484;
+    int vzwivc = 677;
+    vzwivc = 259;
+    int v8i9u5 = 625;
+    v8i9u5 = 589;
+    printi(156);
+    while (vhxgbg <= vhxgbg) {
+        vhxgbg = 637;
+    }
+    return 230b;
+}
+
+int f5uhp2g() {
+    bool vgyvri = false;
+    vgyvri = false;
+    vgyvri = false;
+    fo0pzss();
+    f5uhp2g();
+    printi(220);
+    return 953;
+}
+
+void main() {
+    bool m4l14t = true;
+    byte m9hjoy = 138b;
+    foilryr((byte)474);
+    fo0pzss();
+    f1fr0an(657, 550);
+    f5uhp2g();
+    m4l14t = true;
+    print("hello");
+}

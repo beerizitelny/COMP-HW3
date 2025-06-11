@@ -1,0 +1,35 @@
+byte fkw68z(byte pahjtg, int pkyc5p) {
+    int vygwkj = 607;
+    int v4aixp = 290;
+    int venepj = 761;
+vygwkj = 94;
+print("hello");
+fkw68z(0, 518);
+vygwkj = 327;
+vygwkj = 600;
+{
+    fkw68z(22, 809);
+    while (venepj < v4aixp) {
+        fkw68z(238, 101);
+        v4aixp = vygwkj;
+        pkyc5p = 779;
+    }
+}
+}
+
+void main() {
+    int v48p39 = 441;
+    bool vrx7ya = true;
+    bool vz8h0m = false;
+fkw68z(168, 629);
+printi(42);
+main();
+vrx7ya = vz8h0m;
+vrx7ya = vz8h0m;
+printi(42);
+fkw68z(194, 234);
+printi(42);
+print("hello");
+fkw68z(202, 806);
+printi(42);
+}

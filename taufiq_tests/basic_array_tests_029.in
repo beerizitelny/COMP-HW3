@@ -1,0 +1,62 @@
+int f8wi7a(bool pw4k6p, bool ponn7p) {
+    byte v7t7ry = 121;
+    int azkq2j[3];
+azkq2j[2] = 734;
+pw4k6p = true;
+azkq2j[0] = 725;
+azkq2j[0] = 432;
+ponn7p = false;
+f3ktwa(true);
+ponn7p = false;
+pw4k6p = true;
+ponn7p = pw4k6p;
+pw4k6p = ponn7p;
+azkq2j[2] = 565;
+azkq2j[2] = 957;
+azkq2j[2] = 581;
+v7t7ry = 204;
+pw4k6p = false;
+}
+
+int fthzo9(byte pi2quk, int p6le31) {
+    byte vk3xve = 84;
+if (p6le31 >= p6le31) {
+    f3ktwa(true);
+    vk3xve = 91;
+    f3ktwa(false);
+    while (p6le31 <= p6le31) {
+        fthzo9(142, 63);
+        print("hello");
+        {
+            fthzo9(164, 141);
+        }
+    }
+}
+}
+
+void main() {
+    bool vlkv4t = false;
+if (vlkv4t) {
+    printi(42);
+    vlkv4t = false;
+    f3ktwa(true);
+    vlkv4t = true;
+    vlkv4t = false;
+}
+}
+
+int f3ktwa(bool pcrbg2) {
+    byte v7nhuc = 73;
+    bool avxu5l[3];
+while (v7nhuc != v7nhuc) {
+    avxu5l[0] = pcrbg2;
+    v7nhuc = 81;
+    f8wi7a(false, true);
+    v7nhuc = 27;
+    print("hello");
+    v7nhuc = 170;
+    avxu5l[0] = false;
+    pcrbg2 = avxu5l[2];
+    print("hello");
+}
+}

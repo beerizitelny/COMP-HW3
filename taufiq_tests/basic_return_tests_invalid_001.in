@@ -1,0 +1,6 @@
+void f1() {
+    print("hi");
+}
+void main() {
+    int x = f1();
+}

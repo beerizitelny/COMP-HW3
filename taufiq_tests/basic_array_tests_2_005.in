@@ -1,0 +1,13 @@
+void main() {
+    int arr[10];
+    byte bytes[5];
+    bool flags[8];
+    int x = 198;
+    byte y = 122;
+    bool z = false;
+    arr[3] = 896;
+    arr[4] = 277;
+    x = arr[8];
+    y = bytes[4];
+    y = bytes[1];
+}

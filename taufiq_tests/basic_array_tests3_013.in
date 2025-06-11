@@ -1,0 +1,61 @@
+byte f806tax(byte p4hccg) {
+    p4hccg = 182b;
+    byte vlw006 = 115b;
+    vlw006 = 63b;
+    vlw006 = (byte)637;
+    int vwxqwt = 598;
+    vwxqwt = 160;
+    bool vve01l = true;
+    vve01l = false;
+    vve01l = false;
+    printi(17);
+    while (vlw006 == vlw006) {
+        vlw006 = 11b;
+    }
+    return 36b;
+}
+
+bool fs42gwd() {
+    byte vriynj = 6b;
+    vriynj = 63b;
+    vriynj = 49b;
+    print("world");
+    return true;
+}
+
+void faud187(byte pz3uz4) {
+    pz3uz4 = 67b;
+    bool vtdl8s = false;
+    vtdl8s = false;
+    bool viuyiz = false;
+    viuyiz = false;
+    viuyiz = false;
+    faud187(60b);
+    print("hello");
+}
+
+byte f43w9tm() {
+    byte v55yj4 = 13b;
+    v55yj4 = (byte)942;
+    faud187(233b);
+    f806tax(78b);
+    printi(80);
+    while (v55yj4 == v55yj4) {
+        v55yj4 = (byte)348;
+    }
+    return 115b;
+}
+
+void main() {
+    int msd9m6 = 707;
+    bool mytw45 = false;
+    f806tax(127b);
+    fs42gwd();
+    faud187(134b);
+    f43w9tm();
+    mytw45 = true;
+    print("world");
+    while (msd9m6 < msd9m6) {
+        msd9m6 = 145;
+    }
+}

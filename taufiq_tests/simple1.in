@@ -1,0 +1,10 @@
+// Test: binop of two ints yields int – cannot assign to byte without cast
+void main() {
+    byte b1 = 10b;
+    int i1   = 100;
+    int i2   =  55;
+    byte b2;
+    
+    // This line should be rejected: (i1+i2) is an int, can't go into a byte
+    b2 = i1 + i2;
+}

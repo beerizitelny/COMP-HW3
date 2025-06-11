@@ -1,0 +1,41 @@
+int f181x0() {
+    bool vakhm4 = true;
+    bool v2sqaf = true;
+print("hello");
+v2sqaf = false;
+printi(42);
+foihis(246);
+foihis(178);
+v2sqaf = vakhm4;
+}
+
+void main() {
+    byte vz6knf = 136;
+printi(42);
+vz6knf = 38;
+vz6knf = 62;
+foihis(218);
+print("hello");
+vz6knf = 168;
+f181x0();
+print("hello");
+f181x0();
+vz6knf = 114;
+vz6knf = 149;
+vz6knf = 67;
+}
+
+void foihis(byte pwne1z) {
+    byte v4kdzy = 1;
+    int vmntqq = 575;
+    int v0ewvd = 507;
+foihis(205);
+printi(42);
+print("hello");
+pwne1z = 183;
+pwne1z = v4kdzy;
+v0ewvd = vmntqq;
+v0ewvd = vmntqq;
+v0ewvd = 940;
+vmntqq = v0ewvd;
+}

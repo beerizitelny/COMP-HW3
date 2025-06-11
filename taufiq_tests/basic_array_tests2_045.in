@@ -1,0 +1,83 @@
+int fyh71xi(int p9ta0r) {
+    p9ta0r = 813;
+    byte vptrlo = (byte)440;
+    vptrlo = 77b;
+    vptrlo = 120b;
+    bool vhbuvg = true;
+    vhbuvg = true;
+    byte vfdq2o = 75b;
+    vfdq2o = 70b;
+    printi(2);
+    return 418;
+}
+
+bool f5fqtjh(byte pcjjhj) {
+    pcjjhj = (byte)805;
+    int vyvleq = 650;
+    vyvleq = 658;
+    vyvleq = 590;
+    byte v1flg4 = (byte)392;
+    v1flg4 = 40b;
+    v1flg4 = 183b;
+    f5fqtjh(52b);
+    print("array");
+    return false;
+}
+
+bool f592omv(int piedd2, int pw6bj5) {
+    piedd2 = 220;
+    pw6bj5 = 987;
+    int vf8pz1 = 905;
+    vf8pz1 = 371;
+    bool vj588q = false;
+    vj588q = true;
+    vj588q = false;
+    f592omv(782, 28);
+    fyh71xi(405);
+    print("test");
+    while (vf8pz1 >= vf8pz1) {
+        vf8pz1 = 678;
+    }
+    return true;
+}
+
+bool fv89bft() {
+    byte vxw628 = 66b;
+    vxw628 = (byte)190;
+    vxw628 = 147b;
+    int vglnun = 319;
+    vglnun = 240;
+    f5fqtjh(121b);
+    print("world");
+    return false;
+}
+
+int fmo6h0j(bool p4stzw) {
+    p4stzw = true;
+    int v3gjee = 848;
+    v3gjee = 247;
+    v3gjee = 698;
+    byte vv0q3p = 255b;
+    vv0q3p = 16b;
+    vv0q3p = 79b;
+    bool vmd7ar = false;
+    vmd7ar = false;
+    vmd7ar = false;
+    fmo6h0j(true);
+    printi(164);
+    return 352;
+}
+
+void main() {
+    byte mtswy6 = 43b;
+    byte m4409a = 183b;
+    fyh71xi(930);
+    f5fqtjh(120b);
+    f592omv(279, 267);
+    fv89bft();
+    fmo6h0j(true);
+    mtswy6 = 49b;
+    while (m4409a <= m4409a) {
+        m4409a = 118;
+    }
+}

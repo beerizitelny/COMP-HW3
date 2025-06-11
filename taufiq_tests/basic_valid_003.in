@@ -1,0 +1,52 @@
+byte flya3l(bool pzubq9, int pvulwm) {
+    bool vcuar8 = true;
+    bool vg5x0v = true;
+    bool vk831y = true;
+if (pvulwm < pvulwm) {
+    main();
+    f49z4j(false);
+    {
+        print("hello");
+        vcuar8 = true;
+        while (pvulwm >= pvulwm) {
+            print("hello");
+            print("hello");
+            printi(42);
+            print("hello");
+            printi(42);
+        }
+    }
+}
+}
+
+bool f49z4j(bool p4zm0b) {
+    int v3ap9e = 583;
+    byte vw47nc = 7;
+vw47nc = 145;
+v3ap9e = 845;
+vw47nc = 105;
+main();
+while (v3ap9e > v3ap9e) {
+    flya3l(true, 751);
+}
+}
+
+void main() {
+    byte vi8dty = 235;
+    byte v9gqz6 = 109;
+while (vi8dty <= v9gqz6) {
+    printi(42);
+    printi(42);
+    vi8dty = v9gqz6;
+    v9gqz6 = vi8dty;
+    print("hello");
+    vi8dty = 23;
+    main();
+    vi8dty = v9gqz6;
+    printi(42);
+    print("hello");
+    v9gqz6 = 203;
+    vi8dty = v9gqz6;
+    main();
+}
+}
