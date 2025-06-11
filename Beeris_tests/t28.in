@@ -1,0 +1,7 @@
+int[5] foo() {
+    int arr[5];
+    return arr;
+}
+
+void main() {
+}
