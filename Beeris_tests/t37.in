@@ -1,6 +1,6 @@
 void main() {
     int a;
-    berri(a);
+    beeri(a);
 }
 
 int beeri(bool[3] a) {

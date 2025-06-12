@@ -3,5 +3,5 @@ bool foo(int x, byte y) {
 }
 
 void main() {
-    foo[2] = false;
+    foo = false;
 }

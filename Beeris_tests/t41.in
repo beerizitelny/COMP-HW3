@@ -3,5 +3,5 @@ int beeri(bool a) {
 }
 
 void main() {
-    int x = beeri[3];
+    int x = beeri;
 }

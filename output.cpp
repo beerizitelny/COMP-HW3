@@ -4,7 +4,7 @@
 namespace output {
     /* Helper functions */
 
-    std::string toString(ast::BuiltInType type) {
+    static std::string toString(ast::BuiltInType type) {
         switch (type) {
             case ast::BuiltInType::INT:
                 return "int";
@@ -87,7 +87,7 @@ namespace output {
     }
 
     void errorMainMissing() {
-        std::cout << ":" << std::endl;
+        std::cout << "Program has no 'void main()' function" << std::endl;
         exit(0);
     }
 

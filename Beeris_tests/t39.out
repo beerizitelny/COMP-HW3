@@ -1,1 +1,1 @@
-line 8: type mismatch
+line 8: prototype mismatch, function beeri expects parameters (BOOL)

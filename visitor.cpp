@@ -13,7 +13,7 @@ protected:
     // SymTable declared_functions;
 
     unsigned int whiles = 0;
-    bool looping() { return whiles > 0;}
+    bool looping() { return whiles > 0; }
     bool is_valid_cast(ast::BuiltInType from, ast::BuiltInType to) {
         return ((from == to) || (from == ast::BuiltInType::BYTE && to == ast::BuiltInType::INT));
     }
@@ -48,7 +48,7 @@ public:
         if (sym_entry == nullptr) {
             output::errorUndef(line, id);
         }
-        if (sym_entry->is_func_decl){
+        if (sym_entry->is_func_decl) {
             output::errorDefAsFunc(line, id);
         }
         index->accept(*this);
@@ -198,10 +198,8 @@ public:
         node.id->accept(*this);
         node.exp->accept(*this);
 
-        //TODO: see assign
-
         // in case RHS is ID
-        if (dynamic_cast<ast::ID *>(node.exp.get())){
+        if (dynamic_cast<ast::ID *>(node.exp.get())) {
             // in case RHS is an array
             std::string rhs_id = ((ast::ID *) node.exp.get())->value;
             if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
@@ -275,10 +273,10 @@ public:
 
             for (int i = 0; i < entry->get_param_types()->size(); ++i) {
 
-                if (dynamic_cast<ast::ID*>(node.args->exps[i].get())){
-                    std::string arg_name = static_cast<ast::ID*>(node.args->exps[i].get())->value;
+                if (dynamic_cast<ast::ID *>(node.args->exps[i].get())) {
+                    std::string arg_name = static_cast<ast::ID *>(node.args->exps[i].get())->value;
                     if (symbol_table_stack.get_symbol_entry_by_id(arg_name)->is_array)
-                        output::errorMismatch(node.line);
+                        output::errorPrototypeMismatch(node.line, id, *entry->get_string_param_types());
                 }
                 if (!is_valid_cast(node.args->exps[i]->type, (*entry->get_param_types())[i]))
                     output::errorPrototypeMismatch(node.line, id, *entry->get_string_param_types());
@@ -331,13 +329,13 @@ public:
             (!node.exp && expected_return_type != ast::BuiltInType::VOID))
             output::errorMismatch(node.line);
 
-        if (dynamic_cast<ast::ID *>(node.exp.get())){
+        if (dynamic_cast<ast::ID *>(node.exp.get())) {
             // in case RHS is an array
             std::string exp_id = ((ast::ID *) node.exp.get())->value;
-            if(symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_array){
+            if (symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_array) {
                 output::errorMismatch(node.line);
             }
-            if (symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_func_decl){
+            if (symbol_table_stack.get_symbol_entry_by_id(exp_id)->is_func_decl) {
                 output::errorDefAsFunc(node.line, exp_id);
             }
         }
@@ -399,10 +397,15 @@ public:
             if (!is_valid_cast(node.init_exp->type, node.type->type))
                 output::errorMismatch(node.line);
 
-            // if rvalue is of array type
-            if (dynamic_cast<ast::ID *>(node.init_exp.get()) &&
-                symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.init_exp.get())->value)->is_array)
-                output::errorMismatch(node.line);
+            if (dynamic_cast<ast::ID *>(node.init_exp.get())) {
+                std::string rhs_id = ((ast::ID *) node.init_exp.get())->value;
+                // if rvalue is of array type
+                if (symbol_table_stack.get_symbol_entry_by_id(id)->is_array)
+                    output::errorMismatch(node.line);
+                // if rvalue is a function identifier
+                if (symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.init_exp.get())->value)->is_func_decl)
+                    output::errorDefAsFunc(node.line, rhs_id);
+            }
         }
         // calculate the offset whether it's an arrayType or primitiveType
         int var_size = node.type->get_size();
@@ -430,26 +433,10 @@ public:
         node.id->accept(*this);
         std::string id = node.id->value;
         node.exp->accept(*this);
-
-        // cannot assign into a funcion identifier
         SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
 
-        //TODO: make sure that RHS is checked before LHS even if its arr1 = arr2
-        // as in https://piazza.com/class/m8mycqqtxff2ir/post/102
-        // see late_tests/t1
-
-        // make sure that a variable bearing this id exists
-        if (!var_entry)
-            output::errorUndef(node.line, id);
-
-
-        if (var_entry->is_array) {
-            output::ErrorInvalidAssignArray(node.line, node.id->value);
-        }
-
-
         // in case RHS is ID
-        if (dynamic_cast<ast::ID *>(node.exp.get())){
+        if (dynamic_cast<ast::ID *>(node.exp.get())) {
             // in case RHS is an array
             std::string rhs_id = ((ast::ID *) node.exp.get())->value;
             if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
@@ -459,8 +446,19 @@ public:
                 output::errorDefAsFunc(node.line, rhs_id);
         }
 
+        // make sure that a variable bearing this id exists
+        if (!var_entry)
+            output::errorUndef(node.line, id);
+
+        // cannot assign into an array
+        if (var_entry->is_array) {
+            output::ErrorInvalidAssignArray(node.line, node.id->value);
+        }
+
+        // cannot assign into a function identifier
         if (var_entry->is_func_decl)
             output::errorDefAsFunc(node.line, id);
+
         // validate matching types between expression and symbol as declared
         if (!is_valid_cast(node.exp->type, var_entry->get_type()))
             output::errorMismatch(node.line);
