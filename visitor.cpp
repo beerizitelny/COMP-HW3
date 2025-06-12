@@ -4,7 +4,7 @@
 #include "nodes.hpp"
 
 static void print_node_name(const std::string &name) {
-    if (true)
+    if (false)
         std::cout << "visited " << name << " node" << std::endl;
 }
 
@@ -394,11 +394,10 @@ public:
         node.type->accept(*this);
         if (node.init_exp) {
             node.init_exp->accept(*this);
-
             if (dynamic_cast<ast::ID *>(node.init_exp.get())) {
                 std::string rhs_id = ((ast::ID *) node.init_exp.get())->value;
                 // if rvalue is of array type
-                if (symbol_table_stack.get_symbol_entry_by_id(id)->is_array)
+                if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
                     output::errorMismatch(node.line);
                 // if rvalue is a function identifier
                 if (symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.init_exp.get())->value)->is_func_decl)
