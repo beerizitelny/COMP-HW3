@@ -4,7 +4,7 @@
 #include "nodes.hpp"
 
 static void print_node_name(const std::string &name) {
-    if (false)
+    if (true)
         std::cout << "visited " << name << " node" << std::endl;
 }
 
@@ -394,8 +394,6 @@ public:
         node.type->accept(*this);
         if (node.init_exp) {
             node.init_exp->accept(*this);
-            if (!is_valid_cast(node.init_exp->type, node.type->type))
-                output::errorMismatch(node.line);
 
             if (dynamic_cast<ast::ID *>(node.init_exp.get())) {
                 std::string rhs_id = ((ast::ID *) node.init_exp.get())->value;
@@ -406,6 +404,9 @@ public:
                 if (symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.init_exp.get())->value)->is_func_decl)
                     output::errorDefAsFunc(node.line, rhs_id);
             }
+
+            if (!is_valid_cast(node.init_exp->type, node.type->type))
+                output::errorMismatch(node.line);
         }
         // calculate the offset whether it's an arrayType or primitiveType
         int var_size = node.type->get_size();
