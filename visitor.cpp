@@ -435,16 +435,10 @@ public:
         node.exp->accept(*this);
         SymTableEntry *var_entry = symbol_table_stack.get_symbol_entry_by_id(id);
 
-        // in case RHS is ID
-        if (dynamic_cast<ast::ID *>(node.exp.get())) {
-            // in case RHS is an array
-            std::string rhs_id = ((ast::ID *) node.exp.get())->value;
-            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_array)
-                output::errorMismatch(node.line);
-            // in case RHS is a function
-            if (symbol_table_stack.get_symbol_entry_by_id(rhs_id)->is_func_decl)
-                output::errorDefAsFunc(node.line, rhs_id);
-        }
+        // in case RHS is a function
+        if (dynamic_cast<ast::ID *>(node.exp.get()) &&
+            symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_func_decl)
+            output::errorDefAsFunc(node.line, ((ast::ID *) node.exp.get())->value);
 
         // make sure that a variable bearing this id exists
         if (!var_entry)
@@ -458,6 +452,11 @@ public:
         // cannot assign into a function identifier
         if (var_entry->is_func_decl)
             output::errorDefAsFunc(node.line, id);
+
+        // in case RHS is an array
+        if (dynamic_cast<ast::ID *>(node.exp.get()) &&
+            symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_array)
+            output::errorMismatch(node.line);
 
         // validate matching types between expression and symbol as declared
         if (!is_valid_cast(node.exp->type, var_entry->get_type()))
