@@ -1,0 +1,6 @@
+void main() {
+    bool x[2];
+    while (x[12 / 5 + 2] < 8) {
+        continue;
+    }
+}

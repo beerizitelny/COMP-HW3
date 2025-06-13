@@ -1,0 +1,20 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+main () -> void
+foo (int,bool,byte) -> int
+bar (int,bool,byte) -> bool
+  ---begin scope---
+  a int 0
+  ---end scope---
+  ---begin scope---
+  a int -1
+  b bool -2
+  c byte -3
+  ---end scope---
+  ---begin scope---
+  d int -1
+  e bool -2
+  f byte -3
+  ---end scope---
+---end global scope---

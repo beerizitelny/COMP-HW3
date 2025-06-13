@@ -1,0 +1,7 @@
+int beeri(bool a) {
+    return 0;
+}
+
+void main() {
+    int x = beeri;
+}

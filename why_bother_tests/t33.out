@@ -1,0 +1,12 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+main () -> void
+foo () -> bool
+  ---begin scope---
+  p bool 0
+  ---end scope---
+  ---begin scope---
+  a[7] bool 0
+  ---end scope---
+---end global scope---

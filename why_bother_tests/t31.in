@@ -1,0 +1,8 @@
+void main() {
+    int a[3];
+    a[7] = foo();
+}
+
+bool foo() {
+    return true;
+}

@@ -1,0 +1,11 @@
+void main() {
+    int a = foo(1b, true, 2b);
+}
+
+int foo(int a, bool b, byte c) {
+    return 1;
+}
+
+bool bar(int d, bool e, byte f) {
+    return false;
+}

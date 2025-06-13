@@ -1,0 +1,7 @@
+void main() {
+    byte x;
+    int y[7];
+    while (x >= y[9 / 7 + (45 - 2 + 8) * 3]) {
+        continue;
+    }
+}

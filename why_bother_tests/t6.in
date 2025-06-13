@@ -1,0 +1,8 @@
+void main() {
+    byte c;
+    foo(c);
+}
+
+int foo(int a) {
+    return 1;
+}

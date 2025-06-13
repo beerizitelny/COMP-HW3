@@ -1,0 +1,8 @@
+void main() {
+    bool p = foo();
+}
+
+bool foo() {
+    bool a[7];
+    return a[2 * 3];
+}

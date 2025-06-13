@@ -1,0 +1,4 @@
+void main() {
+    byte a[8];
+    int b = a[3 * (7b + 5)];
+}

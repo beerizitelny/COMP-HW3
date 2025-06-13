@@ -1,0 +1,8 @@
+void main() {
+    int arr[1];
+    foo(arr);
+}
+
+void foo(int a, bool b, byte c) {
+    return;
+}
