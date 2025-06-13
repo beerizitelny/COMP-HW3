@@ -213,7 +213,7 @@ public:
         SymTableEntry *sym_entry = validate_array_dereference(node.id->value, node.index, node.line);
 
         // check if types match and that rvalue is not of array type
-        if (sym_entry->get_type() != node.exp->type ||
+        if (!is_valid_cast(node.exp->type, sym_entry->get_type()) ||
             (dynamic_cast<ast::ID *>(node.exp.get()) &&
              symbol_table_stack.get_symbol_entry_by_id(((ast::ID *) node.exp.get())->value)->is_array)) {
             output::errorMismatch(node.line);
