@@ -13,11 +13,6 @@ int main() {
     yyparse();
 
     SemanticParserVisitor semantic_visitor;
-    try {
-        program->accept(semantic_visitor);
-        }
-    catch(const std::exception& e) {
-        std::cerr << "Semantic error" << e.what() << std::endl;}
-
+    program->accept(semantic_visitor);
     std::cout << semantic_visitor.symbol_table_stack.scope_printer;
 }
