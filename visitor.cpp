@@ -27,20 +27,6 @@ public:
     /***************************************************************************************
                             implementation of helper methods
     ****************************************************************************************/
-    int calc_bin_op(ast::BinOpType op, int var1, int var2) {
-        switch (op) {
-            case ast::BinOpType::ADD:
-                return var1 + var2;
-            case ast::BinOpType::DIV:
-                return var1 / var2;
-            case ast::BinOpType::MUL:
-                return var1 * var2;
-            case ast::BinOpType::SUB:
-                return var1 - var2;
-            default:
-                return -1;
-        }
-    }
 
     SymTableEntry *validate_array_dereference(std::string id, std::shared_ptr<ast::Exp> index, int line) {
         // checking if this is a valid id
@@ -164,6 +150,8 @@ public:
         print_node_name("ArrayType");
         // finding out the length of the array
         node.length->accept(*this);
+        if (!dynamic_cast<ast::Num *>(node.length.get()) && !dynamic_cast<ast::NumB *>(node.length.get()))
+            output::errorMismatch(node.line);
     }
 
     void visit(ast::Statements &node) {
@@ -442,8 +430,7 @@ public:
         else
             output::errorMismatch(node.line);
 
-        node.numerical_value =
-                calc_bin_op(node.op, node.left->get_numerical_value(), node.right->get_numerical_value());
+        node.numerical_value = 1;
     }
 
     void visit(ast::Call &node) {
