@@ -39,7 +39,9 @@ public:
         }
         index->accept(*this);
         // checking that this is an array and that the index is valid
-        if (!(index->is_number() && sym_entry->is_array)) {
+        if (!sym_entry->is_array)
+            output::errorDefAsVar(line, id);
+        if (!index->is_number()) {
             output::errorMismatch(line);
         }
 
@@ -308,7 +310,7 @@ public:
             ast::BuiltInType func_type = func->return_type->type;
 
             if (symbol_table_stack.get_symbol_entry_by_id(func_id))
-                output::errorDef(func->line, func_id);
+                output::errorDef(func->id->line, func_id);
 
             SymTableEntry *new_entry = new SymTableEntry(func_id, func_type, true);
             symbol_table_stack.push_entry(new_entry, 0);
