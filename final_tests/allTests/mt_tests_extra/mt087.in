@@ -1,0 +1,7 @@
+// Test mt087.in – duplicate_var_same_scope_mismatch
+// Expected: FAIL
+void main(){
+    int x;
+    int x; // duplicate
+    return;
+}

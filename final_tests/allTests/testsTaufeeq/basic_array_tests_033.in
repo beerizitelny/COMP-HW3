@@ -1,0 +1,39 @@
+void fdqr8a(int pnk9z5, bool pc4h0r) {
+    byte vki9nf = 34;
+    byte a33ioj[9];
+pnk9z5 = 412;
+if (pnk9z5 > pnk9z5) {
+    main();
+    while (pnk9z5 > pnk9z5) {
+        printi(42);
+        pnk9z5 = 286;
+        vki9nf = a33ioj[pnk9z5];
+        a33ioj[3] = vki9nf;
+        if (pnk9z5 != pnk9z5) {
+            a33ioj[pnk9z5] = vki9nf;
+            while (pnk9z5 == pnk9z5) {
+                a33ioj[pnk9z5] = 126;
+                fdqr8a(264, true);
+                if (pnk9z5 != pnk9z5) {
+                    vki9nf = a33ioj[6];
+                }
+            }
+        }
+    }
+}
+}
+
+void main() {
+    byte v83xou = 83;
+    bool abeufm[8];
+while (v83xou <= v83xou) {
+    fdqr8a(470, false);
+    while (v83xou != v83xou) {
+        print("hello");
+        v83xou = 51;
+        print("hello");
+        v83xou = 69;
+        abeufm[1] = true;
+    }
+}
+}

@@ -1,0 +1,10 @@
+// Test mt106.in – prototype_correct_pass
+// Expected: PASS
+int foo(int a, byte b){
+    return a+b;
+}
+
+void main(){
+    foo(3, 2b);
+    return;
+}

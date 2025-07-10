@@ -1,0 +1,73 @@
+int factorial(int n) {
+    int result = 1;
+    while (n > 1) {
+        result = result * n;
+        n = n - 1;
+    }
+    return result;
+}
+
+bool iseven(int x) {
+    return ((x / 2) * 2) == x;   // Alternative to x % 2 == 0
+}
+
+void processarrays() {
+    int values[10];
+    byte modifiers[10];
+    bool flags[10];
+    
+    int i = 0;
+    while (i < 10) {
+        values[i] = i * 3;
+        modifiers[i] = (byte)(i - (i / 256) * 256);  // Equivalent to i % 256
+        flags[i] = iseven(values[i]);
+        i = i + 1;
+    }
+
+    int total = 0;
+    byte modsum = 0;
+    bool anytrue = false;
+
+    i = 0;
+    while (i < 10) {
+        total = total + values[i];
+        modsum = modsum + modifiers[i];
+        if (flags[i]) {
+            anytrue = true;
+        }
+        i = i + 1;
+    }
+
+    printi(total);
+    printi(modsum);
+
+}
+
+void nestedloops(int max) {
+    int outer = 0;
+    while (outer < max) {
+        if (((outer / 2) * 2) == outer) {  // Checking even without %
+            print("Outer loop iteration:");
+            printi(outer);
+        } else {
+            int inner = 0;
+            while (inner < 5) {
+                {
+                    print("  Inner loop iteration:");
+                    printi(inner);
+                }
+                inner = inner + 1;
+            }
+        }
+        outer = outer + 1;
+    }
+}
+
+void main() {
+    int fact5 = factorial(5);
+    printi(fact5);   // should print 120
+
+    bool isSixEven = iseven(6);
+    processarrays();
+    nestedloops(10);
+}

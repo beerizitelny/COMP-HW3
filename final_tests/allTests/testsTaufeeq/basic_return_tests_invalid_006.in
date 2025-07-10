@@ -1,0 +1,6 @@
+byte f6() {
+    return 0;
+}
+void main() {
+    bool b = f6();
+}

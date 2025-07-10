@@ -1,0 +1,57 @@
+bool fhyd7kp(byte pcpo32) {
+    pcpo32 = 99b;
+    bool v9hkka = true;
+    v9hkka = true;
+    byte v22pdp = (byte)282;
+    v22pdp = 149b;
+    v22pdp = 30b;
+    fhyd7kp(93b);
+    fhyd7kp(184b);
+    print("world");
+    return false;
+}
+
+byte f06ez3o(bool pfd2nk) {
+    pfd2nk = false;
+    int vlhpgz = 412;
+    vlhpgz = 69;
+    byte vz3edi = 179b;
+    vz3edi = 100b;
+    f06ez3o(true);
+    printi(172);
+    while (vlhpgz == vlhpgz) {
+        vlhpgz = 62;
+    }
+    return 81b;
+}
+
+byte f5c32tr(bool p1wczq, bool pu47zi) {
+    p1wczq = false;
+    pu47zi = false;
+    int vzpgy0 = 300;
+    vzpgy0 = 496;
+    vzpgy0 = 320;
+    int vwae3g = 25;
+    vwae3g = 319;
+    vwae3g = 522;
+    int vux1l7 = 96;
+    vux1l7 = 761;
+    vux1l7 = 336;
+    f06ez3o(true);
+    printi(78);
+    return 87b;
+}
+
+void main() {
+    bool mrlc6j = false;
+    int m1ci62 = 623;
+    int mkwwp7 = 986;
+    fhyd7kp((byte)579);
+    f06ez3o(true);
+    f5c32tr(true, true);
+    print("test");
+    mrlc6j = true;
+    while (m1ci62 == m1ci62) {
+        m1ci62 = 312;
+    }
+}

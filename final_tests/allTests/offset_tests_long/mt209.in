@@ -1,0 +1,22 @@
+// Test mt209.in – deep_nested_scopes_offsets_pass
+// Expected: PASS
+void main(){
+    int a;
+    {
+        int b;
+        {
+            int c;
+            {
+                int d;
+                {
+                    int e;
+                    a = b + c + d + e;
+                }
+                d = c;
+            }
+            c = b;
+        }
+        b = a;
+    }
+    return;
+}

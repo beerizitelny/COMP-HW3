@@ -1,0 +1,19 @@
+// Test mt210.in – mixed_loops_ifs_offsets_pass
+// Expected: PASS
+void main(){
+    int i = 0;
+    int total = 0;
+    while(i < 10){
+        if(i % 2 == 0){
+            int even;
+            even = i;
+            total = total + even;
+        } else {
+            int odd;
+            odd = i;
+            total = total + odd;
+        }
+        i = i + 1;
+    }
+    return;
+}

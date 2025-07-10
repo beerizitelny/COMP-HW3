@@ -1,0 +1,11 @@
+// Test mt058.in – relop
+// Expected: PASS
+//relop
+//lt_int_bool_mismatch
+void main(){
+    int x = 1;
+    bool t = true;
+    if(x < t){
+    }
+    return;
+}

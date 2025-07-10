@@ -1,0 +1,6 @@
+int f1() {
+    return true;    // error: f1 declared int but returns bool
+}
+void main() {
+    print("ok");
+}

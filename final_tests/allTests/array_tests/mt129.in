@@ -1,0 +1,10 @@
+// Test mt129.in – pass_array_as_arg_fail
+// Expected: FAIL
+void foo(int a){
+    return;
+}
+void main(){
+    int arr[2];
+    foo(arr); // passing array
+    return;
+}

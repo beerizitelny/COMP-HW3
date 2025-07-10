@@ -1,0 +1,13 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+sum (int,int,byte) -> int
+main () -> void
+  ---begin scope---
+  a int -1
+  b int -2
+  c byte -3
+  ---end scope---
+  ---begin scope---
+  ---end scope---
+---end global scope---

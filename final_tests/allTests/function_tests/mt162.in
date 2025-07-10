@@ -1,0 +1,8 @@
+// Test mt162.in – array_as_arg_fail
+// Expected: FAIL
+int sum(int a){ return a; }
+void main(){
+    int arr[2];
+    sum(arr); // array to int mismatch
+    return;
+}

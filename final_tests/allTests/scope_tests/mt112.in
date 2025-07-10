@@ -1,0 +1,7 @@
+// Test mt112.in – duplicate_var_same_scope
+// Expected: FAIL
+void main(){
+    int x;
+    int x;           // duplicate
+    return;
+}

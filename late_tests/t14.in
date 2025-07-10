@@ -1,0 +1,8 @@
+void main() {
+    int x;
+    foo(x[1]);
+}
+
+void foo(int b) {
+    return;
+}

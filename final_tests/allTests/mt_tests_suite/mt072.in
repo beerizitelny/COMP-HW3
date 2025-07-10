@@ -1,0 +1,10 @@
+// Test mt072.in – binop
+// Expected: PASS
+//binop
+//add_string_string_mismatch
+void main(){
+    string s1 = "hello";
+    string s2 = "world";
+    string s3 = s1 + s2;   // mismatch: '+' not defined on strings
+    return;
+}

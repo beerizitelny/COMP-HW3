@@ -1,0 +1,7 @@
+// Test mt202.in – offset_array_size
+// Expected: PASS
+void main(){
+    int arr[5];
+    byte x;
+    return;
+}

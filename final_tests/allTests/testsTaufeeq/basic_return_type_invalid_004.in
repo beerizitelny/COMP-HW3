@@ -1,0 +1,6 @@
+void f4() {
+    return 5;       // error: void function cannot return a value
+}
+void main() {
+    print("ok");
+}

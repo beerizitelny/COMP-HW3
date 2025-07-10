@@ -1,0 +1,52 @@
+void f04n1x(int p0uuo6) {
+    int v6fizr = 785;
+    byte v5xpk6 = 40;
+f04n1x(236);
+printi(42);
+while (v6fizr > p0uuo6) {
+    v6fizr = 576;
+    {
+        main();
+        {
+            v5xpk6 = 32;
+            feb8we();
+        }
+    }
+}
+}
+
+int feb8we() {
+    bool vav1gi = false;
+printi(42);
+vav1gi = true;
+print("hello");
+while (true) {
+    printi(42);
+    while (false) {
+        print("hello");
+    }
+}
+}
+
+void main() {
+    byte vmbz9l = 38;
+    byte vr8bcb = 18;
+printi(42);
+{
+    vmbz9l = 219;
+    main();
+    printi(42);
+    {
+        printi(42);
+        print("hello");
+        while (vmbz9l == vr8bcb) {
+            vr8bcb = 110;
+            f04n1x(971);
+            {
+                vmbz9l = 213;
+                printi(42);
+            }
+        }
+    }
+}
+}

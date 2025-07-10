@@ -1,0 +1,8 @@
+// Test mt132.in – array_bool_index_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    bool b = true;
+    int x = arr[b]; // bool index
+    return;
+}

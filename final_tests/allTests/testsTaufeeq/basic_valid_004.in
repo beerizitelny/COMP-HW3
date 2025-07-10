@@ -1,0 +1,39 @@
+void main() {
+    bool vzh9tz = true;
+    byte v6ph6b = 42;
+while (v6ph6b != v6ph6b) {
+    main();
+    fqxtbg();
+    vzh9tz = true;
+    v6ph6b = 15;
+    while (v6ph6b != v6ph6b) {
+        printi(42);
+        vzh9tz = false;
+        if (v6ph6b >= v6ph6b) {
+            fqxtbg();
+        }
+    }
+}
+}
+
+bool fqxtbg() {
+    byte v7xyos = 74;
+    byte vv5p0u = 164;
+    int vy6lio = 423;
+v7xyos = 52;
+if (vy6lio <= vy6lio) {
+    v7xyos = vv5p0u;
+    {
+        vy6lio = 121;
+        main();
+        {
+            vy6lio = 926;
+            v7xyos = 65;
+            while (vy6lio < vy6lio) {
+                print("hello");
+                printi(42);
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,6 @@
+// Test mt153.in – invalid_array_init_bool_fail
+// Expected: FAIL
+void main(){
+    bool arr[2] = {true, false}; // array of bool not int
+    return;
+}

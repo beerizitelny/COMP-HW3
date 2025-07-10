@@ -1,0 +1,13 @@
+// Test mt204.in – offset_loops_blocks
+// Expected: PASS
+void main(){
+    int i;
+    while(i<3){
+        int j;
+        while(j<2){
+            bool flag;
+            break;
+        }
+    }
+    return;
+}

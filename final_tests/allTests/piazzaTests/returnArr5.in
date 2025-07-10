@@ -1,0 +1,5 @@
+int foo() {
+	bool arr[6];
+	return arr;
+}
+void main(){return;}

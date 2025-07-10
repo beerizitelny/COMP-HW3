@@ -1,0 +1,3 @@
+// Test mt157.in – main_with_params_fail
+// Expected: FAIL
+void main(int x){ return; }

@@ -1,0 +1,98 @@
+void f5nftn(byte pj6x44) {
+    byte vg7ire = 47;
+    int vrycm2 = 257;
+    bool vizztf = true;
+vizztf = true;
+vg7ire = pj6x44;
+f2h76m(234);
+main();
+vg7ire = pj6x44;
+pj6x44 = vg7ire;
+printi(42);
+vg7ire = pj6x44;
+pj6x44 = 37;
+vg7ire = 36;
+while (vrycm2 < vrycm2) {
+    vizztf = true;
+    vg7ire = 34;
+}
+}
+
+void main() {
+    byte v81am3 = 194;
+    bool a3t0yi[10];
+v81am3 = 156;
+a3t0yi[8] = false;
+a3t0yi[7] = true;
+v81am3 = 217;
+v81am3 = 212;
+while (v81am3 > v81am3) {
+    v81am3 = 98;
+    a3t0yi[7] = true;
+    v81am3 = 163;
+    v81am3 = 82;
+    {
+        f2h76m(176);
+        {
+            a3t0yi[8] = true;
+        }
+    }
+}
+}
+
+bool f2h76m(byte p3bj2q) {
+    byte vhatha = 24;
+p3bj2q = vhatha;
+f2h76m(94);
+printi(42);
+vhatha = 241;
+p3bj2q = vhatha;
+fbsvyl(false);
+vhatha = p3bj2q;
+fbsvyl(true);
+fu6m55(true, 469);
+fbsvyl(true);
+fbsvyl(false);
+fu6m55(true, 920);
+f5nftn(177);
+f2h76m(182);
+vhatha = p3bj2q;
+}
+
+int fu6m55(bool ptityz, int pzosos) {
+    byte vsgizb = 92;
+    int v5hkoc = 633;
+print("hello");
+v5hkoc = pzosos;
+f5nftn(55);
+fu6m55(true, 572);
+fu6m55(true, 848);
+v5hkoc = 240;
+pzosos = v5hkoc;
+vsgizb = 62;
+print("hello");
+f2h76m(38);
+}
+
+bool fbsvyl(bool pozrrh) {
+    byte vsurzr = 210;
+    bool vram42 = true;
+fbsvyl(true);
+f5nftn(183);
+f5nftn(242);
+f5nftn(41);
+pozrrh = vram42;
+if (vsurzr > vsurzr) {
+    fu6m55(true, 244);
+    if (vsurzr > vsurzr) {
+        vsurzr = 167;
+        pozrrh = false;
+        fbsvyl(false);
+        fu6m55(true, 287);
+        vram42 = pozrrh;
+        while (vsurzr >= vsurzr) {
+            print("hello");
+        }
+    }
+}
+}

@@ -1,0 +1,65 @@
+byte f45n3l(int pc677q, byte pfsy8l) {
+    bool vb5ee6 = false;
+    int vftwj5 = 580;
+vb5ee6 = false;
+main();
+vb5ee6 = false;
+while (pc677q < vftwj5) {
+    vftwj5 = pc677q;
+    pfsy8l = 255;
+    vftwj5 = 836;
+    vb5ee6 = false;
+    printi(42);
+}
+}
+
+void main() {
+    bool v0lnt5 = true;
+    byte vfhmzp = 177;
+print("hello");
+faeyme(666, 71);
+vfhmzp = 128;
+printi(42);
+main();
+vfhmzp = 210;
+vfhmzp = 172;
+print("hello");
+v0lnt5 = false;
+print("hello");
+print("hello");
+faeyme(52, 134);
+}
+
+byte faeyme(int pgy1oj, byte pitb48) {
+    byte vbqlar = 29;
+pgy1oj = 662;
+printi(42);
+pitb48 = vbqlar;
+pitb48 = vbqlar;
+printi(42);
+print("hello");
+fzk3i7(468, 34);
+faeyme(809, 174);
+pitb48 = 70;
+pgy1oj = 242;
+print("hello");
+printi(42);
+pgy1oj = 934;
+fzk3i7(763, 222);
+}
+
+bool fzk3i7(int p2o32e, byte p25up4) {
+    int vbvrml = 91;
+    byte v321nv = 109;
+    int vppcar = 675;
+main();
+vbvrml = 811;
+if (p2o32e < vppcar) {
+    printi(42);
+    if (p2o32e < vppcar) {
+        printi(42);
+        vppcar = p2o32e;
+        print("hello");
+    }
+}
+}

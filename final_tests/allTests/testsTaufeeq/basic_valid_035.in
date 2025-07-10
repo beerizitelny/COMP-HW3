@@ -1,0 +1,103 @@
+bool fbmp07() {
+    int vmyn3t = 715;
+{
+    fbmp07();
+    print("hello");
+    printi(42);
+    if (vmyn3t < vmyn3t) {
+        fg2doy(219, false);
+        if (vmyn3t < vmyn3t) {
+            fg2doy(180, true);
+            {
+                vmyn3t = 987;
+                fbmp07();
+                print("hello");
+                fbmp07();
+                vmyn3t = 813;
+            }
+        }
+    }
+}
+}
+
+void fg2doy(byte pew3to, bool pfjffh) {
+    int v9qzaj = 452;
+pew3to = 102;
+printi(42);
+{
+    v9qzaj = 926;
+    printi(42);
+    while (v9qzaj >= v9qzaj) {
+        f03v3z();
+        pfjffh = true;
+        if (v9qzaj >= v9qzaj) {
+            v9qzaj = 486;
+            while (v9qzaj == v9qzaj) {
+                fg2doy(27, false);
+                pfjffh = true;
+                pfjffh = false;
+                fg2doy(235, false);
+            }
+        }
+    }
+}
+}
+
+void main() {
+    int v486c3 = 256;
+    bool v2pjq2 = false;
+printi(42);
+fg2doy(90, false);
+printi(42);
+v486c3 = 369;
+v2pjq2 = true;
+print("hello");
+fkl5md(536, false);
+v486c3 = 238;
+v2pjq2 = true;
+fkl5md(847, false);
+printi(42);
+v486c3 = 471;
+print("hello");
+}
+
+byte fkl5md(int pxxapq, bool p5sz51) {
+    bool vwixud = false;
+    int vufoor = 921;
+if (vufoor == vufoor) {
+    printi(42);
+    fkl5md(61, true);
+    print("hello");
+    vufoor = pxxapq;
+    {
+        vufoor = pxxapq;
+        while (pxxapq < vufoor) {
+            f03v3z();
+            {
+                pxxapq = vufoor;
+                vufoor = 554;
+            }
+        }
+    }
+}
+}
+
+int f03v3z() {
+    int vl6ovd = 302;
+vl6ovd = 513;
+while (vl6ovd >= vl6ovd) {
+    f03v3z();
+    print("hello");
+    fkl5md(769, true);
+    vl6ovd = 294;
+    print("hello");
+    vl6ovd = 809;
+    vl6ovd = 666;
+    main();
+    fg2doy(131, false);
+    vl6ovd = 695;
+    vl6ovd = 174;
+    print("hello");
+    vl6ovd = 983;
+}
+}

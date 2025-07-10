@@ -1,0 +1,16 @@
+// Test mt224.in – param_and_inner_array_pass
+// Expected: PASS
+int sumArr(int arr[4]){
+    int idx = 0;
+    int total = 0;
+    while(idx<4){
+        total = total + arr[idx];
+        idx = idx + 1;
+    }
+    return total;
+}
+void main(){
+    int my[4];
+    sumArr(my);
+    return;
+}

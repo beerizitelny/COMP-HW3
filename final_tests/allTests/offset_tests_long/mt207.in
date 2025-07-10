@@ -1,0 +1,32 @@
+// Test mt207.in – big_function_offsets_pass
+// Expected: PASS
+int compute(int a, byte b, bool c, int arrA[5], byte arrB[2]){
+    int res;
+    int tmp1;
+    byte tmp2;
+    bool tmp3;
+    {
+        int inner1;
+        byte innerArr[4];
+        {
+            bool deepest;
+            inner1 = a + arrA[2];
+            deepest = c;
+        }
+        tmp1 = inner1 + b;
+    }
+    res = a + b;
+    while(res < 50){
+        int loopVar;
+        res = res + arrA[loopVar];
+        loopVar = loopVar + 1;
+    }
+    return res;
+}
+
+void main(){
+    int    bigArr[5];
+    byte   smallArr[2];
+    int val = compute(10, 2b, true, bigArr, smallArr);
+    return;
+}

@@ -1,0 +1,3 @@
+// Test mt125.in – library_funcs_missing_first
+// Expected: FAIL
+void main(){ return; }

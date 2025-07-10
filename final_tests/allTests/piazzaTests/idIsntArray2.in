@@ -1,0 +1,6 @@
+void main() {
+	int arr[9];
+	int a = 345;
+	int x = a[0];
+}
+

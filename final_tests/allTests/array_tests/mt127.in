@@ -1,0 +1,7 @@
+// Test mt127.in – assign_array_to_var_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    int x = arr; // assigning entire array to int variable
+    return;
+}

@@ -1,0 +1,12 @@
+// Test mt255.in – recursive_factorial_pass
+// Expected: PASS
+int fact(int n){
+    if(n<=1) return 1;
+    return n * fact(n-1);
+}
+
+void main(){
+    int val = fact(7);
+    printi(val);
+    return;
+}

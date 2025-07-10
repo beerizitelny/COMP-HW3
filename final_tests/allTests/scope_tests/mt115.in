@@ -1,0 +1,7 @@
+// Test mt115.in – shadowing_array_inner_scope
+// Expected: FAIL
+void main(){
+    int arr[3];
+    { int arr[2]; } // illegal shadowing of array
+    return;
+}

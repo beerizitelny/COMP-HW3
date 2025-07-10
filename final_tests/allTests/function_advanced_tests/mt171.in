@@ -1,0 +1,7 @@
+// Test mt171.in – int_to_byte_no_cast_fail
+// Expected: FAIL
+void main(){
+    int  x = 300;
+    byte b = x; // mismatch
+    return;
+}

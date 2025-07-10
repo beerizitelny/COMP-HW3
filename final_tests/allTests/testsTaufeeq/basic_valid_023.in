@@ -1,0 +1,26 @@
+void main() {
+    int v36lwt = 774;
+    byte vzomqh = 67;
+vzomqh = 214;
+vzomqh = 250;
+vzomqh = 82;
+main();
+fgxpyt(true);
+printi(42);
+print("hello");
+}
+
+byte fgxpyt(bool ptwyz6) {
+    bool v998qp = false;
+    int vhzcq3 = 101;
+    bool vpbn6q = true;
+main();
+vhzcq3 = 405;
+v998qp = ptwyz6;
+main();
+ptwyz6 = false;
+printi(42);
+printi(42);
+main();
+vpbn6q = ptwyz6;
+}

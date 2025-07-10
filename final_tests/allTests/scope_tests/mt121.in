@@ -1,0 +1,7 @@
+// Test mt121.in – var_used_as_func
+// Expected: FAIL
+void main(){
+    int x = 5;
+    x();            // variable as function
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt223.in – offset_after_large_array_pass
+// Expected: PASS
+void main(){
+    byte big[20];
+    int x;
+    return;
+}

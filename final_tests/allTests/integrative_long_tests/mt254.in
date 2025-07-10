@@ -1,0 +1,14 @@
+// Test mt254.in – prototype_mismatch_large_fail
+// Expected: FAIL
+int calc(int x,int y,int z);
+void helper(){
+    return;
+}
+void main(){
+    int r = calc(1,2); // missing one arg
+    printi(r);
+    return;
+}
+int calc(int a,int b,int c){
+    return a+b+c;
+}

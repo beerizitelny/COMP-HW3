@@ -1,0 +1,47 @@
+void main() {
+    int vkk9qs = 454;
+    byte vcz3ss = 79;
+print("hello");
+vkk9qs = 560;
+vkk9qs = 792;
+f53qdr(95);
+vkk9qs = 189;
+printi(42);
+f53qdr(157);
+vcz3ss = 19;
+printi(42);
+vcz3ss = 209;
+main();
+vcz3ss = 8;
+}
+
+void f53qdr(byte p8ivpj) {
+    byte v8ykq8 = 82;
+f53qdr(232);
+printi(42);
+main();
+p8ivpj = 64;
+p8ivpj = 237;
+main();
+v8ykq8 = p8ivpj;
+}
+
+int f649l0(byte poedff, int pv6bkp) {
+    bool v21efe = false;
+    byte an93iq[3];
+f649l0(33, 227);
+f649l0(90, 961);
+pv6bkp = 668;
+an93iq[pv6bkp] = poedff;
+while (pv6bkp <= pv6bkp) {
+    print("hello");
+    f649l0(242, 973);
+    printi(42);
+    poedff = an93iq[pv6bkp];
+    poedff = an93iq[0];
+    poedff = an93iq[pv6bkp];
+    an93iq[pv6bkp] = 103;
+    an93iq[pv6bkp] = 15;
+    printi(42);
+}
+}

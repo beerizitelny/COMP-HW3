@@ -1,0 +1,53 @@
+void main() {
+    bool v870z5 = false;
+    bool v86y6o = true;
+    byte a34n6p[2];
+print("hello");
+a34n6p[0] = 126;
+a34n6p[0] = 9;
+{
+    fwkm1s(false, 229);
+    fwkm1s(true, 58);
+}
+}
+
+int fwkm1s(bool psvxb3, byte p1kwzg) {
+    bool vs5lac = false;
+    int ayykre[9];
+printi(42);
+{
+    print("hello");
+    psvxb3 = true;
+    fg4xb0(855, 738, 187);
+    vs5lac = psvxb3;
+    psvxb3 = true;
+    print("hello");
+    if (p1kwzg == p1kwzg) {
+        print("hello");
+        while (p1kwzg > p1kwzg) {
+            vs5lac = psvxb3;
+        }
+    }
+}
+}
+
+bool fg4xb0(int pjd2ht, int phzbsv, int poueny) {
+    bool vf1c6y = true;
+    int v2vsc9 = 339;
+print("hello");
+if (poueny <= poueny) {
+    poueny = pjd2ht;
+    fwkm1s(true, 205);
+    print("hello");
+    vf1c6y = false;
+    fwkm1s(true, 124);
+    print("hello");
+    {
+        v2vsc9 = phzbsv;
+        printi(42);
+        print("hello");
+        phzbsv = v2vsc9;
+        printi(42);
+    }
+}
+}

@@ -1,0 +1,6 @@
+// Test mt234.in – break_outside_loop_only_fail
+// Expected: FAIL
+void main(){
+    break; // illegal
+    return;
+}

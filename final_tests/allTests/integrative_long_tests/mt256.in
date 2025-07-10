@@ -1,0 +1,13 @@
+// Test mt256.in – byte_literal_deep_fail
+// Expected: FAIL
+void main(){
+    int big[5];
+    int i = 0;
+    while(i<5){
+        big[i] = i*10;
+        i = i + 1;
+    }
+    byte wrong = 300b; // too large
+    printi(big[2]);
+    return;
+}

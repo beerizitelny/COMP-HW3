@@ -1,0 +1,60 @@
+bool fes0ohz() {
+    bool vcmobw = false;
+    vcmobw = true;
+    print("hello");
+    return true;
+}
+
+bool fn324tt(byte plo5e6) {
+    plo5e6 = (byte)587;
+    int vj6qrv = 272;
+    vj6qrv = 647;
+    vj6qrv = 73;
+    fn324tt((byte)310);
+    fes0ohz();
+    print("test");
+    return true;
+}
+
+byte fspapvh(byte pjm6fm, bool p5bmz1) {
+    pjm6fm = (byte)639;
+    p5bmz1 = false;
+    int v0koyo = 802;
+    v0koyo = 96;
+    v0koyo = 221;
+    fes0ohz();
+    fspapvh(31b, true);
+    printi(9);
+    while (v0koyo >= v0koyo) {
+        v0koyo = 58;
+    }
+    return 102b;
+}
+
+byte ffhagix(int pkyd7e, int p6lgxq) {
+    pkyd7e = 414;
+    p6lgxq = 662;
+    byte vpmneo = 131b;
+    vpmneo = 213b;
+    ffhagix(802, 621);
+    printi(161);
+    while (vpmneo <= vpmneo) {
+        vpmneo = 64b;
+    }
+    return 234b;
+}
+
+void main() {
+    bool mbwhwl = false;
+    bool mek80n = true;
+    byte mgzmhp = 247b;
+    fes0ohz();
+    fn324tt(134b);
+    fspapvh(15b, false);
+    ffhagix(164, 569);
+    mgzmhp = 231b;
+    mbwhwl = true;
+    while (mgzmhp != mgzmhp) {
+        mgzmhp = 203b;
+    }
+}

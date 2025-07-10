@@ -1,0 +1,52 @@
+void main() {
+    bool vv6n1l = false;
+    byte asijrh[8];
+{
+    asijrh[4] = 168;
+    vv6n1l = false;
+    vv6n1l = false;
+    while (vv6n1l) {
+        vv6n1l = false;
+        asijrh[4] = 65;
+        vv6n1l = false;
+        vv6n1l = true;
+        while (vv6n1l) {
+            vv6n1l = true;
+            while (false) {
+                vv6n1l = false;
+            }
+        }
+    }
+}
+}
+
+byte f4pe0n(bool pb5u42, byte pqbutx) {
+    byte v1hlnh = 231;
+ffpikd(115, 696);
+while (pqbutx < v1hlnh) {
+    pb5u42 = true;
+    printi(42);
+    pqbutx = v1hlnh;
+    ffpikd(13, 633);
+    pb5u42 = false;
+    main();
+    v1hlnh = 185;
+    printi(42);
+    ffpikd(144, 903);
+    printi(42);
+    pqbutx = v1hlnh;
+}
+}
+
+bool ffpikd(byte pvu482, int pcia4e) {
+    byte v82n2e = 239;
+v82n2e = pvu482;
+pcia4e = 879;
+ffpikd(193, 844);
+pvu482 = 253;
+printi(42);
+v82n2e = pvu482;
+v82n2e = 158;
+f4pe0n(false, 20);
+ffpikd(170, 730);
+}

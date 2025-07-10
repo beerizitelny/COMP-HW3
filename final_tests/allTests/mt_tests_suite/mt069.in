@@ -1,0 +1,10 @@
+// Test mt069.in – binop
+// Expected: PASS
+//binop
+//add_int_byte_legal
+void main(){
+    int  x = 5;
+    byte y = 6;
+    int  z = x + y;   // legal: byte promoted
+    return;
+}

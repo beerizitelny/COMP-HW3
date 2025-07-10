@@ -1,0 +1,11 @@
+// Test mt083.in – binop
+// Expected: PASS
+//binop
+//compound_arith_chain_legal
+void main(){
+    int x = 2;
+    int y = 3;
+    int z = 4;
+    int w = x + y * z;   // legal, tests precedence
+    return;
+}

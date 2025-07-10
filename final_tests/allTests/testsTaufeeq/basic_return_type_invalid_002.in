@@ -1,0 +1,6 @@
+bool f2() {
+    return 1;       // error: f2 declared bool but returns int
+}
+void main() {
+    print("ok");
+}

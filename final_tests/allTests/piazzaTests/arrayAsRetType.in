@@ -1,0 +1,4 @@
+int[10] foo() {
+	return;
+}
+void main() {return;}

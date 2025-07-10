@@ -1,0 +1,7 @@
+// Test mt128.in – assign_expr_to_array_var_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    arr = 5; // assigning expression to array name
+    return;
+}

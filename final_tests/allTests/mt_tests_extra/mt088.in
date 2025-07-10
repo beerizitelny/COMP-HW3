@@ -1,0 +1,9 @@
+// Test mt088.in – shadowing_inner_scope_mismatch
+// Expected: FAIL
+void main(){
+    int x;
+    {
+        int x; // shadowing
+    }
+    return;
+}

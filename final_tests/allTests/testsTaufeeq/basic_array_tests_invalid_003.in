@@ -1,0 +1,6 @@
+void main() {
+    int arr1[5];
+    int arr2[5];
+    // invalid: cannot assign an element to the whole array
+    arr1 = arr2[0];
+}

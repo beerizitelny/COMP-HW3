@@ -1,0 +1,6 @@
+// Test mt179.in – void_returns_value_fail
+// Expected: FAIL
+void greet(){
+    return 42;
+}
+void main(){ greet(); return; }

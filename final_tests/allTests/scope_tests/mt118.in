@@ -1,0 +1,12 @@
+// Test mt118.in – nested_scope_global_access
+// Expected: PASS
+int g = 1;
+void main(){
+    if(g == 1){
+        while(true){
+            printi(g);
+            break;
+        }
+    }
+    return;
+}

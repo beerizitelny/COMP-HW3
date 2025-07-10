@@ -1,0 +1,11 @@
+// Test mt054.in – relop
+// Expected: PASS
+//relop
+//le_byte_legal
+void main(){
+    byte a = 3;
+    byte b = 3;
+    if(a <= b){
+    }
+    return;
+}

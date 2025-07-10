@@ -1,0 +1,5 @@
+void main() {
+	bool arr[7b];
+	int x = 90;
+	bool b = arr[3];
+}

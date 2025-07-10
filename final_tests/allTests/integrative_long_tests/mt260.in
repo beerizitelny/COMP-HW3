@@ -1,0 +1,12 @@
+// Test mt260.in – break_outside_after_blocks_fail
+// Expected: FAIL
+void main(){
+    {
+        int a = 0;
+        while(a<3){
+            a = a + 1;
+        }
+    }
+    break; // illegal
+    return;
+}

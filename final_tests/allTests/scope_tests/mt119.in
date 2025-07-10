@@ -1,0 +1,9 @@
+// Test mt119.in – param_visible_in_inner_scope
+// Expected: PASS
+int add(int a, int b){
+    if(a > 0){
+        return a + b;
+    }
+    return b;
+}
+void main(){ add(1,2); return; }

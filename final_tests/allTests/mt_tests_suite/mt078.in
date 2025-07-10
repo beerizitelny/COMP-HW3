@@ -1,0 +1,11 @@
+// Test mt078.in – binop
+// Expected: PASS
+//binop
+//and_bool_bool_legal
+void main(){
+    bool p = true;
+    bool q = false;
+    if(p && q){
+    }
+    return;
+}

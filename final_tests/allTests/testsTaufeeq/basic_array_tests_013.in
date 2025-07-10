@@ -1,0 +1,65 @@
+byte fwev8x(int p9ia78) {
+    int v8j8r7 = 526;
+    byte v4u2k5 = 181;
+v8j8r7 = 805;
+p9ia78 = 496;
+fq89yl(25, 166, false);
+main();
+fx92es();
+main();
+print("hello");
+p9ia78 = v8j8r7;
+p9ia78 = v8j8r7;
+print("hello");
+v8j8r7 = p9ia78;
+v8j8r7 = p9ia78;
+v8j8r7 = 831;
+}
+
+void main() {
+    bool vhbz2v = false;
+    int vq2xxm = 444;
+vhbz2v = false;
+main();
+vq2xxm = 926;
+if (vq2xxm == vq2xxm) {
+    vq2xxm = 68;
+    vhbz2v = false;
+    vq2xxm = 373;
+    {
+        vq2xxm = 881;
+    }
+}
+}
+
+byte fq89yl(byte p06yff, byte pnk3em, bool p41a9w) {
+    byte v4ilbq = 239;
+fq89yl(97, 161, true);
+print("hello");
+p06yff = 152;
+p41a9w = true;
+fq89yl(99, 202, false);
+main();
+fwev8x(723);
+main();
+}
+
+void fx92es() {
+    byte vbynyy = 237;
+if (vbynyy <= vbynyy) {
+    vbynyy = 150;
+    fwev8x(683);
+    main();
+    {
+        fwev8x(982);
+        fq89yl(218, 39, true);
+        fwev8x(986);
+        while (vbynyy >= vbynyy) {
+            printi(42);
+            vbynyy = 183;
+            vbynyy = 33;
+            fwev8x(416);
+        }
+    }
+}
+}

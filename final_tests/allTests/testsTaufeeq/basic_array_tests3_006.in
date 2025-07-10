@@ -1,0 +1,77 @@
+int fz587kw(byte pykckm) {
+    pykckm = 171b;
+    byte vcii5h = 19b;
+    vcii5h = 202b;
+    vcii5h = 63b;
+    byte vweb5p = (byte)905;
+    vweb5p = 232b;
+    fz587kw((byte)251);
+    fz587kw(209b);
+    printi(64);
+    return 901;
+}
+
+byte fomd1oo() {
+    byte vm44o8 = 161b;
+    vm44o8 = 115b;
+    vm44o8 = 34b;
+    bool v0t6u1 = false;
+    v0t6u1 = false;
+    v0t6u1 = true;
+    fz587kw(84b);
+    printi(120);
+    return 201b;
+}
+
+bool f9ptyfs(int p1zgi9, bool piz73s) {
+    p1zgi9 = 547;
+    piz73s = true;
+    bool vmcb72 = false;
+    vmcb72 = false;
+    vmcb72 = true;
+    print("hello");
+    return true;
+}
+
+void fqdi7qd() {
+    bool vy3xrs = false;
+    vy3xrs = true;
+    vy3xrs = false;
+    print("random");
+}
+
+int fpha0nk(byte puds5q) {
+    puds5q = 210b;
+    byte vdi1lx = 29b;
+    vdi1lx = 255b;
+    vdi1lx = 216b;
+    byte vp08f7 = 197b;
+    vp08f7 = (byte)362;
+    printi(250);
+    return 588;
+}
+
+void fctfok0() {
+    bool v7wuk7 = false;
+    v7wuk7 = true;
+    v7wuk7 = false;
+    bool vk8xz5 = false;
+    vk8xz5 = true;
+    vk8xz5 = true;
+    byte vlweab = 186b;
+    vlweab = (byte)287;
+    print("test");
+}
+
+void main() {
+    int mov7vk = 158;
+    byte mnmogu = (byte)390;
+    byte mh0qoy = 193b;
+    fz587kw((byte)832);
+    fomd1oo();
+    f9ptyfs(500, true);
+    fqdi7qd();
+    fpha0nk(195b);
+    fctfok0();
+    mov7vk = 195;
+}

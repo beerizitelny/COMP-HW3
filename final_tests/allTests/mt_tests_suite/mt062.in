@@ -1,0 +1,10 @@
+// Test mt062.in – relop
+// Expected: PASS
+//relop
+//assign_relop_to_int_mismatch
+void main(){
+    int x = 1;
+    int y = 2;
+    int z = (x > y); // should mismatch: bool to int
+    return;
+}

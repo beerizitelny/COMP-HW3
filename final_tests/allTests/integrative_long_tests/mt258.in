@@ -1,0 +1,16 @@
+// Test mt258.in – duplicate_identifier_deep_fail
+// Expected: FAIL
+void main(){
+    int level1;
+    {
+        int level2;
+        {
+            int level1; // duplicate hides outer but in same nested? allowed? Actually different scope but ok
+            {
+                int level2; // duplicate in same nested scope? duplicates previous level2? not same scope
+            }
+        }
+        int level2; // duplicate in same scope - error
+    }
+    return;
+}

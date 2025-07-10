@@ -1,0 +1,7 @@
+// Test mt114.in – shadowing_var_inner_scope
+// Expected: FAIL
+void main(){
+    int x;
+    { int x; }      // illegal shadowing
+    return;
+}

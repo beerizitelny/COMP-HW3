@@ -1,0 +1,11 @@
+// Test mt055.in – relop
+// Expected: PASS
+//relop
+//ge_mixed_legal
+void main(){
+    int x = 5;
+    byte b = 4;
+    if(x >= b){
+    }
+    return;
+}

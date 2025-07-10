@@ -1,0 +1,5 @@
+void main() {
+    int arr1[5];
+    // invalid: cannot assign a scalar literal to an entire array
+    arr1 = 3;
+}

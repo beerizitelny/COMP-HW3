@@ -1,0 +1,8 @@
+// Test mt197.in – offset_simple_locals
+// Expected: PASS
+void main(){
+    int x;
+    byte y;
+    bool z;
+    return;
+}

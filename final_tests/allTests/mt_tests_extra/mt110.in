@@ -1,0 +1,6 @@
+// Test mt110.in – byte_literal_too_large_fail
+// Expected: FAIL
+void main(){
+    byte b = 300b;
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt146.in – array_to_scalar_init_fail
+// Expected: FAIL
+void main(){
+    int a[3]={1,2,3};
+    int x = a; // illegal
+    return;
+}

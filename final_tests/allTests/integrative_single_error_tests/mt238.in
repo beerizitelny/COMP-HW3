@@ -1,0 +1,8 @@
+// Test mt238.in – array_as_param_only_fail
+// Expected: FAIL
+int sum(int a){ return a; }
+void main(){
+    int arr[3];
+    sum(arr); // array passed to int param
+    return;
+}

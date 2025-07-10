@@ -1,0 +1,8 @@
+// Test mt147.in – scalar_to_array_uninit_fail
+// Expected: FAIL
+void main(){
+    int a[3];
+    int x = 5;
+    a = x; // illegal: scalar to array
+    return;
+}

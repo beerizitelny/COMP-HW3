@@ -1,0 +1,8 @@
+// Test mt141.in – array_to_element_uninit_fail
+// Expected: FAIL
+void main(){
+    int a[3];
+    int b[3];
+    a[0] = b; // illegal: array to element
+    return;
+}

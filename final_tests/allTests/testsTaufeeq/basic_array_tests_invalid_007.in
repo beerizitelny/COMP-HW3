@@ -1,0 +1,5 @@
+void main() {
+    int arr[4];
+    // invalid: array index must be int, not bool
+    arr[true] = 5;
+}

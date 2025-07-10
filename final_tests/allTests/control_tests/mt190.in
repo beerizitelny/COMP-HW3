@@ -1,0 +1,14 @@
+// Test mt190.in – continue_in_nested_loops_pass
+// Expected: PASS
+void main(){
+    int i = 0;
+    while(i < 3){
+        int j = 0;
+        while(j < 2){
+            j = j + 1;
+            continue;   // continues inner loop
+        }
+        i = i + 1;
+    }
+    return;
+}

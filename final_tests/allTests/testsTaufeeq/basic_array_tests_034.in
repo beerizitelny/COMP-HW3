@@ -1,0 +1,45 @@
+void main() {
+    byte vzdbjw = 147;
+    byte vn0rqs = 37;
+vzdbjw = 160;
+vzdbjw = vn0rqs;
+fjc6jo(false);
+vzdbjw = 106;
+vn0rqs = 60;
+fjc6jo(false);
+main();
+vn0rqs = 35;
+printi(42);
+vn0rqs = vzdbjw;
+f85ox8(true);
+vn0rqs = vzdbjw;
+printi(42);
+vn0rqs = 139;
+}
+
+bool f85ox8(bool pnypyw) {
+    int vex5yl = 75;
+fjc6jo(true);
+fjc6jo(true);
+print("hello");
+printi(42);
+pnypyw = true;
+vex5yl = 949;
+pnypyw = true;
+}
+
+bool fjc6jo(bool pip3k2) {
+    int vyg1mj = 617;
+    bool abxi4m[2];
+abxi4m[vyg1mj] = false;
+pip3k2 = true;
+print("hello");
+pip3k2 = true;
+main();
+pip3k2 = abxi4m[1];
+pip3k2 = abxi4m[vyg1mj];
+vyg1mj = 84;
+main();
+pip3k2 = abxi4m[1];
+main();
+}

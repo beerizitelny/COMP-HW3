@@ -1,0 +1,6 @@
+void main() {
+    int arr1[5];
+    bool b;
+    // invalid: assigning an int element to a bool variable
+    b = arr1[0];
+}

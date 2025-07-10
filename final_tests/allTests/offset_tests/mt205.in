@@ -1,0 +1,10 @@
+// Test mt205.in – offset_global_then_inner
+// Expected: PASS
+int g;
+void main(){
+    int x;
+    {
+        int arr[4];
+    }
+    return;
+}

@@ -1,0 +1,18 @@
+// Test mt212.in – params_locals_many_pass
+// Expected: PASS
+int gigantic(int p1,int p2,int p3,int p4,int p5,int p6){
+    int l1,l2,l3,l4,l5,l6;
+    byte arr1[3];
+    byte arr2[3];
+    byte arr3[3];
+    {
+        int inner1,inner2;
+        byte innerArr[6];
+    }
+    return p1 + p6;
+}
+
+void main(){
+    int r = gigantic(1,2,3,4,5,6);
+    return;
+}

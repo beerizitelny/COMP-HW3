@@ -1,0 +1,7 @@
+// Test mt183.in – prototype_mismatch_fail
+// Expected: FAIL
+int bad(int, int);
+int bad(int a){
+    return a;
+}
+void main(){ bad(1,2); return; }

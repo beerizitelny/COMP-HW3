@@ -1,0 +1,10 @@
+// Test mt061.in – relop
+// Expected: PASS
+//relop
+//eq_array_mismatch
+void main(){
+    int arr[5];
+    if(arr == arr){
+    }
+    return;
+}

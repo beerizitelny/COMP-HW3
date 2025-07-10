@@ -1,0 +1,9 @@
+// Test mt033.in – assigments
+// Expected: PASS
+//assigments
+void main(){
+    bool x = "y";
+    return;
+}
+
+//until there - assigements inside and outside declerations.

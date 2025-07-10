@@ -1,0 +1,34 @@
+// Test mt208.in – multiple_funcs_globals_offsets_pass
+// Expected: PASS
+int g1;
+byte g2[8];
+bool g3;
+
+int helper1(int p1, int p2){
+    int loc;
+    byte localArr[3];
+    {
+        int nested;
+        {
+            byte nested2;
+        }
+    }
+    return p1+p2;
+}
+
+byte helper2(byte q1, byte q2, int big[4]){
+    byte res = q1;
+    int i = 0;
+    while(i<4){
+        res = res + big[i];
+        i = i + 1;
+    }
+    return res;
+}
+
+void main(){
+    int myBig[4];
+    int x = helper1(3,4);
+    byte y = helper2(1b,2b,myBig);
+    return;
+}

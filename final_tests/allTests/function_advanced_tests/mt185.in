@@ -1,0 +1,8 @@
+// Test mt185.in – power_byte_base_pass
+// Expected: PASS
+int powerInt(int b,int e){ if(e==0) return 1; return b*powerInt(b,e-1); }
+void main(){
+    byte two = 2b;
+    int r = powerInt(two,3);
+    return;
+}

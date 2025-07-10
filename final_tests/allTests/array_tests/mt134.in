@@ -1,0 +1,8 @@
+// Test mt134.in – array_byte_index_pass
+// Expected: PASS
+void main(){
+    int arr[4];
+    byte i = 2b;
+    int x = arr[i];
+    return;
+}

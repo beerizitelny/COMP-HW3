@@ -1,0 +1,4 @@
+// Test mt156.in – two_mains_fail
+// Expected: FAIL
+void main(){ return; }
+void main(){ return; }

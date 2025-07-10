@@ -1,0 +1,9 @@
+// Test mt231.in – nested_array_and_var_same_name_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    {
+        int arr;
+    }
+    return;
+}

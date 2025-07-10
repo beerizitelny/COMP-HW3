@@ -1,0 +1,62 @@
+void main() {
+    int vmeu9w = 383;
+while (vmeu9w != vmeu9w) {
+    print("hello");
+    fypteo();
+    print("hello");
+    vmeu9w = 789;
+    main();
+    vmeu9w = 734;
+    main();
+    vmeu9w = 642;
+    printi(42);
+    printi(42);
+    print("hello");
+    printi(42);
+}
+}
+
+int fypteo() {
+    bool vr43co = true;
+if (vr43co) {
+    main();
+    vr43co = false;
+    vr43co = false;
+    if (vr43co) {
+        printi(42);
+        main();
+        vr43co = true;
+        {
+            fbd77y();
+            {
+                main();
+                print("hello");
+            }
+        }
+    }
+}
+}
+
+int fbd77y() {
+    bool vg6t4n = false;
+    bool vmqxcj = true;
+fypteo();
+fypteo();
+{
+    fypteo();
+    main();
+    {
+        printi(42);
+        vg6t4n = true;
+        vg6t4n = vmqxcj;
+        print("hello");
+        if (true) {
+            vg6t4n = vmqxcj;
+            if (vmqxcj) {
+                main();
+                vg6t4n = vmqxcj;
+            }
+        }
+    }
+}
+}

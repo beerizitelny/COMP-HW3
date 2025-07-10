@@ -1,0 +1,6 @@
+// Test mt166.in – nonvoid_return_no_expr_fail
+// Expected: FAIL
+int foo(){
+    return; // illegal: no expr
+}
+void main(){ foo(); return; }

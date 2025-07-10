@@ -1,0 +1,20 @@
+// Test mt252.in – cast_mismatch_deep_fail
+// Expected: FAIL
+int process(byte arr[4], int len){
+    int idx = 0;
+    int total = 0;
+    while(idx < len){
+        total = total + arr[idx];
+        idx = idx + 1;
+    }
+    return total;
+}
+
+void main(){
+    byte buf[4];
+    int r = process(buf, 4);
+    bool wrong = true;
+    int value = wrong; // mismatch bool→int (single error)
+    printi(r);
+    return;
+}

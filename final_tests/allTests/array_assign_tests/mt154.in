@@ -1,0 +1,6 @@
+// Test mt154.in – invalid_array_init_string_fail
+// Expected: FAIL
+void main(){
+    int arr[2] = {"a", "b"}; // non-int initializer
+    return;
+}

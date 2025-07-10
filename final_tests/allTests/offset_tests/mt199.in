@@ -1,0 +1,11 @@
+// Test mt199.in – offset_params_and_locals
+// Expected: PASS
+int foo(int p1, byte p2){
+    int l1;
+    byte arr[3];
+    return p1;
+}
+void main(){
+    foo(3,2b);
+    return;
+}

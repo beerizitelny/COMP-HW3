@@ -1,0 +1,18 @@
+// Test mt086.in – binop
+// Expected: PASS
+//binop
+//add_byte_byte_const_overflow
+void main(){
+    byte a = 200;
+    byte b = 100;
+    int  c = a + b;   // arithmetic legal, but later runtime value >255; still legal compile‑time
+    return;
+}
+
+
+
+
+#endif //TESTS_H
+
+print ("gf"); ok
+string b = "pt"; not ok

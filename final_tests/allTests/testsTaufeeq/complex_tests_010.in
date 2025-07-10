@@ -1,0 +1,50 @@
+int fu09hkj(int p64wgm, bool p3tfcm) {
+    p64wgm = 31/190;
+    p3tfcm = false;
+    byte vvxg2q = 249b;
+    vvxg2q = (byte)564-158;
+    byte vs76n1 = (byte)62*990;
+    vs76n1 = (byte)494/924;
+    printi(139);
+    return 711;
+}
+
+bool f65hm3w(int pahw99) {
+    pahw99 = 480;
+    int vfl04x = 109+268;
+    vfl04x = 765+123;
+    vfl04x = 232;
+    fu09hkj(262, true);
+    fu09hkj(799, true);
+    print("world");
+    while (vfl04x<190/943) {
+        vfl04x = 797;
+    }
+    return false;
+}
+
+bool fm8qorn() {
+    int vuaxr3 = 871;
+    vuaxr3 = 713/243;
+    byte vexikv = 249b;
+    vexikv = 198b;
+    bool vetbi2 = true;
+    vetbi2 = false;
+    vetbi2 = false;
+    f65hm3w(646-575);
+    fm8qorn();
+    print("world");
+    while (vuaxr3>=300) {
+        vuaxr3 = 338-262;
+    }
+    return true;
+}
+
+void main() {
+    byte mikvzl = (byte)171-706;
+    byte mlr76z = (byte)686*902;
+    fu09hkj(157, false);
+    f65hm3w(523);
+    fm8qorn();
+    print("all done");
+}

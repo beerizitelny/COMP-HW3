@@ -1,0 +1,10 @@
+void foo(int a) {
+  int b;
+}
+
+void main() {
+  int x;
+  int a[4];
+  byte b;
+  foo(x);
+}

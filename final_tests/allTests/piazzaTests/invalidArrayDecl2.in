@@ -1,0 +1,4 @@
+void main() {
+	byte s = 5b;
+	int a[s];
+}

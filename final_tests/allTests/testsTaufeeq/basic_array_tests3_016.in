@@ -1,0 +1,51 @@
+byte fp1pghw() {
+    int v73558 = 227;
+    v73558 = 726;
+    printi(157);
+    while (v73558 != v73558) {
+        v73558 = 510;
+    }
+    return 213b;
+}
+
+bool f4pgeze(int p38rns, int pzn3la) {
+    p38rns = 109;
+    pzn3la = 907;
+    byte vnomvn = 243b;
+    vnomvn = 118b;
+    byte v3w3py = 32b;
+    v3w3py = 142b;
+    v3w3py = 156b;
+    f4pgeze(920, 252);
+    print("test");
+    while (vnomvn > vnomvn) {
+        vnomvn = 181b;
+    }
+    return true;
+}
+
+bool fmk09nb(byte p678cm) {
+    p678cm = 41b;
+    int vqd7ch = 938;
+    vqd7ch = 436;
+    bool v3x87a = false;
+    v3x87a = false;
+    int vbgjy2 = 348;
+    vbgjy2 = 384;
+    fmk09nb((byte)895);
+    print("hello");
+    while (vbgjy2 < vbgjy2) {
+        vbgjy2 = 181;
+    }
+    return true;
+}
+
+void main() {
+    int md6a9z = 504;
+    int m3l8ko = 305;
+    int mddnac = 651;
+    fp1pghw();
+    f4pgeze(597, 645);
+    fmk09nb(23b);
+    print("array");
+}

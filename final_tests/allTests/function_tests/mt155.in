@@ -1,0 +1,3 @@
+// Test mt155.in – no_main_fail
+// Expected: FAIL
+int foo(){ return 1; }

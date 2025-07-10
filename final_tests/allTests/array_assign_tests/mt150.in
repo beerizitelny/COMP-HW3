@@ -1,0 +1,7 @@
+// Test mt150.in – element_to_scalar_init_pass
+// Expected: PASS
+void main(){
+    int a[3]={1,2,3};
+    int y = a[0];
+    return;
+}

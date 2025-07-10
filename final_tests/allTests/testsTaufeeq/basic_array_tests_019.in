@@ -1,0 +1,32 @@
+void main() {
+    byte v5euns = 243b;
+    byte vf974w = 110b;
+v5euns = 99;
+printi(42);
+{
+    print("hello");
+    printi(42);
+    if (v5euns == v5euns) {
+        vf974w = v5euns;
+        print("hello");
+        printi(42);
+        main();
+        v5euns = vf974w;
+        printi(42);
+        printi(42);
+        vf974w = 5;
+    }
+}
+}
+
+bool f7cvbz(bool pj9lvo, byte pjrgwm) {
+    byte vfcao4 = 6;
+pjrgwm = 222;
+f7cvbz(false, 119);
+pjrgwm = vfcao4;
+main();
+f7cvbz(false, 224);
+pjrgwm = vfcao4;
+print("hello");
+printi(42);
+}

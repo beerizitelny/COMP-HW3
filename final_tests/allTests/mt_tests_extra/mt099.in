@@ -1,0 +1,8 @@
+// Test mt099.in – array_index_bool_mismatch
+// Expected: FAIL
+void main(){
+    int arr[3];
+    bool b = true;
+    int x = arr[b];
+    return;
+}

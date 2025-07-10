@@ -1,0 +1,34 @@
+void fs39dk(byte p48m6g, int papxsg) {
+    bool vfcf3y = false;
+    int v2ajt9 = 732;
+    byte v7okpe = 177;
+printi(42);
+main();
+printi(42);
+while (v2ajt9 > v2ajt9) {
+    fs39dk(60, 338);
+    print("hello");
+}
+}
+
+void main() {
+    bool v1bva5 = false;
+    int va1wk2 = 376;
+{
+    main();
+    {
+        main();
+        main();
+        va1wk2 = 627;
+        main();
+        v1bva5 = false;
+        print("hello");
+        printi(42);
+        v1bva5 = true;
+        printi(42);
+        while (va1wk2 >= va1wk2) {
+            print("hello");
+        }
+    }
+}
+}

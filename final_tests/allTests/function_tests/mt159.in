@@ -1,0 +1,9 @@
+// Test mt159.in – proper_func_call_pass
+// Expected: PASS
+int add(int a, int b){
+    return a+b;
+}
+void main(){
+    int x = add(3,4);
+    return;
+}

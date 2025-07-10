@@ -1,0 +1,10 @@
+// Test mt164.in – void_function_return_pass
+// Expected: PASS
+void greet(){
+    print("hi");
+    return;
+}
+void main(){
+    greet();
+    return;
+}

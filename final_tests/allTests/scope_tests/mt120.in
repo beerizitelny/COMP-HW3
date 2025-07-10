@@ -1,0 +1,7 @@
+// Test mt120.in – func_used_as_var
+// Expected: FAIL
+int foo(int a){ return a; }
+void main(){
+    int foo = 3;   // function name as variable
+    return;
+}

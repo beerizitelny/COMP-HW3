@@ -1,0 +1,8 @@
+// Test mt139.in – element_to_element_uninit_pass
+// Expected: PASS
+void main(){
+    int a[3];
+    int b[3];
+    a[1] = b[2]; // element to element
+    return;
+}

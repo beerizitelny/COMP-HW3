@@ -1,0 +1,65 @@
+bool fj1yr04(byte pl4blo, byte po693o) {
+    pl4blo = 24b;
+    po693o = 98b;
+    byte vkv74k = 99b;
+    vkv74k = 99b;
+    fj1yr04((byte)453, (byte)776);
+    print("world");
+    return false;
+}
+
+void f25uy3k(bool p3gym8, byte pymfzn) {
+    p3gym8 = false;
+    pymfzn = 210b;
+    int veg20a = 506;
+    veg20a = 75;
+    int vwobjk = 392;
+    vwobjk = 679;
+    vwobjk = 715;
+    int vvgcfg = 2;
+    vvgcfg = 74;
+    vvgcfg = 438;
+    print("world");
+    while (vvgcfg == vvgcfg) {
+        vvgcfg = 104;
+    }
+}
+
+byte fx0o3yi(int pz7y3h, bool p9vqjq) {
+    pz7y3h = 751;
+    p9vqjq = false;
+    byte vtdp6p = 192b;
+    vtdp6p = 110b;
+    bool vb4bb7 = true;
+    vb4bb7 = false;
+    vb4bb7 = true;
+    fx0o3yi(699, true);
+    printi(214);
+    while (vtdp6p != vtdp6p) {
+        vtdp6p = (byte)333;
+    }
+    return 53b;
+}
+
+bool frvjdgn() {
+    int v6exor = 838;
+    v6exor = 117;
+    int v3qiu8 = 694;
+    v3qiu8 = 943;
+    v3qiu8 = 720;
+    int vivbty = 505;
+    vivbty = 0;
+    vivbty = 579;
+    print("world");
+    return true;
+}
+
+void main() {
+    byte m7oxgd = 205b;
+    fj1yr04(88b, 51b);
+    f25uy3k(true, 112b);
+    fx0o3yi(81, false);
+    frvjdgn();
+    print("world");
+    m7oxgd = 151b;
+}

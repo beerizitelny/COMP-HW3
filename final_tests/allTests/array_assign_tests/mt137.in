@@ -1,0 +1,8 @@
+// Test mt137.in – array_to_array_uninit_fail
+// Expected: FAIL
+void main(){
+    int a[3];
+    int b[3];
+    a = b; // illegal: array to array
+    return;
+}

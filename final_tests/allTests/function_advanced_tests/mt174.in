@@ -1,0 +1,5 @@
+// Test mt174.in – main_in_inner_block_fail
+// Expected: FAIL
+{
+    void main(){ return; }
+}

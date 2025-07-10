@@ -1,0 +1,6 @@
+// Test mt243.in – invalid_identifier_char_fail
+// Expected: FAIL
+void main(){
+    int @x = 5; // invalid identifier char
+    return;
+}

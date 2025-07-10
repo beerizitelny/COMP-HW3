@@ -1,0 +1,7 @@
+// Test mt098.in – array_index_access_pass
+// Expected: PASS
+void main(){
+    int arr[3];
+    int x = arr[2];
+    return;
+}

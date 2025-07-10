@@ -1,0 +1,13 @@
+// Test mt217.in – nested_offset_ok_pass
+// Expected: PASS
+void main(){
+    int a;
+    {
+        int b;
+        {
+            int c;
+            byte arr[4];
+        }
+    }
+    return;
+}

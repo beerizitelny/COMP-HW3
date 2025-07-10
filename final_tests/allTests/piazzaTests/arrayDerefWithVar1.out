@@ -1,0 +1,10 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+main () -> void
+  ---begin scope---
+  arr[7] bool 0
+  x int 7
+  b bool 8
+  ---end scope---
+---end global scope---

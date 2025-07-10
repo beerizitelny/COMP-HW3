@@ -1,0 +1,6 @@
+// Test mt213.in – dup_param_names_fail
+// Expected: FAIL
+int bad(int x, int x){
+    return x;
+}
+void main(){ bad(1,2); return; }

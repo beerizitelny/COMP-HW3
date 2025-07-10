@@ -1,0 +1,10 @@
+// Test mt191.in – var_decl_in_loop_used_outside_fail
+// Expected: FAIL
+void main(){
+    while(true){
+        int x = 5;
+        break;
+    }
+    int y = x;  // x not in scope
+    return;
+}

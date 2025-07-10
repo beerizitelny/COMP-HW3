@@ -1,0 +1,9 @@
+// Test mt163.in – return_value_match_pass
+// Expected: PASS
+int doubleIt(int a){
+    return a*2;
+}
+void main(){
+    int x = doubleIt(5);
+    return;
+}

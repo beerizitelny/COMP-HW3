@@ -1,0 +1,8 @@
+// Test mt142.in – array_to_element_init_fail
+// Expected: FAIL
+void main(){
+    int a[3]={1,2,3};
+    int b[3]={4,5,6};
+    a[2] = b; // illegal
+    return;
+}

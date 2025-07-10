@@ -1,0 +1,9 @@
+// Test mt136.in – use_array_out_of_scope_fail
+// Expected: FAIL
+void main(){
+    {
+        int arr[2];
+    }
+    int x = arr[0]; // arr is out of scope
+    return;
+}

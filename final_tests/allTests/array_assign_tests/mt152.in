@@ -1,0 +1,8 @@
+// Test mt152.in – scalar_to_element_init_pass
+// Expected: PASS
+void main(){
+    int a[3]={1,2,3};
+    int x = 9;
+    a[1] = x;
+    return;
+}

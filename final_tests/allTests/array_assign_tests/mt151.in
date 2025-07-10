@@ -1,0 +1,8 @@
+// Test mt151.in – scalar_to_element_uninit_pass
+// Expected: PASS
+void main(){
+    int a[3];
+    int x = 7;
+    a[2] = x; // legal
+    return;
+}

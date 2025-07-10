@@ -1,0 +1,6 @@
+// Test mt111.in – identifier_main_variable_fail
+// Expected: FAIL
+void main(){
+    int main;
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt042.in – break/continue
+// Expected: PASS
+//break/continue
+void main(){
+    break;
+    return;
+}

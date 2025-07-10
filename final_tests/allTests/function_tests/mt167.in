@@ -1,0 +1,6 @@
+// Test mt167.in – void_return_with_expr_fail
+// Expected: FAIL
+void bar(){
+    return 1; // illegal
+}
+void main(){ bar(); return; }

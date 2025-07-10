@@ -1,0 +1,27 @@
+void main() {
+    byte vardbs = 165;
+    bool vpi82u = false;
+print("hello");
+print("hello");
+vardbs = 72;
+print("hello");
+vpi82u = false;
+ftics0();
+vardbs = 39;
+vardbs = 30;
+vpi82u = true;
+main();
+printi(42);
+main();
+}
+
+int ftics0() {
+    int v5jry9 = 977;
+print("hello");
+ftics0();
+ftics0();
+v5jry9 = 478;
+v5jry9 = 986;
+printi(42);
+v5jry9 = 140;
+}

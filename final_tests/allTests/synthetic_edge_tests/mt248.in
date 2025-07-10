@@ -1,0 +1,6 @@
+// Test mt248.in – bool_cast_from_int_fail
+// Expected: FAIL
+void main(){
+    bool b = (bool)5; // invalid cast
+    return;
+}

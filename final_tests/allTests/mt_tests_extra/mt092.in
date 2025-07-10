@@ -1,0 +1,7 @@
+// Test mt092.in – simple_var_usage_pass
+// Expected: PASS
+void main(){
+    int x = 5;
+    int y = x + 2;
+    return;
+}

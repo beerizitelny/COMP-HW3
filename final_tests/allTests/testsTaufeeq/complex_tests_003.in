@@ -1,0 +1,44 @@
+void fqxlfnx(byte pcg6js, bool pcx51p) {
+    pcg6js = 161b;
+    pcx51p = true;
+    int vd1p3i = 361;
+    vd1p3i = 95;
+    vd1p3i = 905-114;
+    fqxlfnx(32b, false);
+    print("random");
+    if (vd1p3i>=958) {
+        vd1p3i = 260;
+    }
+    while (vd1p3i<611) {
+        vd1p3i = 203/479;
+    }
+}
+
+byte f8vtnkj() {
+    int vkhz7x = 101;
+    vkhz7x = 765;
+    vkhz7x = 674*412;
+    printi(238);
+    while (vkhz7x<395) {
+        vkhz7x = 616;
+    }
+    return (byte)486+593;
+}
+
+bool fq5k5wx() {
+    byte vg438u = (byte)878*575;
+    vg438u = 139b;
+    byte vx39cf = 156b;
+    vx39cf = 63b;
+    fqxlfnx((byte)563, true);
+    print("hello");
+    return false;
+}
+
+void main() {
+    int ma46a6 = 763;
+    fqxlfnx((byte)14-614, false);
+    f8vtnkj();
+    fq5k5wx();
+    print("all done");
+}

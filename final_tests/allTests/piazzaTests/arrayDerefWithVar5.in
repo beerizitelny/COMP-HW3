@@ -1,0 +1,8 @@
+int foo() { return 4;}
+byte bar() { return 4b;}
+void main() {
+	bool arr[7b];
+	int x = 90;
+	bool b = arr[foo()];
+	bool b2 = arr[bar()];
+}

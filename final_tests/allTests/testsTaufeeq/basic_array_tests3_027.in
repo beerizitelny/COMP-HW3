@@ -1,0 +1,45 @@
+byte fybejbj(bool pkz7yl, byte p4aznr) {
+    pkz7yl = false;
+    p4aznr = 178b;
+    bool vo89jr = false;
+    vo89jr = false;
+    fybejbj(true, 51b);
+    fybejbj(true, (byte)899);
+    printi(153);
+    return 152b;
+}
+
+byte fwgrbu8() {
+    bool vmvz51 = false;
+    vmvz51 = true;
+    vmvz51 = true;
+    fybejbj(true, 37b);
+    printi(229);
+    return 102b;
+}
+
+byte fc7ctvt() {
+    int vk9te1 = 227;
+    vk9te1 = 520;
+    vk9te1 = 593;
+    int vu11sz = 971;
+    vu11sz = 458;
+    fc7ctvt();
+    printi(196);
+    while (vu11sz >= vu11sz) {
+        vu11sz = 898;
+    }
+    return (byte)655;
+}
+
+void main() {
+    int m5mg4o = 53;
+    byte mai1ge = 141b;
+    fybejbj(true, (byte)968);
+    fwgrbu8();
+    fc7ctvt();
+    m5mg4o = 496;
+    while (mai1ge > mai1ge) {
+        mai1ge = 184b;
+    }
+}

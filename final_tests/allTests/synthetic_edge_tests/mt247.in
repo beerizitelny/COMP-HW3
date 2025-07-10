@@ -1,0 +1,6 @@
+// Test mt247.in – string_plus_int_mismatch_fail
+// Expected: FAIL
+void main(){
+    string s = "abc" + 5; // mismatch
+    return;
+}

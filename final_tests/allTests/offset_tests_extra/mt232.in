@@ -1,0 +1,17 @@
+// Test mt232.in – complex_offsets_pass
+// Expected: PASS
+byte glbArr[6];
+int bigSum(int a, int b, byte arr[4]){
+    int loc1,loc2;
+    byte x[2];
+    {
+        int innerA;
+        byte y[3];
+    }
+    return a+b;
+}
+void main(){
+    byte x[4];
+    bigSum(3,4,x);
+    return;
+}

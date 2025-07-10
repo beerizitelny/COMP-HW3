@@ -1,0 +1,8 @@
+// Test mt093.in – bool_to_int_mismatch
+// Expected: FAIL
+void main(){
+    int x;
+    bool b = true;
+    x = b;
+    return;
+}

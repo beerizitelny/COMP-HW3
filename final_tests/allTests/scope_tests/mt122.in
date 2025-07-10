@@ -1,0 +1,7 @@
+// Test mt122.in – array_used_as_func
+// Expected: FAIL
+void main(){
+    int a[3];
+    a(1);           // array as function
+    return;
+}

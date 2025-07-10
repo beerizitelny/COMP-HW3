@@ -1,0 +1,7 @@
+// Test mt126.in – library_funcs_first_ok
+// Expected: PASS
+void main(){
+    print("hello");
+    printi(5);
+    return;
+}

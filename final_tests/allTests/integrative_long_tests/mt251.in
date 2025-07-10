@@ -1,0 +1,44 @@
+// Test mt251.in – mega_program_pass
+// Expected: PASS
+byte globalBuf[16];
+int counter;
+bool flag;
+
+int inc(byte step){
+    counter = counter + step;
+    return counter;
+}
+
+int accumulate(int arr[5]){
+    int i = 0;
+    int sum = 0;
+    while(i < 5){
+        sum = sum + arr[i];
+        i = i + 1;
+    }
+    return sum;
+}
+
+void toggle(){
+    flag = !flag;
+    return;
+}
+
+void main(){
+    int localArr[5];
+    int i = 0;
+    while(i < 5){
+        localArr[i] = i * 2;
+        i = i + 1;
+    }
+    int res = accumulate(localArr);
+    byte step = 3b;
+    inc(step);
+    if(flag){
+        toggle();
+    } else {
+        toggle();
+    }
+    printi(res);
+    return;
+}

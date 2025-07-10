@@ -1,0 +1,16 @@
+// Test mt040.in – scoping
+// Expected: PASS
+//scoping
+void main(){
+    int x;
+    while (x>2){
+        while (x>3){
+            while (x<1){
+                break;
+                continue;
+            }
+        }
+    }
+    return;
+
+    //until there - scoping

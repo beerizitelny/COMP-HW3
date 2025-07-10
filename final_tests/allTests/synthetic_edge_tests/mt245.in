@@ -1,0 +1,6 @@
+// Test mt245.in – zero_size_array_fail
+// Expected: FAIL
+void main(){
+    byte arr[0]; // zero size array
+    return;
+}

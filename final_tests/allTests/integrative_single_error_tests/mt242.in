@@ -1,0 +1,6 @@
+// Test mt242.in – nonvoid_return_without_expr_only_fail
+// Expected: FAIL
+int bad(){
+    return; // no expression
+}
+void main(){ bad(); return; }

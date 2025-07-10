@@ -1,0 +1,65 @@
+int fxileak(int plawss, int ppy8yr) {
+    plawss = 28;
+    ppy8yr = 639;
+    int vchbbt = 229;
+    vchbbt = 821;
+    printi(226);
+    while (vchbbt > vchbbt) {
+        vchbbt = 917;
+    }
+    return 996;
+}
+
+byte fgbnqiz(bool pa99me, byte po0krs) {
+    pa99me = false;
+    po0krs = 193b;
+    bool vlzne2 = true;
+    vlzne2 = true;
+    vlzne2 = true;
+    int v2pggv = 467;
+    v2pggv = 140;
+    byte vfnkub = 73b;
+    vfnkub = 151b;
+    vfnkub = 216b;
+    printi(24);
+    return 26b;
+}
+
+bool f0y0r38() {
+    byte vdbrqc = (byte)985;
+    vdbrqc = (byte)902;
+    vdbrqc = 130b;
+    bool vh5ys9 = false;
+    vh5ys9 = false;
+    vh5ys9 = false;
+    byte v7vxq3 = (byte)682;
+    v7vxq3 = (byte)256;
+    v7vxq3 = 53b;
+    fgbnqiz(false, (byte)766);
+    print("world");
+    while (vdbrqc < vdbrqc) {
+        vdbrqc = (byte)713;
+    }
+    return false;
+}
+
+int fnj2qkv(int p8zt3e) {
+    p8zt3e = 817;
+    bool vdc0n0 = false;
+    vdc0n0 = true;
+    vdc0n0 = true;
+    f0y0r38();
+    fnj2qkv(32);
+    printi(92);
+    return 841;
+}
+
+void main() {
+    bool mbblru = true;
+    fxileak(293, 609);
+    fgbnqiz(true, 179b);
+    f0y0r38();
+    fnj2qkv(14);
+    mbblru = true;
+    mbblru = false;
+}

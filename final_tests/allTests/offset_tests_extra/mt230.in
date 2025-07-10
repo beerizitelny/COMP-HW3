@@ -1,0 +1,7 @@
+// Test mt230.in – duplicate_param_and_global_fail
+// Expected: FAIL
+int val;
+int foo(int val){ // shadows global
+    return val;
+}
+void main(){ foo(5); return; }

@@ -1,0 +1,15 @@
+// Test mt201.in – offset_three_nested_scopes
+// Expected: PASS
+void main(){
+    int a;
+    {
+        int b;
+        {
+            byte c;
+            {
+                bool d;
+            }
+        }
+    }
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt226.in – duplicate_array_decl_same_scope_fail
+// Expected: FAIL
+void main(){
+    int arr[2];
+    int arr[3];
+    return;
+}

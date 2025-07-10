@@ -1,0 +1,6 @@
+// Test mt107.in – break_outside_loop_fail
+// Expected: FAIL
+void main(){
+    break;
+    return;
+}

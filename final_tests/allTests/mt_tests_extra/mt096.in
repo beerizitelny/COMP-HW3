@@ -1,0 +1,8 @@
+// Test mt096.in – int_plus_bool_mismatch
+// Expected: FAIL
+void main(){
+    int x = 4;
+    bool b = true;
+    int y = x + b;
+    return;
+}

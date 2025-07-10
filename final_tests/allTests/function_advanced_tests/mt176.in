@@ -1,0 +1,7 @@
+// Test mt176.in – main_after_other_func_pass
+// Expected: PASS
+int helper(){ return 1; }
+void main(){
+    helper();
+    return;
+}

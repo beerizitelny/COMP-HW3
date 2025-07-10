@@ -1,0 +1,6 @@
+// Test mt175.in – main_used_as_variable_fail
+// Expected: FAIL
+void main(){
+    int main = 5;
+    return;
+}

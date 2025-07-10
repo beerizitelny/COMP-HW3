@@ -1,0 +1,9 @@
+// Test mt043.in – break/continue
+// Expected: PASS
+//break/continue
+void main(){
+    continue;
+    return;
+}
+
+    //until there - break continue

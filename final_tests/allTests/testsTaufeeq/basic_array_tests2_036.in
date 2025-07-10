@@ -1,0 +1,84 @@
+byte fk54530() {
+    bool vpyaxp = true;
+    vpyaxp = false;
+    vpyaxp = true;
+    bool vs0inx = true;
+    vs0inx = true;
+    vs0inx = true;
+    int vi5b63 = 904;
+    vi5b63 = 585;
+    fk54530();
+    printi(254);
+    return 245b;
+}
+
+int fyox2p9(byte pq6mbo) {
+    pq6mbo = 9b;
+    int vrjnjq = 522;
+    vrjnjq = 358;
+    byte vyr9ox = 124b;
+    vyr9ox = 60b;
+    vyr9ox = 134b;
+    fyox2p9(141b);
+    printi(187);
+    while (vrjnjq >= vrjnjq) {
+        vrjnjq = 361;
+    }
+    return 92;
+}
+
+bool fzbe450(int pxjzlq) {
+    pxjzlq = 964;
+    bool v91otj = false;
+    v91otj = true;
+    int vpla50 = 789;
+    vpla50 = 92;
+    byte v9v94s = 204b;
+    v9v94s = 74b;
+    fzbe450(727);
+    print("hello");
+    while (v9v94s > v9v94s) {
+        v9v94s = 230;
+    }
+    return true;
+}
+
+bool fhw4t6f(byte pukjel) {
+    pukjel = 58b;
+    byte vgme8x = (byte)260;
+    vgme8x = (byte)629;
+    bool vtqq3w = false;
+    vtqq3w = false;
+    fk54530();
+    print("random");
+    while (vgme8x != vgme8x) {
+        vgme8x = 443;
+    }
+    return false;
+}
+
+void f9gn2f5(byte pf8oxz) {
+    pf8oxz = 25b;
+    int vztrw2 = 72;
+    vztrw2 = 707;
+    int vxe4vd = 625;
+    vxe4vd = 414;
+    fyox2p9(70b);
+    print("array");
+    while (vztrw2 <= vztrw2) {
+        vztrw2 = 172;
+    }
+}
+
+void main() {
+    byte mdyajg = 247b;
+    fk54530();
+    fyox2p9((byte)502);
+    fzbe450(670);
+    fhw4t6f(219b);
+    f9gn2f5((byte)250);
+    mdyajg = 137b;
+    while (mdyajg <= mdyajg) {
+        mdyajg = 686;
+    }
+}

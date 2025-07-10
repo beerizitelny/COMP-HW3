@@ -1,0 +1,6 @@
+// Test mt173.in – byte_literal_too_large_fail
+// Expected: FAIL
+void main(){
+    byte b = 260b; // too large
+    return;
+}

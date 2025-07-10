@@ -1,0 +1,7 @@
+// Test mt130.in – return_array_fail
+// Expected: FAIL
+int[] make(){ // illegal return type (array)
+    int arr[3];
+    return arr; // returning array
+}
+void main(){ return; }

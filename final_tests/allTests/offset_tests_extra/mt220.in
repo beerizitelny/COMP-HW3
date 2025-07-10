@@ -1,0 +1,21 @@
+// Test mt220.in – deep_loops_offset_pass
+// Expected: PASS
+void main(){
+    int g = 0;
+    while(g<2){
+        int i;
+        i = 0;
+        while(i<3){
+            int j;
+            j = 0;
+            while(j<4){
+                int k;
+                k = j;
+                j = j+1;
+            }
+            i = i+1;
+        }
+        g = g+1;
+    }
+    return;
+}

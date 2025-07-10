@@ -1,0 +1,7 @@
+// Test mt177.in – all_paths_return_pass
+// Expected: PASS
+int abs(int a){
+    if(a>=0) return a;
+    else     return -a;
+}
+void main(){ abs(-3); return; }

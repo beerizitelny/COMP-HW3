@@ -1,0 +1,6 @@
+// Test mt235.in – continue_outside_loop_only_fail
+// Expected: FAIL
+void main(){
+    continue; // illegal
+    return;
+}

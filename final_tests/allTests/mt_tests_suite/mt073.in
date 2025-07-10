@@ -1,0 +1,10 @@
+// Test mt073.in – binop
+// Expected: PASS
+//binop
+//sub_int_int_legal
+void main(){
+    int x = 10;
+    int y = 4;
+    int z = x - y;
+    return;
+}

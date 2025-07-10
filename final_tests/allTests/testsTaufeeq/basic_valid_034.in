@@ -1,0 +1,45 @@
+bool fxwhx4(bool p1gc61, bool py2buh) {
+    int v6ma6u = 294;
+    int v61gd1 = 884;
+py2buh = false;
+p1gc61 = py2buh;
+printi(42);
+fxwhx4(true, true);
+printi(42);
+printi(42);
+p1gc61 = py2buh;
+}
+
+void main() {
+    int vf8gwc = 730;
+    byte vm08cc = 47;
+vm08cc = 29;
+printi(42);
+print("hello");
+if (vf8gwc <= vf8gwc) {
+    vm08cc = 152;
+    if (vf8gwc > vf8gwc) {
+        main();
+        vf8gwc = 924;
+    }
+}
+}
+
+bool fdjdz6() {
+    bool v206bo = true;
+    bool venfkm = false;
+v206bo = venfkm;
+while (venfkm) {
+    fdjdz6();
+    v206bo = venfkm;
+    fxwhx4(false, true);
+    printi(42);
+    {
+        printi(42);
+        if (v206bo) {
+            main();
+            venfkm = v206bo;
+        }
+    }
+}
+}

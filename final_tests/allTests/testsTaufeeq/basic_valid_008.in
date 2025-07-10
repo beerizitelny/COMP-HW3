@@ -1,0 +1,55 @@
+bool fb3uzi() {
+    byte v75qmq = 46;
+    byte v3slag = 8;
+v75qmq = v3slag;
+{
+    fb3uzi();
+    main();
+    fogap4(22);
+    f81q1o(9, 106);
+}
+}
+
+void main() {
+    bool vo6nyj = true;
+vo6nyj = true;
+fogap4(151);
+if (vo6nyj) {
+    print("hello");
+    if (vo6nyj) {
+        fogap4(226);
+        vo6nyj = true;
+        if (vo6nyj) {
+            main();
+            if (vo6nyj) {
+                printi(42);
+                printi(42);
+                fb3uzi();
+            }
+        }
+    }
+}
+}
+
+int f81q1o(byte p4v3ob, byte ps6dpr) {
+    bool v9fw0w = true;
+    int ve04ja = 812;
+fb3uzi();
+main();
+v9fw0w = false;
+ps6dpr = 135;
+printi(42);
+printi(42);
+}
+
+byte fogap4(byte pyel38) {
+    bool vhi3gz = true;
+printi(42);
+vhi3gz = false;
+printi(42);
+printi(42);
+pyel38 = 208;
+pyel38 = 143;
+printi(42);
+vhi3gz = true;
+}

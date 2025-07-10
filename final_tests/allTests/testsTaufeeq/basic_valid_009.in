@@ -1,0 +1,59 @@
+bool f6hc71(bool p6aafj, byte p8pfsv) {
+    byte v3kxf1 = 188;
+    bool vtx8mb = true;
+    byte vzrbcm = 68;
+p8pfsv = vzrbcm;
+vzrbcm = 180;
+f6hc71(true, 30);
+print("hello");
+printi(42);
+if (vzrbcm < vzrbcm) {
+    fm0phn(223, false, 413);
+    main();
+    f6hc71(false, 56);
+    vtx8mb = true;
+    vtx8mb = true;
+    p6aafj = vtx8mb;
+    {
+        vzrbcm = v3kxf1;
+        print("hello");
+    }
+}
+}
+
+byte fm0phn(byte p4kwab, bool pjkv9c, int pfn4yi) {
+    int vcb6ph = 36;
+    byte vsd429 = 249;
+pfn4yi = vcb6ph;
+printi(42);
+printi(42);
+f6hc71(false, 42);
+printi(42);
+vsd429 = p4kwab;
+f6hc71(false, 122);
+{
+    print("hello");
+    print("hello");
+    fm0phn(99, false, 488);
+    main();
+    {
+        printi(42);
+    }
+}
+}
+
+void main() {
+    int vge16e = 711;
+while (vge16e < vge16e) {
+    fm0phn(81, false, 362);
+    if (vge16e <= vge16e) {
+        printi(42);
+        printi(42);
+        vge16e = 761;
+        vge16e = 261;
+        fm0phn(216, true, 360);
+        vge16e = 420;
+        main();
+    }
+}
+}

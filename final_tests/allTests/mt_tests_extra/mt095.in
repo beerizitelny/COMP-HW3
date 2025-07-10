@@ -1,0 +1,7 @@
+// Test mt095.in – explicit_cast_int_to_byte_pass
+// Expected: PASS
+void main(){
+    int x = 300;
+    byte b = (byte)1;
+    return;
+}

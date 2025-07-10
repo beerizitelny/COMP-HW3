@@ -1,0 +1,10 @@
+// Test mt222.in – array_param_and_local_same_name_fail
+// Expected: FAIL
+int proc(int arr[3]){
+    int arr; // duplicate name diff kind
+    return arr;
+}
+void main(){
+    int a[3];
+    proc(a); return;
+}

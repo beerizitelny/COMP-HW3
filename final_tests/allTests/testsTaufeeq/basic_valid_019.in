@@ -1,0 +1,48 @@
+void fbnhbg(byte pipmy1, int ptz6fa) {
+    int vy0eyr = 717;
+    bool vfg31v = false;
+    int vt2wfe = 465;
+print("hello");
+while (vt2wfe < ptz6fa) {
+    vt2wfe = 644;
+    vy0eyr = ptz6fa;
+    {
+        fbnhbg(232, 359);
+        pipmy1 = 214;
+        f478q5(419, 183, false);
+        fbnhbg(18, 460);
+    }
+}
+}
+
+void main() {
+    byte vtdgum = 37;
+    int vt22tf = 452;
+    int v2m4qn = 511;
+f478q5(836, 107, false);
+printi(42);
+print("hello");
+main();
+{
+    main();
+    f478q5(574, 30, true);
+    v2m4qn = 476;
+    printi(42);
+    f478q5(950, 860, true);
+    vtdgum = 175;
+}
+}
+
+void f478q5(int p4i25o, int pq43m4, bool p7g99b) {
+    int v6zooi = 436;
+    int v5qhmz = 793;
+    bool v514gs = true;
+v514gs = p7g99b;
+v6zooi = pq43m4;
+fbnhbg(170, 824);
+main();
+v514gs = true;
+v5qhmz = 255;
+fbnhbg(169, 365);
+main();
+}

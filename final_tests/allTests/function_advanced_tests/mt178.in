@@ -1,0 +1,6 @@
+// Test mt178.in – missing_return_path_fail
+// Expected: FAIL
+int maybe(int a){
+    if(a>0) return a;
+}
+void main(){ maybe(1); return; }

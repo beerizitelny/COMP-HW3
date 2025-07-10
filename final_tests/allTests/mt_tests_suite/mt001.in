@@ -1,0 +1,29 @@
+// Test mt001.in – first test
+// Expected: PASS
+//first test
+int foo2 (int a){
+    int b;
+    int c;
+    c = foo(c);
+    b = foo2(b);
+    return (b+c);
+}
+
+void main(){
+    int a = 3;
+    int b;
+    while (a<5){
+        bool t = true;
+        foo(4);
+        break;
+    }
+    if ( b>2 || a < 3){
+        return 1;
+    }
+    else{
+        int i = 0;
+    }
+    int i = 2;
+    print("fdfdf");
+    return;
+}

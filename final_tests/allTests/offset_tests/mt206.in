@@ -1,0 +1,11 @@
+// Test mt206.in – offset_array_param
+// Expected: PASS
+int proc(byte arr[3], int n){
+    int tmp;
+    return n;
+}
+void main(){
+    byte a[3];
+    proc(a,5);
+    return;
+}

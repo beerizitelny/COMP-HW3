@@ -1,0 +1,15 @@
+// Test mt195.in – continue_break_mixed_pass
+// Expected: PASS
+void main(){
+    int i = 0;
+    while(i < 3){
+        i = i + 1;
+        if(i == 2){
+            continue;
+        }
+        if(i == 3){
+            break;
+        }
+    }
+    return;
+}

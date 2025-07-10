@@ -1,0 +1,9 @@
+// Test mt229.in – multiple_funcs_diff_param_counts_pass
+// Expected: PASS
+int f1(int a){ return a; }
+int f2(int a,int b){ return a+b; }
+int f3(int a,int b,int c){ return a+b+c; }
+void main(){
+    f1(1); f2(1,2); f3(1,2,3);
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt117.in – use_before_declaration_array
+// Expected: FAIL
+void main(){
+    int z = arr[0]; // arr not declared yet
+    int arr[4];
+    return;
+}

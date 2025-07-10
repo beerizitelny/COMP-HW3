@@ -1,0 +1,10 @@
+// Test mt091.in – call_defined_later_pass
+// Expected: PASS
+int foo(int a){
+    return a+1;
+}
+
+void main(){
+    int x = foo(3);
+    return;
+}

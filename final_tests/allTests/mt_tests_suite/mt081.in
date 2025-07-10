@@ -1,0 +1,11 @@
+// Test mt081.in – binop
+// Expected: PASS
+//binop
+//or_bool_int_mismatch
+void main(){
+    bool p = true;
+    int  x = 0;
+    if(p || x){   // mismatch
+    }
+    return;
+}

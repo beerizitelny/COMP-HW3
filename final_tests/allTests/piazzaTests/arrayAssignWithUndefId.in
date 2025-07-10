@@ -1,0 +1,4 @@
+void main() {
+	int arr[9];
+	arr[ID] = 1;
+}

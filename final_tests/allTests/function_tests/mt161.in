@@ -1,0 +1,8 @@
+// Test mt161.in – arg_type_mismatch_fail
+// Expected: FAIL
+int foo(int a){ return a; }
+void main(){
+    bool b = true;
+    foo(b); // bool to int mismatch
+    return;
+}

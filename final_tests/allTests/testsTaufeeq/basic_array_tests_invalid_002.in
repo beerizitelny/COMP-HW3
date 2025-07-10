@@ -1,0 +1,6 @@
+void main() {
+    int arr1[5];
+    int arr2[5];
+    // invalid: arrays cannot be assigned to each other
+    arr1 = arr2;
+}

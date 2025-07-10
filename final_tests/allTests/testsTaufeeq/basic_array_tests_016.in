@@ -1,0 +1,68 @@
+int f75oyb(byte pz3rsg) {
+    byte v1jal0 = 47;
+    bool a7mtjs[5];
+pz3rsg = 232;
+pz3rsg = v1jal0;
+print("hello");
+a7mtjs[1] = false;
+v1jal0 = 169;
+pz3rsg = 162;
+a7mtjs[1] = true;
+v1jal0 = pz3rsg;
+while (pz3rsg < v1jal0) {
+    a7mtjs[0] = false;
+    a7mtjs[3] = false;
+    print("hello");
+    v1jal0 = pz3rsg;
+}
+}
+
+bool fdlfg1(bool p883k9) {
+    bool v2w9fj = false;
+print("hello");
+print("hello");
+v2w9fj = p883k9;
+fdlfg1(true);
+printi(42);
+v2w9fj = p883k9;
+v2w9fj = false;
+p883k9 = v2w9fj;
+fdlfg1(false);
+main();
+v2w9fj = p883k9;
+}
+
+void fqibsr(int p0kd5e, byte pmbcly, byte plrn7u) {
+    byte v89e94 = 73;
+printi(42);
+pmbcly = v89e94;
+pmbcly = v89e94;
+plrn7u = v89e94;
+fdlfg1(false);
+fdlfg1(true);
+main();
+while (p0kd5e != p0kd5e) {
+    p0kd5e = 796;
+    {
+        print("hello");
+    }
+}
+}
+
+void main() {
+    byte vqlz4t = 122;
+while (vqlz4t == vqlz4t) {
+    print("hello");
+    {
+        print("hello");
+        vqlz4t = 161;
+        {
+            vqlz4t = 54;
+            vqlz4t = 155;
+            vqlz4t = 231;
+            vqlz4t = 142;
+            print("hello");
+        }
+    }
+}
+}

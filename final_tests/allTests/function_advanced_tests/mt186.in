@@ -1,0 +1,8 @@
+// Test mt186.in – power_array_base_fail
+// Expected: FAIL
+int powerInt(int,int);
+void main(){
+    int arr[1];
+    int r = powerInt(arr,3);
+    return;
+}

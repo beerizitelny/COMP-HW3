@@ -1,0 +1,48 @@
+int f0a7zge(bool pp2f4d) {
+    pp2f4d = true;
+    bool vzeov9 = true;
+    vzeov9 = true;
+    bool va56j8 = false;
+    va56j8 = false;
+    va56j8 = false;
+    int vyj7zc = 798;
+    vyj7zc = 437;
+    vyj7zc = 860;
+    printi(56);
+    return 348;
+}
+
+void fbz5ghs(byte p81340) {
+    p81340 = 130b;
+    int vrnl4i = 692;
+    vrnl4i = 113;
+    vrnl4i = 460;
+    byte v9orwt = 190b;
+    v9orwt = 79b;
+    v9orwt = 105b;
+    print("hello");
+}
+
+int fe88ksm() {
+    byte vgh6ig = 5b;
+    vgh6ig = 149b;
+    int v3j86p = 291;
+    v3j86p = 110;
+    bool vj4e12 = false;
+    vj4e12 = true;
+    printi(253);
+    while (vgh6ig > vgh6ig) {
+        vgh6ig = 267;
+    }
+    return 433;
+}
+
+void main() {
+    bool mgo4cc = true;
+    bool mkw9b2 = false;
+    f0a7zge(true);
+    fbz5ghs((byte)75);
+    fe88ksm();
+    mkw9b2 = true;
+    print("array");
+}

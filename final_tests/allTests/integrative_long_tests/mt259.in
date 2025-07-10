@@ -1,0 +1,23 @@
+// Test mt259.in – array_operations_large_pass
+// Expected: PASS
+int sum(byte arr[8]){
+    int s = 0;
+    int i = 0;
+    while(i < 8){
+        s = s + arr[i];
+        i = i + 1;
+    }
+    return s;
+}
+
+void main(){
+    byte data[8];
+    int k = 0;
+    while(k < 8){
+        data[k] = k + 1b;
+        k = k + 1;
+    }
+    int total = sum(data);
+    printi(total);
+    return;
+}

@@ -1,0 +1,23 @@
+// Test mt065.in – relop
+// Expected: PASS
+//relop
+//mismatch_on_line1
+void main(){
+    bool b = 5 < true;
+    return;
+}
+
+    mt59
+    //relop
+    //mismatch_on_last_line
+    void main(){
+    int x = 1;
+    int y = 2;
+    if(x < y){
+    }
+    bool b = x < "str";
+    return;
+}
+
+
+//until there - relop

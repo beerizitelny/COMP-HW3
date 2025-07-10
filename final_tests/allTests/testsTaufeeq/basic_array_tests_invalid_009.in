@@ -1,0 +1,5 @@
+void main() {
+    int arr[5];
+    // invalid: cannot assign an entire array to an int
+    int x = arr;
+}

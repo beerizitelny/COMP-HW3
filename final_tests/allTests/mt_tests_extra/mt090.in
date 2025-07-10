@@ -1,0 +1,6 @@
+// Test mt090.in – undef_function_call_mismatch
+// Expected: FAIL
+void main(){
+    foo(3);
+    return;
+}

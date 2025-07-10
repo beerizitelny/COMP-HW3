@@ -1,0 +1,8 @@
+// Test mt109.in – if_non_bool_mismatch_fail
+// Expected: FAIL
+void main(){
+    int x = 3;
+    if(x){
+    }
+    return;
+}

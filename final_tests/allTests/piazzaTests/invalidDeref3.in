@@ -1,0 +1,7 @@
+void main() {
+int arr[5];
+
+arr[3+4] = 1;
+
+arr[7] = 1;
+}

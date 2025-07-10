@@ -1,0 +1,22 @@
+// Test mt257.in – nested_loops_break_continue_pass
+// Expected: PASS
+void main(){
+    int i = 0;
+    int acc = 0;
+    while(i < 4){
+        int j = 0;
+        while(j < 3){
+            j = j + 1;
+            if(j == 2){
+                continue;
+            }
+            acc = acc + i + j;
+            if(acc > 20){
+                break;
+            }
+        }
+        i = i + 1;
+    }
+    printi(acc);
+    return;
+}

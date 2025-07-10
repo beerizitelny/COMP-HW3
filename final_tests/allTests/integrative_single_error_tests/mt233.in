@@ -1,0 +1,7 @@
+// Test mt233.in – cast_mismatch_only_fail
+// Expected: FAIL
+void main(){
+    bool b = true;
+    int x = b; // cast mismatch
+    return;
+}

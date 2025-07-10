@@ -1,0 +1,7 @@
+// Test mt035.in – scoping
+// Expected: PASS
+//scoping
+void main(){
+    {int x;}{int y;}{int x;{int y;}}
+    return;
+}

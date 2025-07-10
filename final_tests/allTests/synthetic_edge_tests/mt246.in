@@ -1,0 +1,8 @@
+// Test mt246.in – while_true_break_pass
+// Expected: PASS
+void main(){
+    while(true){
+        break;
+    }
+    return;
+}

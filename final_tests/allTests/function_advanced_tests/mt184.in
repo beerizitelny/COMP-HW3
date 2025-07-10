@@ -1,0 +1,7 @@
+// Test mt184.in – power_base2_exp0_pass
+// Expected: PASS
+int power(int b,int e){ if(e==0) return 1; return b*power(b,e-1); }
+void main(){
+    int one = power(2,0);
+    return;
+}

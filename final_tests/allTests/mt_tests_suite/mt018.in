@@ -1,0 +1,9 @@
+// Test mt018.in – assigments
+// Expected: PASS
+//assigments
+void main(){
+    bool i;
+    bool b;
+    i = b;
+    return;
+}

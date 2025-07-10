@@ -1,0 +1,7 @@
+// Test mt116.in – use_before_declaration_var
+// Expected: FAIL
+void main(){
+    y = 3;          // use before declaration
+    int y;
+    return;
+}

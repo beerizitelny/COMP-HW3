@@ -1,0 +1,7 @@
+// Test mt100.in – non_constant_array_size_fail
+// Expected: FAIL
+void main(){
+    int n = 5;
+    int arr[n];
+    return;
+}

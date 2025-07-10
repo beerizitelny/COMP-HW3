@@ -1,0 +1,9 @@
+// Test mt180.in – recursive_void_pass
+// Expected: PASS
+void forever(){
+    forever();
+}
+void main(){
+    forever();
+    return;
+}

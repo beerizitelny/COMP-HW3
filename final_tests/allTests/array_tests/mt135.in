@@ -1,0 +1,7 @@
+// Test mt135.in – use_array_before_decl_fail
+// Expected: FAIL
+void main(){
+    arr[0] = 1;
+    int arr[3];
+    return;
+}

@@ -1,0 +1,8 @@
+// Test mt133.in – array_string_index_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    string s = "0";
+    int x = arr[s]; // string index
+    return;
+}

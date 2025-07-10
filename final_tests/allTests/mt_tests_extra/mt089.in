@@ -1,0 +1,7 @@
+// Test mt089.in – use_before_declaration_mismatch
+// Expected: FAIL
+void main(){
+    y = 3;
+    int y;
+    return;
+}

@@ -1,0 +1,7 @@
+// Test mt216.in – array_size_var_fail
+// Expected: FAIL
+void main(){
+    int n = 5;
+    int arr[n]; // non‑constant size
+    return;
+}

@@ -1,0 +1,10 @@
+// Test mt228.in – large_parameter_array_pass
+// Expected: PASS
+int process(byte buf[10], int len){
+    return len;
+}
+void main(){
+    byte b[10];
+    process(b,10);
+    return;
+}

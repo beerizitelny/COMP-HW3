@@ -1,0 +1,7 @@
+// Test mt240.in – array_name_shadow_function_only_fail
+// Expected: FAIL
+int calc(int a){ return a+1; }
+void main(){
+    int calc[3]; // redeclare array with function name (shadow)
+    return;
+}

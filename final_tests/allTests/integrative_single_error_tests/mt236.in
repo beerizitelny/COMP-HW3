@@ -1,0 +1,7 @@
+// Test mt236.in – prototype_argcount_mismatch_only_fail
+// Expected: FAIL
+int foo(int a, int b){ return a+b; }
+void main(){
+    foo(3); // wrong arg count
+    return;
+}

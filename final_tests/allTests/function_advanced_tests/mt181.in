@@ -1,0 +1,7 @@
+// Test mt181.in – recursive_int_no_return_fail
+// Expected: FAIL
+int recurse(int n){
+    if(n==0) return 0;
+    recurse(n-1);
+}
+void main(){ recurse(3); return; }

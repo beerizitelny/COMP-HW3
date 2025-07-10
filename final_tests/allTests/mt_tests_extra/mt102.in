@@ -1,0 +1,5 @@
+// Test mt102.in – main_missing_fail
+// Expected: FAIL
+int foo(){
+    return 0;
+}

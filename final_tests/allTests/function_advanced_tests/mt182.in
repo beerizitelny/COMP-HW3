@@ -1,0 +1,15 @@
+// Test mt182.in – prototype_and_definition_match_pass
+// Expected: PASS
+int power(int, int);
+void main(){
+    int x = power(2,10);
+    return;
+}
+int power(int base, int exp){
+    int result = 1;
+    while(exp>0){
+        result = result*base;
+        exp = exp-1;
+    }
+    return result;
+}

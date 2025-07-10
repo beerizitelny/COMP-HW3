@@ -1,0 +1,49 @@
+int ft0nde(byte p95ydt) {
+    int v3ep87 = 898;
+main();
+p95ydt = 138;
+print("hello");
+v3ep87 = 383;
+print("hello");
+flo0g8();
+print("hello");
+}
+
+void main() {
+    bool vhthqb = false;
+main();
+vhthqb = true;
+printi(42);
+flo0g8();
+if (vhthqb) {
+    vhthqb = false;
+    vhthqb = true;
+    vhthqb = false;
+    vhthqb = false;
+    ft0nde(115);
+}
+}
+
+bool flo0g8() {
+    byte vy40dd = 101;
+vy40dd = 220;
+vy40dd = 80;
+vy40dd = 203;
+while (vy40dd >= vy40dd) {
+    vy40dd = 59;
+    while (vy40dd < vy40dd) {
+        printi(42);
+        printi(42);
+        vy40dd = 182;
+        while (vy40dd > vy40dd) {
+            main();
+            {
+                vy40dd = 165;
+                {
+                    vy40dd = 198;
+                }
+            }
+        }
+    }
+}
+}

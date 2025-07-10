@@ -1,0 +1,8 @@
+// Test mt148.in – scalar_to_array_init_fail
+// Expected: FAIL
+void main(){
+    int a[3]={1,2,3};
+    int x = 2;
+    a = x; // illegal
+    return;
+}

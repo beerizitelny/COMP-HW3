@@ -1,0 +1,10 @@
+// Test mt104.in – void_function_return_value_fail
+// Expected: FAIL
+void bar(){
+    return 1;
+}
+
+void main(){
+    bar();
+    return;
+}

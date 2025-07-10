@@ -1,0 +1,6 @@
+// Test mt188.in – continue_outside_loop_fail
+// Expected: FAIL
+void main(){
+    continue;
+    return;
+}

@@ -1,0 +1,20 @@
+// Test mt200.in – offset_multiple_funcs
+// Expected: PASS
+int g1;
+byte g2[4];
+bool bar(bool p){
+    byte l;
+    return p;
+}
+int baz(int x){
+    int y;
+    {
+        int z;
+    }
+    return x;
+}
+void main(){
+    bar(false);
+    baz(5);
+    return;
+}

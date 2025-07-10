@@ -1,0 +1,10 @@
+// Test mt060.in – relop
+// Expected: PASS
+//relop
+//eq_string_mismatch
+void main(){
+    string s = "a";
+    if(s == "a"){
+    }
+    return;
+}

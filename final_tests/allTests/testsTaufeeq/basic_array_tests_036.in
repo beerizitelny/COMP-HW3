@@ -1,0 +1,71 @@
+byte fks68u(bool plerql) {
+    int vytq6k = 308;
+    bool a3f7wt[2];
+    byte vzakf8 = 173;
+fks68u(true);
+{
+    a3f7wt[1] = false;
+    if (vytq6k < vytq6k) {
+        a3f7wt[vytq6k] = true;
+        plerql = a3f7wt[1];
+        vzakf8 = 55;
+        printi(42);
+        f7xizd(false);
+    }
+}
+}
+
+byte fy2888() {
+    bool vakgbr = true;
+print("hello");
+main();
+f7xizd(false);
+if (vakgbr) {
+    printi(42);
+    f7xizd(true);
+    vakgbr = false;
+    print("hello");
+    vakgbr = false;
+}
+}
+
+void f7xizd(bool puw2jb) {
+    byte vhcek4 = 160;
+    byte a1a048[10];
+    byte vvn52d = 103;
+vvn52d = vhcek4;
+puw2jb = true;
+print("hello");
+vhcek4 = a1a048[1];
+vvn52d = a1a048[9];
+puw2jb = true;
+vhcek4 = a1a048[7];
+a1a048[2] = 59;
+vhcek4 = vvn52d;
+a1a048[9] = 116;
+}
+
+void fg0xgb(byte pgfaj2) {
+    bool v3lbg3 = false;
+pgfaj2 = 221;
+pgfaj2 = 23;
+v3lbg3 = false;
+while (pgfaj2 < pgfaj2) {
+    v3lbg3 = false;
+    print("hello");
+    fks68u(false);
+}
+}
+
+void main() {
+    bool v8zdql = false;
+    bool ai4jms[6];
+    byte vzyoul = 185;
+fy2888();
+fg0xgb(97);
+vzyoul = 108;
+ai4jms[2] = v8zdql;
+{
+    print("hello");
+}
+}

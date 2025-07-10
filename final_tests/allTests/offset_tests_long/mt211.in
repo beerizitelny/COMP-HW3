@@ -1,0 +1,19 @@
+// Test mt211.in – arrays_offset_growth_large_pass
+// Expected: PASS
+int proc(int big[10], byte mid[5], bool small[2]){
+    int sum = 0;
+    int idx = 0;
+    while(idx < 10){
+        sum = sum + big[idx];
+        idx = idx + 1;
+    }
+    return sum;
+}
+
+void main(){
+    int huge[10];
+    byte mid[5];
+    bool tiny[2];
+    int res = proc(huge, mid, tiny);
+    return;
+}

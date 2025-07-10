@@ -1,0 +1,7 @@
+// Test mt241.in – call_array_as_function_only_fail
+// Expected: FAIL
+void main(){
+    int myArr[2];
+    int x = myArr(1); // array used as function
+    return;
+}

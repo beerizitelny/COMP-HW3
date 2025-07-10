@@ -1,0 +1,7 @@
+// Test mt214.in – param_shadow_local_fail
+// Expected: FAIL
+int foo(int x){
+    int x; // shadow param
+    return x;
+}
+void main(){ foo(3); return; }

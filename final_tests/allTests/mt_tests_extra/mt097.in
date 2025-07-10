@@ -1,0 +1,7 @@
+// Test mt097.in – assign_to_array_variable_fail
+// Expected: FAIL
+void main(){
+    int arr[3];
+    arr = 5;
+    return;
+}

@@ -1,0 +1,9 @@
+// Test mt193.in – if_without_else_decl_usage_fail
+// Expected: FAIL
+void main(){
+    if(1 > 0){
+        int t = 4;
+    }
+    printi(t); // t not declared in this scope
+    return;
+}

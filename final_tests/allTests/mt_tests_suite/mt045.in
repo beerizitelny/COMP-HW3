@@ -1,0 +1,10 @@
+// Test mt045.in – relop
+// Expected: PASS
+//relop
+void main(){
+    int x = 3;
+    int y = 4;
+    if(x>y){
+    }
+    return;
+}

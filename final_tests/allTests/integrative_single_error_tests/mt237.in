@@ -1,0 +1,8 @@
+// Test mt237.in – prototype_argtype_mismatch_only_fail
+// Expected: FAIL
+int bar(int a){ return a; }
+void main(){
+    bool flag = true;
+    bar(flag); // type mismatch
+    return;
+}

@@ -1,0 +1,63 @@
+void fsu7pqn() {
+    bool v5gryi = false;
+    v5gryi = true;
+    v5gryi = false;
+    byte vshqtg = 221b;
+    vshqtg = 118b;
+    vshqtg = 39b;
+    int vw4llm = 387;
+    vw4llm = 739;
+    vw4llm = 41;
+    print("test");
+    while (vshqtg != vshqtg) {
+        vshqtg = 18b;
+    }
+}
+
+int f6iyr5v() {
+    bool v9kqid = true;
+    v9kqid = false;
+    v9kqid = true;
+    f6iyr5v();
+    f6iyr5v();
+    printi(8);
+    return 968;
+}
+
+byte fska8sr(int pgybb8, bool pm4n9p) {
+    pgybb8 = 574;
+    pm4n9p = true;
+    int vz54ry = 709;
+    vz54ry = 942;
+    vz54ry = 650;
+    f6iyr5v();
+    printi(229);
+    while (vz54ry >= vz54ry) {
+        vz54ry = 329;
+    }
+    return (byte)807;
+}
+
+void fymotnx(bool pibao6, int p7fp8y) {
+    pibao6 = true;
+    p7fp8y = 42;
+    int v22v3w = 435;
+    v22v3w = 835;
+    v22v3w = 900;
+    byte vvy06w = (byte)84;
+    vvy06w = 146b;
+    byte vbducn = 242b;
+    vbducn = 123b;
+    fymotnx(true, 792);
+    print("test");
+}
+
+void main() {
+    byte myip9m = 228b;
+    fsu7pqn();
+    f6iyr5v();
+    fska8sr(806, false);
+    fymotnx(true, 940);
+    print("hello");
+    print("test");
+}

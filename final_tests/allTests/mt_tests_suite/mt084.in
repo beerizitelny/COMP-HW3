@@ -1,0 +1,10 @@
+// Test mt084.in – binop
+// Expected: PASS
+//binop
+//assign_to_byte_overflow_mismatch
+void main(){
+    int  x = 100;
+    int  y = 200;
+    byte b = x + y;   // mismatch: result int assigned to byte
+    return;
+}

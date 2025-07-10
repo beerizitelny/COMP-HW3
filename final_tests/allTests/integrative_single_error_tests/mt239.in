@@ -1,0 +1,6 @@
+// Test mt239.in – byte_literal_too_large_only_fail
+// Expected: FAIL
+void main(){
+    byte b = 300b; // literal too large
+    return;
+}

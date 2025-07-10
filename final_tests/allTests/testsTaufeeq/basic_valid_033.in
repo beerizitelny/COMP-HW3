@@ -1,0 +1,62 @@
+bool fzzaxb() {
+    int vpbuzv = 992;
+    int v0qhd8 = 777;
+print("hello");
+fzzaxb();
+main();
+fmr8cf(false);
+v0qhd8 = vpbuzv;
+vpbuzv = 266;
+vpbuzv = 234;
+fmr8cf(false);
+v0qhd8 = 897;
+fzzaxb();
+}
+
+void main() {
+    int vg2bul = 98;
+    int vv862i = 749;
+vv862i = vg2bul;
+print("hello");
+vg2bul = vv862i;
+fmr8cf(true);
+while (vg2bul != vg2bul) {
+    vv862i = 897;
+    printi(42);
+    print("hello");
+    vv862i = vg2bul;
+    main();
+    vg2bul = 224;
+}
+}
+
+byte fqj4yi(byte payglw, bool plj1dg) {
+    byte var1aa = 111;
+    int vcjamp = 958;
+payglw = var1aa;
+print("hello");
+main();
+vcjamp = 388;
+main();
+print("hello");
+}
+
+int fmr8cf(bool pc9tt9) {
+    bool vpjhzg = false;
+    byte vt0w0d = 220;
+    int vma8eb = 647;
+fqj4yi((byte)143, true);
+main();
+main();
+printi(42);
+fzzaxb();
+pc9tt9 = vpjhzg;
+if (vma8eb > vma8eb) {
+    fmr8cf(false);
+    vpjhzg = pc9tt9;
+    if (vma8eb == vma8eb) {
+        printi(42);
+        printi(42);
+    }
+}
+}

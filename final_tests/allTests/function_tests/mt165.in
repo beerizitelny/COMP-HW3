@@ -1,0 +1,6 @@
+// Test mt165.in – nonvoid_no_return_pass
+// Expected: PASS
+int foo(int a){
+    int x = a+1;
+} // no explicit return – allowed
+void main(){ foo(1); return; }

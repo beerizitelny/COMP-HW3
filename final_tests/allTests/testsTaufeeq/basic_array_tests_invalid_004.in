@@ -1,0 +1,6 @@
+void main() {
+    int arr1[5];
+    int arr2[5];
+    // invalid: RHS is an array, LHS is an element
+    arr1[0] = arr2;
+}

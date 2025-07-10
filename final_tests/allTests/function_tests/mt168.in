@@ -1,0 +1,8 @@
+// Test mt168.in – call_before_def_pass
+// Expected: PASS
+int foo(int a);
+void main(){
+    int x = foo(3);
+    return;
+}
+int foo(int a){ return a+1; }

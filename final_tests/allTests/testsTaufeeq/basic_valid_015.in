@@ -1,0 +1,37 @@
+bool fzwa3i(int pr8z06, bool p1wk4c, byte p4ud7l) {
+    bool vo9rwg = false;
+    byte vhb7ql = 17;
+    int vjrgpv = 221;
+p1wk4c = false;
+while (vjrgpv != pr8z06) {
+    printi(42);
+    fzwa3i(313, false, 96);
+    printi(42);
+    vo9rwg = false;
+    main();
+    vjrgpv = pr8z06;
+    main();
+    printi(42);
+}
+}
+
+void main() {
+    int v2sn2j = 29;
+    bool vjfowi = true;
+    int vhbtet = 571;
+while (v2sn2j > vhbtet) {
+    main();
+    printi(42);
+    if (v2sn2j < vhbtet) {
+        fzwa3i(703, false, 32);
+        if (v2sn2j <= v2sn2j) {
+            vjfowi = true;
+            vjfowi = false;
+            fzwa3i(827, true, 88);
+            printi(42);
+            vhbtet = 283;
+            main();
+        }
+    }
+}
+}

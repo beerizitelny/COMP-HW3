@@ -1,0 +1,11 @@
+// Test mt057.in – relop
+// Expected: PASS
+//relop
+//lt_byte_int_legal (promotion)
+void main(){
+    byte b = 7;
+    int  i = 10;
+    if(b < i){
+    }
+    return;
+}

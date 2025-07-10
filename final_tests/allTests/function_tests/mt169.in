@@ -1,0 +1,7 @@
+// Test mt169.in – param_shadows_global_fail
+// Expected: FAIL
+int x = 5;
+int foo(int x){ // shadows global
+    return x;
+}
+void main(){ foo(3); return; }

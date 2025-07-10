@@ -1,0 +1,71 @@
+int f19y2k(byte p7mx4j, int pddo7j) {
+    int voi28p = 499;
+pddo7j = 228;
+fqx214();
+print("hello");
+{
+    fqx214();
+    printi(42);
+    voi28p = pddo7j;
+    print("hello");
+    printi(42);
+    f19y2k(78, 956);
+    if (pddo7j <= voi28p) {
+        voi28p = pddo7j;
+        voi28p = pddo7j;
+        main();
+    }
+}
+}
+
+void main() {
+    bool va9y8g = true;
+    byte adadtu[5];
+    int vf34ok = 332;
+va9y8g = true;
+if (vf34ok <= vf34ok) {
+    vf34ok = 474;
+    print("hello");
+    vf34ok = 585;
+    va9y8g = false;
+    printi(42);
+}
+}
+
+void fqx214() {
+    bool vcdm1c = true;
+    bool aux0ao[10];
+aux0ao[2] = true;
+vcdm1c = true;
+print("hello");
+fnlkpa(230, false, false);
+print("hello");
+vcdm1c = true;
+while (true) {
+    aux0ao[8] = false;
+    f19y2k(180, 73);
+    fnlkpa(19, true, false);
+    while (vcdm1c) {
+        main();
+        vcdm1c = aux0ao[6];
+    }
+}
+}
+
+int fnlkpa(byte p0prnn, bool ppe658, bool pl49kv) {
+    int vzwj8a = 743;
+    bool akakc9[4];
+fnlkpa(95, true, true);
+fnlkpa(224, true, false);
+akakc9[2] = pl49kv;
+{
+    akakc9[3] = pl49kv;
+    ppe658 = akakc9[vzwj8a];
+    fqx214();
+    vzwj8a = 729;
+    pl49kv = akakc9[vzwj8a];
+    while (vzwj8a < vzwj8a) {
+        akakc9[vzwj8a] = true;
+    }
+}
+}

@@ -1,0 +1,6 @@
+// Test mt250.in – var_named_main_inside_main_fail
+// Expected: FAIL
+void main(){
+    int main = 3; // illegal shadowing main
+    return;
+}

@@ -1,0 +1,84 @@
+bool fs44m81() {
+    byte vfi875 = (byte)228;
+    vfi875 = (byte)114;
+    fs44m81();
+    print("hello");
+    return false;
+}
+
+void fhkgd70() {
+    bool va0326 = true;
+    va0326 = true;
+    va0326 = true;
+    print("world");
+}
+
+byte ft7s4zu(byte pln02r, bool p7bp95) {
+    pln02r = 184b;
+    p7bp95 = true;
+    int vst8fa = 856;
+    vst8fa = 994;
+    vst8fa = 995;
+    fhkgd70();
+    printi(180);
+    return (byte)380;
+}
+
+bool f4dv8ev() {
+    int v05ysy = 895;
+    v05ysy = 200;
+    v05ysy = 584;
+    byte v4wgxx = 73b;
+    v4wgxx = 239b;
+    v4wgxx = 131b;
+    bool vtlfk6 = false;
+    vtlfk6 = false;
+    vtlfk6 = false;
+    print("random");
+    while (v4wgxx <= v4wgxx) {
+        v4wgxx = 250;
+    }
+    return false;
+}
+
+int fsmghyu() {
+    bool vn6upd = true;
+    vn6upd = false;
+    vn6upd = true;
+    byte vfia8n = (byte)213;
+    vfia8n = 165b;
+    bool v130a6 = false;
+    v130a6 = true;
+    v130a6 = false;
+    printi(10);
+    while (vfia8n <= vfia8n) {
+        vfia8n = 6;
+    }
+    return 800;
+}
+
+int fnuabks() {
+    bool v9xxto = false;
+    v9xxto = true;
+    bool voevkc = true;
+    voevkc = true;
+    int vxwjct = 469;
+    vxwjct = 984;
+    vxwjct = 101;
+    fnuabks();
+    printi(88);
+    return 406;
+}
+
+void main() {
+    byte mm70jw = 192b;
+    bool m4f883 = false;
+    fs44m81();
+    fhkgd70();
+    ft7s4zu(222b, true);
+    f4dv8ev();
+    fsmghyu();
+    fnuabks();
+    print("array");
+    print("world");
+}

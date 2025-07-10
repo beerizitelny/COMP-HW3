@@ -1,0 +1,13 @@
+// Test mt041.in – break/continue
+// Expected: PASS
+//break/continue
+
+void main(){
+    while (true){
+        break;
+    }
+    while (true){
+        continue;
+    }
+    return;
+}

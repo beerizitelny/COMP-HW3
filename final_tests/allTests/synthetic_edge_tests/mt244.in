@@ -1,0 +1,6 @@
+// Test mt244.in – empty_identifier_fail
+// Expected: FAIL
+void main(){
+    int  = 4; // empty identifier
+    return;
+}

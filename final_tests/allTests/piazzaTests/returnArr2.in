@@ -1,0 +1,5 @@
+byte foo() {
+	int arr[6];
+	return arr;
+}
+void main(){return;}

@@ -1,0 +1,6 @@
+// Test mt215.in – array_size_zero_fail
+// Expected: FAIL
+void main(){
+    int arr[0];
+    return;
+}

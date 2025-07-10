@@ -1,0 +1,13 @@
+// Test mt056.in – relop
+// Expected: PASS
+//relop
+//eq_bool_legal
+void main(){
+    bool p = true;
+    bool q = false;
+    if(p == q){
+    }
+    if(p != q){
+    }
+    return;
+}

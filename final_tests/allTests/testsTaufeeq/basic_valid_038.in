@@ -1,0 +1,66 @@
+void feau1a(bool p68f19, int p2fzv5) {
+    int vkbabj = 697;
+    bool vdgbtn = false;
+    int vfjjc9 = 168;
+vkbabj = vfjjc9;
+printi(42);
+printi(42);
+print("hello");
+while (p2fzv5 == p2fzv5) {
+    p2fzv5 = 741;
+    printi(42);
+    fgkctq(true, false);
+    p68f19 = false;
+}
+}
+
+void main() {
+    byte v3mo7s = 216;
+v3mo7s = 185;
+v3mo7s = 161;
+printi(42);
+print("hello");
+v3mo7s = 202;
+while (v3mo7s < v3mo7s) {
+    printi(42);
+    v3mo7s = 50;
+    v3mo7s = 153;
+    print("hello");
+    printi(42);
+    print("hello");
+    print("hello");
+    fgkctq(true, true);
+}
+}
+
+byte fgkctq(bool pjag0t, bool p3fv4d) {
+    byte vfgf7j = 99;
+    int vb8ieu = 215;
+    int v8pr4g = 620;
+vfgf7j = 200;
+pjag0t = p3fv4d;
+fgkctq(false, true);
+while (v8pr4g != v8pr4g) {
+    feau1a(false, 257);
+    while (v8pr4g >= v8pr4g) {
+        fgkctq(false, false);
+    }
+}
+}
+
+bool fpc7ls() {
+    bool v0bqx7 = true;
+    int v4193d = 681;
+main();
+print("hello");
+fpc7ls();
+main();
+printi(42);
+fpc7ls();
+printi(42);
+print("hello");
+v4193d = 315;
+v4193d = 962;
+print("hello");
+feau1a(true, 922);
+}

@@ -1,0 +1,7 @@
+// Test mt123.in – func_used_as_array
+// Expected: FAIL
+int foo(){ return 7; }
+void main(){
+    int x = foo[2]; // function as array
+    return;
+}

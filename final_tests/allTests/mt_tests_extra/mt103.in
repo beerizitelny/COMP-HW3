@@ -1,0 +1,9 @@
+// Test mt103.in – return_value_mismatch_fail
+// Expected: FAIL
+int foo(){
+    return;
+}
+
+void main(){
+    return;
+}

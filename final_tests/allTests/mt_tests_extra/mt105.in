@@ -1,0 +1,10 @@
+// Test mt105.in – prototype_param_mismatch_fail
+// Expected: FAIL
+int foo(int a, byte b){
+    return a+b;
+}
+
+void main(){
+    foo(3); // only one param
+    return;
+}

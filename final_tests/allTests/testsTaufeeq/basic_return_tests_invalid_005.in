@@ -1,0 +1,6 @@
+bool f5() {
+    return true;
+}
+void main() {
+    int x = f5();
+}

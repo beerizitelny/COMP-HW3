@@ -1,0 +1,8 @@
+// Test mt131.in – array_elem_assignment_pass
+// Expected: PASS
+void main(){
+    int arr[3];
+    arr[1] = 5;
+    int x = arr[2];
+    return;
+}

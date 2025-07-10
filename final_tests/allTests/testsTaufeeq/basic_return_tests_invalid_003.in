@@ -1,0 +1,6 @@
+void f3() {
+    print("hi");
+}
+void main() {
+    byte b = f3();
+}

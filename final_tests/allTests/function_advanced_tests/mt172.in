@@ -1,0 +1,7 @@
+// Test mt172.in – int_to_byte_explicit_cast_pass
+// Expected: PASS
+void main(){
+    int  x = 1000;
+    byte b = (byte)x;
+    return;
+}

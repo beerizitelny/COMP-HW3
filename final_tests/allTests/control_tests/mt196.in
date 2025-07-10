@@ -1,0 +1,12 @@
+// Test mt196.in – assign_and_after_loop_pass
+// Expected: PASS
+void main(){
+    int sum = 0;
+    int i = 0;
+    while(i < 4){
+        sum = sum + i;   // assignment inside loop
+        i = i + 1;
+    }
+    printi(sum);         // usage after loop
+    return;
+}

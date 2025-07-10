@@ -1,0 +1,6 @@
+// Test mt124.in – call_undefined_function
+// Expected: FAIL
+void main(){
+    bar();
+    return;
+}

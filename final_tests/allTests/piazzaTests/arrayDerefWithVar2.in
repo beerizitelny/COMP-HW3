@@ -1,0 +1,5 @@
+void main() {
+	bool arr[7b];
+	byte x = 90b;
+	bool b = arr[x];
+}

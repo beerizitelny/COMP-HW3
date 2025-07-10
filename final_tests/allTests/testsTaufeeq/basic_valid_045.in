@@ -1,0 +1,56 @@
+int fbqerd() {
+    bool v6cwl6 = false;
+v6cwl6 = true;
+if (false) {
+    v6cwl6 = true;
+    printi(42);
+    v6cwl6 = false;
+    printi(42);
+    printi(42);
+    v6cwl6 = true;
+    v6cwl6 = false;
+    v6cwl6 = false;
+    fhmfzh();
+    v6cwl6 = true;
+    print("hello");
+    fbqerd();
+    v6cwl6 = true;
+}
+}
+
+byte fhmfzh() {
+    int vrba3q = 157;
+    bool vl3m0x = true;
+fbqerd();
+{
+    fhmfzh();
+    while (vrba3q < vrba3q) {
+        fhmfzh();
+        while (vrba3q >= vrba3q) {
+            fbqerd();
+            print("hello");
+            main();
+        }
+    }
+}
+}
+
+void main() {
+    int vqtr17 = 211;
+vqtr17 = 900;
+if (vqtr17 > vqtr17) {
+    vqtr17 = 118;
+    vqtr17 = 746;
+    fhmfzh();
+    if (vqtr17 != vqtr17) {
+        vqtr17 = 113;
+        vqtr17 = 160;
+        vqtr17 = 44;
+        printi(42);
+        {
+            vqtr17 = 296;
+            main();
+        }
+    }
+}
+}

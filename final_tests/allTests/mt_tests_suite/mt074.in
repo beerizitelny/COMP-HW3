@@ -1,0 +1,10 @@
+// Test mt074.in – binop
+// Expected: PASS
+//binop
+//mul_byte_int_legal
+void main(){
+    byte b = 5;
+    int  x = 6;
+    int  z = b * x;   // legal
+    return;
+}

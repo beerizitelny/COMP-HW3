@@ -1,0 +1,14 @@
+// Test mt221.in – duplicate_var_across_sibling_fail
+// Expected: FAIL
+void main(){
+    {
+        int x;
+    }
+    {
+        int x;
+    }
+    {
+        int x; // third redeclaration at same level
+    }
+    return;
+}

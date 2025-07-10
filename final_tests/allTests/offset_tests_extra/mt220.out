@@ -1,0 +1,23 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+main () -> void
+  ---begin scope---
+  g int 0
+    ---begin scope---
+      ---begin scope---
+      i int 1
+        ---begin scope---
+          ---begin scope---
+          j int 2
+            ---begin scope---
+              ---begin scope---
+              k int 3
+              ---end scope---
+            ---end scope---
+          ---end scope---
+        ---end scope---
+      ---end scope---
+    ---end scope---
+  ---end scope---
+---end global scope---

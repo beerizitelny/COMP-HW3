@@ -1,0 +1,19 @@
+// Test mt253.in – five_level_nesting_pass
+// Expected: PASS
+void main(){
+    int a = 1;
+    {
+        int b = 2;
+        {
+            int c = 3;
+            {
+                int d = 4;
+                {
+                    int e = a + b + c + d;
+                    printi(e);
+                }
+            }
+        }
+    }
+    return;
+}

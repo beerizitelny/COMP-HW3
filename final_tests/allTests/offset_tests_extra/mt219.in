@@ -1,0 +1,8 @@
+// Test mt219.in – arrays_various_sizes_pass
+// Expected: PASS
+void main(){
+    int a[1];
+    int b[3];
+    byte c[5];
+    return;
+}

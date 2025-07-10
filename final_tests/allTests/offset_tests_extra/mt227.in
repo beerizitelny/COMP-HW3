@@ -1,0 +1,12 @@
+// Test mt227.in – array_of_arrays_offset_pass
+// Expected: PASS
+void main(){
+    int m1[2];
+    {
+        int m2[3];
+        {
+            int m3[4];
+        }
+    }
+    return;
+}

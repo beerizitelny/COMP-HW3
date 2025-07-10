@@ -1,0 +1,6 @@
+byte f3() {
+    return 300;     // error: byte literal >255
+}
+void main() {
+    print("ok");
+}

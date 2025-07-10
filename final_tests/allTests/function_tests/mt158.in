@@ -1,0 +1,3 @@
+// Test mt158.in – main_non_void_fail
+// Expected: FAIL
+int main(){ return 0; }

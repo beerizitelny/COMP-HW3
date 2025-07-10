@@ -1,0 +1,10 @@
+// Test mt070.in – binop
+// Expected: PASS
+//binop
+//add_int_bool_mismatch
+void main(){
+    int  x = 7;
+    bool b = true;
+    int  z = x + b;   // mismatch: bool in arithmetic
+    return;
+}

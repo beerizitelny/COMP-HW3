@@ -1,0 +1,11 @@
+// Test mt036.in – scoping
+// Expected: PASS
+//scoping
+void main(){
+    {int x[3];}
+    if (x[2]>28){
+        print("x[2]>28");
+        return;
+    }
+    return;
+}

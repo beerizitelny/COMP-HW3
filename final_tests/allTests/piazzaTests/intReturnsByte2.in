@@ -1,0 +1,4 @@
+int foo() {
+byte x = 5b;
+return x;}
+void main() {return;}

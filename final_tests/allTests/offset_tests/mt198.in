@@ -1,0 +1,11 @@
+// Test mt198.in – offset_nested_block
+// Expected: PASS
+void main(){
+    int a;
+    {
+        int b;
+        byte c;
+    }
+    bool d;
+    return;
+}

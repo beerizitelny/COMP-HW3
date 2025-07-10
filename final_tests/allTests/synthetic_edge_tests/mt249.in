@@ -1,0 +1,6 @@
+// Test mt249.in – byte_literal_256_fail
+// Expected: FAIL
+void main(){
+    byte x = 256b; // too large
+    return;
+}

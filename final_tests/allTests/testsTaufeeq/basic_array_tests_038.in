@@ -1,0 +1,37 @@
+void main() {
+    int vxppjs = 689;
+    bool vbgqz7 = true;
+    bool at0l3o[5];
+at0l3o[0] = false;
+main();
+vbgqz7 = false;
+print("hello");
+vbgqz7 = at0l3o[vxppjs];
+main();
+vbgqz7 = false;
+}
+
+byte fzdloe(int pu9fng, int p43ba6, byte pmheap) {
+    byte v5duny = 34;
+    bool vwwp1f = true;
+f5s5h1(114, 576, 210);
+v5duny = 62;
+print("hello");
+fzdloe(756, 872, 7);
+pmheap = v5duny;
+pmheap = 51;
+main();
+}
+
+int f5s5h1(byte pkmo6b, int p33ofk, byte p2q9u2) {
+    int v1oqiv = 225;
+p33ofk = v1oqiv;
+print("hello");
+print("hello");
+printi(42);
+pkmo6b = p2q9u2;
+p33ofk = 278;
+{
+    printi(42);
+}
+}

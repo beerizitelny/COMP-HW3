@@ -1,0 +1,58 @@
+byte fjc6r7(bool p536yy) {
+    byte voqujq = 88;
+    int audks2[4];
+    byte aceylo[7];
+voqujq = aceylo[0];
+voqujq = aceylo[4];
+aceylo[5] = voqujq;
+aceylo[4] = 148;
+p536yy = true;
+print("hello");
+voqujq = aceylo[4];
+p536yy = true;
+voqujq = aceylo[0];
+voqujq = 102;
+audks2[0] = 554;
+fk7fub(155, false);
+}
+
+void main() {
+    byte vfffyh = 79;
+vfffyh = 16;
+vfffyh = 98;
+while (vfffyh < vfffyh) {
+    vfffyh = 11;
+    {
+        vfffyh = 105;
+        fk7fub(542, true);
+        vfffyh = 134;
+        vfffyh = 85;
+        print("hello");
+        {
+            main();
+        }
+    }
+}
+}
+
+int fk7fub(int phtiic, bool p8ly2j) {
+    bool vu7osg = true;
+    byte vrhmbh = 183;
+    int v4pux4 = 443;
+vrhmbh = 150;
+fjc6r7(true);
+if (phtiic >= phtiic) {
+    fjc6r7(false);
+    printi(42);
+    {
+        main();
+        {
+            vrhmbh = 85;
+            fk7fub(333, false);
+            while (v4pux4 <= v4pux4) {
+                main();
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,12 @@
+---begin global scope---
+print (string) -> void
+printi (int) -> void
+doubleIt (int) -> int
+main () -> void
+  ---begin scope---
+  a int -1
+  ---end scope---
+  ---begin scope---
+  x int 0
+  ---end scope---
+---end global scope---

@@ -1,0 +1,11 @@
+// Test mt066.in – binop
+// Expected: PASS
+//binop
+void main(){
+    int x = 3;
+    int y = 4;
+    if(x>y){
+        return 1;
+    }
+    return;
+}

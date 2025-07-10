@@ -1,0 +1,9 @@
+// Test mt203.in – offset_param_order
+// Expected: PASS
+int sum(int a, int b, byte c){
+    return a+b+c;
+}
+void main(){
+    sum(1,2,3b);
+    return;
+}

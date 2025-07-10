@@ -1,0 +1,8 @@
+// Test mt170.in – byte_to_int_promotion_pass
+// Expected: PASS
+void main(){
+    byte b = 42b;
+    int  x = b;
+    x = x + 1;
+    return;
+}

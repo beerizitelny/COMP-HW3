@@ -1,0 +1,63 @@
+byte fb0egof(bool pybflr) {
+    pybflr = false;
+    bool v565ol = true;
+    v565ol = true;
+    byte vvqv4t = 194b;
+    vvqv4t = 224b;
+    fb0egof(false);
+    printi(187);
+    while (vvqv4t > vvqv4t) {
+        vvqv4t = 17;
+    }
+    return 154b;
+}
+
+void fnj79i7() {
+    int v4qeu0 = 946;
+    v4qeu0 = 448;
+    v4qeu0 = 102;
+    int vjj19m = 377;
+    vjj19m = 94;
+    print("world");
+}
+
+int fk1uot3(bool p3vd9b) {
+    p3vd9b = false;
+    bool vpyhe2 = false;
+    vpyhe2 = false;
+    int vmr5pf = 28;
+    vmr5pf = 248;
+    vmr5pf = 929;
+    bool v3vht0 = true;
+    v3vht0 = false;
+    v3vht0 = false;
+    printi(87);
+    while (vmr5pf != vmr5pf) {
+        vmr5pf = 370;
+    }
+    return 815;
+}
+
+void f1z37cj(byte pwg68v, int p1hwbc) {
+    pwg68v = 38b;
+    p1hwbc = 862;
+    int v9if05 = 851;
+    v9if05 = 62;
+    v9if05 = 633;
+    fnj79i7();
+    f1z37cj(110b, 469);
+    print("random");
+    while (v9if05 == v9if05) {
+        v9if05 = 867;
+    }
+}
+
+void main() {
+    byte musi34 = 249b;
+    int monyne = 655;
+    fb0egof(false);
+    fnj79i7();
+    fk1uot3(false);
+    f1z37cj(115b, 906);
+    musi34 = (byte)393;
+}
